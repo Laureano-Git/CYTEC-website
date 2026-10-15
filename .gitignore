@@ -1,0 +1,76 @@
+# ============================================================
+# .gitignore — proyecto SvelteKit (Cytec)
+# Regla de oro: en Git sólo va lo que NO se puede regenerar.
+# Todo lo que se reconstruye con `npm install` o `npm run build`
+# (dependencias, compilados, cachés) se ignora.
+# ============================================================
+
+# --- Dependencias -------------------------------------------
+# Se reinstalan con `npm install` a partir de package.json.
+# Pesan cientos de MB y varían según el sistema operativo.
+node_modules/
+
+# --- Salidas de SvelteKit / Vite ----------------------------
+# .svelte-kit: carpeta generada en `dev` y `build` (tipos, caché, servidor).
+# build, dist, .output: resultado de compilar para producción.
+# .vercel, .netlify, .cloudflare: artefactos de los adapters de despliegue.
+.svelte-kit/
+build/
+dist/
+.output/
+.vercel/
+.netlify/
+.cloudflare/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# --- Variables de entorno (SEGURIDAD) -----------------------
+# Pueden contener claves de API, contraseñas o tokens. NUNCA se suben.
+# Excepción: .env.example SÍ se versiona como plantilla sin valores reales.
+.env
+.env.*
+!.env.example
+!.env.test
+
+# --- Logs ---------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Gestores de paquetes -----------------------------------
+# IMPORTANTE: NO ignorar package-lock.json; fija las versiones exactas
+# y garantiza instalaciones idénticas en todos los equipos.
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/install-state.gz
+
+# --- Pruebas y cobertura ------------------------------------
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# --- Editores e IDEs ----------------------------------------
+# Configuración personal de cada desarrollador. Si el equipo
+# comparte ajustes, se pueden versionar con excepciones (!).
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Archivos del sistema operativo -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Archivos comprimidos y temporales ----------------------
+*.zip
+*.tgz
+*.tmp
+.cache/
