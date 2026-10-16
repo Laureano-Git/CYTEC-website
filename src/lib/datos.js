@@ -555,11 +555,11 @@ export const serviciosDetalle = {
     // 6. Tipo de RX
     tipo:[
       'Rx Cráneo, Cara, Senos Paranasales.', ' Rx Hueso Temporal-Agujeros ópticos.', 'Rx Panorámica de Cráneo.','Rx Raquis-Columna.','Rx Hombro, Húmero, Pelvis, Cadera.',
-      'Rx Codo. Mano. Pie, etc.','Rx de Tórax.', 'Medición Comparativa de Miembros Inferiores.', 'Espinografia'
+      'Rx Codo. Mano. Pie, etc.','Rx de Tórax.', 'Medición Comparativa de Miembros Inferiores.'
     ],
     // 7. Localidad donde se realiza
     localidad:[
-      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.',
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs.',
       'Florencio Varela - Bartolomé Mitre Nº 40 - Lunes a Viernes: 9:00 a 15:00 hs.'
     ]
   },
@@ -627,14 +627,87 @@ export const serviciosDetalle = {
     requisito:[
       'carnet de obra social y orden médica'
     ],
-    // 6. Tipo de RX
+    // 6. Tipo de MEDICINA NUCLEAR
     tipo:[
-      'Rx Cráneo, Cara, Senos Paranasales.', ' Rx Hueso Temporal-Agujeros ópticos.', 'Rx Panorámica de Cráneo.','Rx Raquis-Columna.','Rx Hombro, Húmero, Pelvis, Cadera.',
-      'Rx Codo. Mano. Pie, etc.','Rx de Tórax.', 'Medición Comparativa de Miembros Inferiores.', 'Espinografia'
+      'Centellograma Óseo.', ' Centellograma Tiroideo.', 'SPECT Cardíaco.','Centellograma Renal con DMSA.','Centellograma de Paratiroides con MIBI.',
+      'Radiorrenograma con DTPA/MAG3.'
     ],
     // 7. Localidad donde se realiza
     localidad:[
       'Florencio Varela - Bartolomé Mitre Nº 40 - Lunes a Viernes: 9:00 a 15:00 hs.'
+    ]
+  },
+  'mamografia-digital': {
+    slug: 'mamografia-digital',
+    titulo: 'Mamografía Digital Directa',
+    subtitulo: 'Detección precoz de lesiones mamarias con alta definición y mínima compresión',
+    descripcion: [
+      'La Mamografía Digital Directa es el método de exploración por excelencia para el tamizaje, diagnóstico y seguimiento de las patologías de la glándula mamaria. Utiliza detectores digitales de alta sensibilidad que convierten los rayos X directamente en señales electrónicas, brindando imágenes con una resolución espacial y contraste superiores a los sistemas analógicos convencionales.',
+      'Su máxima ventaja radica en la detección temprana de anomalías microscópicas y microcalcificaciones agrupadas antes de que se manifiesten síntomas clínicos o nódulos palpables, incrementando sustancialmente las tasas de curación y permitiendo tratamientos conservadores de mínima invasión.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Screening o tamizaje anual preventivo en mujeres a partir de los 40 años (o antes según antecedentes familiares).',
+      'Identificación y caracterización de microcalcificaciones pleomórficas, distorsiones de la arquitectura tisular y asimetrías focales.',
+      'Diferenciación entre lesiones benignas (quistes, fibroadenomas) y sospechas de malignidad según categorización internacional BI-RADS.',
+      'Evaluación mamográfica en pacientes portadoras de prótesis mamarias mediante técnica de desplazamiento de Eklund.',
+      'Monitoreo y control post-quirúrgico, cicatrizal o post-radioterapia en pacientes con antecedentes oncológicos.',
+      'Guía y correlación para procedimientos intervencionistas de punción, biopsia y marcación previa con arpón.'
+    ],
+    // 2. Aplicaciones Clínicas y Modalidades
+    aplicacionesClinicas: [
+      {
+        area: 'Mamografía Preventiva y Diagnóstica',
+        descripcion: 'Estudio protocolizado en proyecciones estándar y focalizadas:',
+        items: [
+          'Proyecciones Cráneo-Caudal (CC) y Medio-Lateral Oblicua (MLO) de ambas mamas.',
+          'Magnificaciones focalizadas y compresiones localizadas para aclarar zonas de sospecha o superposición glandular.',
+          'Complementariedad con Ecografía Mamaria en patrones de mama densa (categorías C y D de la clasificación ACR).'
+        ]
+      },
+      {
+        area: 'Pacientes con Implantes Mamarios',
+        descripcion: 'Protocolo especializado de maniobras específicas:',
+        items: [
+          'Técnica de Eklund: maniobra cuidadosa que desplaza el implante protésico hacia la pared torácica para maximizar la visualización del parénquima mamario remanente.',
+          'Inspección de la indemnidad del implante y detección temprana de cambios en el tejido adyacente a la cápsula fibrosa.'
+        ]
+      },
+      {
+        area: 'Clasificación Estandarizada BI-RADS',
+        descripcion: 'Informe estructurado bajo norma internacional:',
+        items: [
+          'BI-RADS 1 y 2: Estudios normales y hallazgos típicamente benignos (control periódico habitual).',
+          'BI-RADS 3: Hallazgos con alta probabilidad de benignidad (control semestral sugerido).',
+          'BI-RADS 4 y 5: Lesiones con sospecha de malignidad moderada a alta que requieren confirmación histopatológica.'
+        ]
+      }
+    ],
+    // 3. Equipamiento y Confort del Paciente
+    fusionPETRM: {
+      titulo: 'Mamógrafos Digitales con Optimización de Dosis y Confort',
+      descripcion: 'Nuestros equipos de mamografía digital disponen de paletas de compresión anatómicas y curvadas que adaptan la fuerza ejercida a la tolerancia de cada paciente, reduciendo notablemente las molestias durante el examen. Adicionalmente, el sistema de control automático de exposición (AEC) dosifica de manera precisa la mínima cantidad de radiación requerida en función del espesor y la densidad de la mama.'
+    },
+    // 4. Preparación Previa y Recomendaciones
+    preparacion: [
+      'Cosméticos y Desodorantes: NO colocarse talco, desodorante, antitranspirante, perfumes ni cremas corporales en mamas, escote o axilas el día del estudio (los residuos metálicos cosméticos pueden generar falsas microcalcificaciones en la imagen).',
+      'Momento Óptimo del Ciclo: En pacientes premenopáusicas, se aconseja realizar el estudio entre el día 7 y 10 después de iniciado el ciclo menstrual, período en el cual la mama presenta menor retención de líquidos y sensibilidad a la compresión.',
+      'Vestimenta recomendada: Concurrir con vestimenta de dos piezas (blusa o remera y pantalón/falda) para facilitar desvestir únicamente el torso sin necesidad de quitarse toda la ropa.',
+      'Implantes y Prótesis: Informar al personal técnico la presencia de prótesis o implantes mamarios antes de dar inicio a la exploración.',
+      'Estudios Anteriores: Es de vital importancia traer los estudios mamográficos y ecográficos previos para que el médico radiólogo pueda efectuar un análisis comparativo evolutivo.'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
+    ],
+    // 6. Tipo de MAMOGRAFIA
+    tipo:[
+      'Mamografía bilateral con Proyección Axilar.', ' Mamografía de Alta Resolución.', 'Mamografía con magnificación.','Marcación Pre-Biopsia quirúrgica.',
+      'Biopsia con aguja gruesa con pistola automática.'
+    ],
+    // 7. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs.'
     ]
   }
   // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.
