@@ -12,7 +12,7 @@
     <span class="oculto-movil"><Icono nombre="reloj" tam={16} /> Lun a Vie 8:00 a 20:00 hs · Sáb 8:00 a 12:00 hs</span>
     <span class="acciones">
       <a class="btn whatsapp chico" href={WHATSAPP_LA_PLATA} target="_blank" rel="noopener"><Icono nombre="whatsapp" tam={16} /> Turnos WhatsApp</a>
-      <a class="btn chico" href={PORTAL_WEB} target="_blank" rel="noopener">Portal pacientes</a>
+      <a class="btn chico" href={PORTAL_WEB}>Portal pacientes</a>
     </span>
   </div>
 </div>

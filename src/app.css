@@ -33,6 +33,11 @@ h2 { font-size: clamp(1.4rem, 3vw, 2rem); color: var(--primario); }
 h3 { font-size: 1rem; font-weight: 600; }
 a { color: inherit; text-decoration: none; }
 
+/*Adicion posterior - fase 2*/
+html {
+  scroll-behavior: smooth;
+}
+
 /* Contenedor centrado reutilizable */
 .contenedor { max-width: var(--ancho-max); margin-inline: auto; padding-inline: 1.25rem; }
 /* Bloques de sección; .alt alterna el fondo gris claro */
@@ -46,6 +51,16 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 960px) { .grilla, .grilla.tres { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .grilla, .grilla.tres { grid-template-columns: 1fr; } }
 
+/*Adicion posterior - fase 2*/
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * { 
+    transition: none !important; 
+    animation: none !important; 
+  }
+}
 /* Botones CTA con microinteracción hover */
 .btn { display: inline-block; padding: 0.7rem 1.4rem; border: 0; border-radius: var(--radio); font: 600 0.85rem var(--fuente); text-transform: uppercase; color: var(--blanco); background: var(--primario); cursor: pointer; transition: background var(--transicion), transform var(--transicion); }
 .btn:hover { background: var(--primario-oscuro); transform: translateY(-2px); }
