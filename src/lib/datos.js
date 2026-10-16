@@ -42,7 +42,7 @@ export const menu = [
       { texto: 'Radiología Digital', href: '/servicios/radiologia-digital' },
       { texto: 'Medicina Nuclear', href: '/servicios/medicina-nuclear' },
       { texto: 'Mamografía Digital', href: '/servicios/mamografia-digital' },
-      { texto: 'Espinografía Digital', href: '/servicios/espinografia-digital' },
+      { texto: 'Espirometria Computada', href: '/servicios/espirometria-computada' },
       { texto: 'Ecografía', href: '/servicios/ecografia' },
       { texto: 'Densitometría Ósea', href: '/servicios/densitometria-osea' } 
     ] 
@@ -68,7 +68,7 @@ export const valores = [
 ];
 
 export const servicios = [
-  'Espinografía digital', 'PET CT Multislice y PET CT+RM', 'Resonancia magnética', 'Tomografía',
+  'Espirometría computada', 'PET CT Multislice y PET CT+RM', 'Resonancia magnética', 'Tomografía',
   'Mamografía digital', 'Ecografía', 'Medicina nuclear', 'Radiología digital', 'Densitometría ósea digital'
 ];
 
@@ -572,7 +572,7 @@ export const serviciosDetalle = {
     // 6. Tipo de RX
     tipo:[
       'Rx Cráneo, Cara, Senos Paranasales.', ' Rx Hueso Temporal-Agujeros ópticos.', 'Rx Panorámica de Cráneo.','Rx Raquis-Columna.','Rx Hombro, Húmero, Pelvis, Cadera.',
-      'Rx Codo. Mano. Pie, etc.','Rx de Tórax.', 'Medición Comparativa de Miembros Inferiores.'
+      'Rx Codo. Mano. Pie, etc.','Rx de Tórax.', 'Medición Comparativa de Miembros Inferiores.', 'Espinografia digital'
     ],
     // 7. Localidad donde se realiza
     localidad:[
@@ -869,6 +869,80 @@ export const serviciosDetalle = {
     // 6. Tipos de DENSITOMETRIAS
     tipo:[
       'Densitometría de cuerpo entero.', 'Análisis vertebral.', 'Software pediátrico.', 'Cadera periprotésica.', 'Antebrazo distal (muñeca).'
+    ],
+    // 8. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes.'
+    ]
+  },
+  'espirometria-computada': {
+    slug: 'espirometria-computada',
+    titulo: 'Espirometría Computada con Curva Flujo-Volumen',
+    subtitulo: 'Evaluación funcional respiratoria pre y post-broncodilatador (PBD)',
+    descripcion: [
+      'La Espirometría Computada es el estudio funcional respiratorio estándar de oro para medir la capacidad ventilatoria y los volúmenes pulmonares en movimiento. Evalúa la cantidad total de aire que los pulmones son capaces de inhalar y exhalar, así como la velocidad de los flujos aéreos.',
+      'El test con curva Flujo-Volumen pre y post-broncodilatador (PBD) permite diagnosticar patrones obstructivos y restrictivos, determinar si la limitación al flujo aéreo es reversible tras la administración de un aerosol broncodilatador, y evaluar la respuesta terapéutica en patologías de la vía aérea.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Diagnóstico certero y diferencial entre Asma Bronquial y Enfermedad Pulmonar Obstructiva Crónica (EPOC).',
+      'Test de Respuesta Broncodilatadora (PBD): evaluación de la reversibilidad del calibre bronquial tras inhalación de salbutamol.',
+      'Detección precoz del compromiso pulmonar en pacientes fumadores activos o extabaquistas.',
+      'Evaluación del riesgo quirúrgico preoperatorio en cirugías torácicas, abdominales mayores o pacientes con antecedentes respiratorios.',
+      'Estudio de síntomas respiratorios persistentes no filiados: tos crónica, disnea (falta de aire) y sibilancias.',
+      'Monitoreo funcional en enfermedades restrictivas (fibrosis pulmonar, cifoescoliosis o patologías neuromusculares).'
+    ],
+    // 2. Parámetros Técnicos y Evaluación Clínica
+    aplicacionesClinicas: [
+      {
+        area: 'Patologías Obstructivas y Reversibilidad',
+        descripcion: 'Diferenciación funcional de la limitación al flujo aéreo:',
+        items: [
+          'Asma: obstrucción variable con prueba broncodilatadora positiva (aumento significativo del FEV1 ≥ 12% y 200 ml).',
+          'EPOC: obstrucción bronquial persistente poco o nada reversible con índice FEV1/FVC post-BD menor al límite inferior normal (LIN).',
+          'Seguimiento y ajuste de dosis en tratamientos con corticoides inhalados y broncodilatadores LABA/LAMA.'
+        ]
+      },
+      {
+        area: 'Parámetros Espirométricos Estandarizados (GLI / ATS / ERS)',
+        descripcion: 'Comparación computarizada contra valores de referencia poblacionales:',
+        items: [
+          'FVC (Capacidad Vital Forzada): volumen máximo de aire exhalado con esfuerzo extremo.',
+          'FEV1 (Volumen Espiratorio Forzado en el primer segundo): indicador clave de permeabilidad de la vía aérea central.',
+          'Relación FEV1/FVC (Índice de Tiffeneau): parámetro principal para definir presencia o ausencia de obstrucción.',
+          'Z-Score (Global Lung Initiative): estadificación estandarizada de severidad (leve, moderada o severa) sin sesgo de edad o género.'
+        ]
+      },
+      {
+        area: 'Salud Ocupacional y Toxicidad Pulmonar',
+        descripcion: 'Vigilancia epidemiológica y laboral preventiva:',
+        items: [
+          'Exámenes periódicos en trabajadores expuestos a polvos minerales, químicos, humos, gases o solventes industriales.',
+          'Monitoreo de toxicidad pulmonar secundaria a fármacos (amiodarona, metotrexato, bleomicina).'
+        ]
+      }
+    ],
+    // 3. Tecnología del Espirómetro
+    fusionPETRM: {
+      titulo: 'Espirómetros Computarizados con Neumotacógrafo de Precisión',
+      descripcion: 'Nuestros equipos cuentan con sensores de flujo digital calibrados diariamente con jeringa de 3 litros según normas internacionales ATS/ERS (American Thoracic Society / European Respiratory Society). Incorporan boquillas antibacterianas descartables con filtro biológico de un solo uso para total seguridad e higiene, y curvas en tiempo real con incentivos visuales que aseguran maniobras técnicamente reproducibles y aceptables.'
+    },
+    // 4. Preparación Previa y Pautas para el Paciente
+    preparacion: [
+      'SUSPENSIÓN DE BRONCODILATADORES (Previa consulta médica): Suspender inhaladores de rescate de acción corta (ej. Salbutamol, Bromuro de Ipratropio) 6 horas antes; y los de acción prolongada (ej. Formoterol, Salmeterol) 24 horas antes.',
+      'Tabaco y Vapeo: NO fumar cigarrillos tradicionales ni usar vapeadores/cigarrillos electrónicos durante al menos 2 horas antes de la prueba.',
+      'Estimulantes y Cafeína: No consumir café, mate, té, bebidas cola, bebidas energizantes ni chocolate 4 horas previas al examen.',
+      'Alimentación: No realizar comidas copiosas o pesadas en las 2 horas anteriores para permitir la expansión diafragmática completa.',
+      'Prendas y Actividad: Asistir con ropa holgada que no comprima el tórax ni el abdomen. Evitar ejercicio físico intenso 30 minutos antes.',
+      'Medicamento aerosol: Concurrir al turno con su aerocámara y el inhalador de Salbutamol indicado por su médico (en caso de que el protocolo requiera el propio aerosol del paciente).'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
+    ],
+    // 6. Tipos de ESPIROMETRIAS-COMPUTADAS
+    tipo:[
+      
     ],
     // 8. Localidad donde se realiza
     localidad:[
