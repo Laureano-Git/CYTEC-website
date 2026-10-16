@@ -36,7 +36,20 @@ let servicio = $derived(data.servicio);
         <p>{parrafo}</p>
         {/each}
     </article>
-
+    <!-- Introducción / Definición -->
+    {#if servicio.tipo}
+        <article class="bloque-seccion">
+        <h2>{servicio.titulo} que realizamos</h2>
+        <ul class="lista-checks">
+            {#each servicio.tipo as item}
+            <li>
+                <span class="punto-check" aria-hidden="true">*</span>
+                <span>{item}</span>
+            </li>
+            {/each}
+        </ul>
+        </article>
+    {/if}
     <!-- 1. Aplicaciones Principales -->
     {#if servicio.aplicacionesPrincipales}
         <article class="bloque-seccion">

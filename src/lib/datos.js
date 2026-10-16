@@ -396,6 +396,12 @@ export const serviciosDetalle = {
     // 5. Requisitos
     requisito:[
       'carnet de obra social y orden médica'
+    ],
+    // 6. Tipo de RMN
+    tipo:[
+      'Tomografía Computada de cuerpo entero.', 'Tomografía computada con filtros de imágenes para la exquisita valoración de parénquina pulmonar', 
+      'TC con Filtros especiales para la valoración de la arquitectura trabecular ósea.','Estudios tomográficos de abdomen de gran utilidad en el estudio angiodinámico de lesiones focales hepáticas y pancreáticas.',
+      'Programa de Reconstrucción 3D.', 'Reconstrucción de imágenes 3D color (Work Station).'
     ]
   },
   'resonancia-magnetica': {
@@ -463,6 +469,71 @@ export const serviciosDetalle = {
     // 5. Requisitos
     requisito:[
       'carnet de obra social y orden médica'
+    ],
+    // 6. Tipo de RMN
+    tipo:[
+      'Resonancia Magnética convencional.', 'RM con técnica Difusión-Perfusión.', 'RM Dinámica.','Artro resonancia.','Resonancia de ATM.', 'RM con espectroscopía.'
+    ]
+  },
+  'radiologia-digital': {
+    slug: 'radiologia-digital',
+    titulo: 'Radiología Digital Directa (RX)',
+    subtitulo: 'Diagnóstico radiológico de alta definición con mínima dosis de exposición',
+    descripcion: [
+      'La Radiología Digital es la evolución tecnológica de la radiografía convencional. Emplea detectores digitales de captura directa de última generación que sustituyen a las placas radiográficas analógicas y a los químicos de revelado.',
+      'Este sistema permite adquirir imágenes de máxima definición en fracciones de segundo, optimizando el contraste de tejidos óseos y blandos, reduciendo sensiblemente la dosis de radiación recibida por el paciente y posibilitando el almacenamiento y distribución inmediata a través de la red digital PACS.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Evaluación primaria y de urgencia en traumatismos óseos, fisuras y fracturas articulares.',
+      'Estudio del tórax para diagnóstico de infecciones respiratorias (neumonía, bronquitis), derrames pleurales y cardiomegalia.',
+      'Exploración de la columna vertebral (cervical, dorsal, lumbosacra y sacrocóccix) con mediciones posturales.',
+      'Radiología abdominal simple para detección de niveles hidroaéreos (obstrucción intestinal), cálculos renales o cuerpos extraños.',
+      'Evaluación de senos paranasales y macizo craneofacial en patologías como sinusitis o desviación de tabique.',
+      'Seguimiento postquirúrgico y control evolutivo de material de osteosíntesis (prótesis, placas y clavos).'
+    ],
+    // 2. Aplicaciones Clínicas por Región Anatómica
+    aplicacionesClinicas: [
+      {
+        area: 'Tórax y Vías Respiratorias',
+        descripcion: 'Estudio de primera línea cardiorrespiratorio:',
+        items: [
+          'Radiografía de Tórax (Frente y Perfil) para screening prequirúrgico y valoración pulmonar.',
+          'Detección precoz de condensaciones neumónicas, atelectasias y nódulos.',
+          'Evaluación del índice cardiotorácico y redistribución de flujo vascular.'
+        ]
+      },
+      {
+        area: 'Sistema Óseo y Articular',
+        descripcion: 'Resolución de máxima nitidez cortical y trabecular:',
+        items: [
+          'Hombro, codo, muñeca y manos: estudio de artritis, artrosis y traumatismos deportivos.',
+          'Pelvis, caderas, rodillas, tobillos y pies (con y sin carga / apoyo monopodal).',
+          'Detección de anomalías congénitas, luxaciones articulares y microfisuras.'
+        ]
+      },
+      {
+        area: 'Columna y Estudios Especiales',
+        descripcion: 'Visualización integral de la alineación raquídea:',
+        items: [
+          'Radiografías de columna con maniobras funcionales dinámicas (máxima flexión y extensión).',
+          'Detección de escoliosis, lordosis, rectificaciones cervicales y espondilolistesis.',
+          'Estudios radiológicos de cavum faríngeo en pediatría para hipertrofia adenoidea.'
+        ]
+      }
+    ],
+    // 3. Tecnología de Captura y Bioseguridad
+    fusionPETRM: {
+      titulo: 'Tecnología Directa y Protocolo ALARA de Baja Radiación',
+      descripcion: 'Nuestros equipos de radiología digital cuentan con colimadores automáticos y algoritmos inteligentes de compensación de exposición bajo el criterio ALARA (As Low As Reasonably Achievable). Esto asegura que niños, adultos y adultos mayores reciban la menor dosis de radiación físicamente necesaria para un diagnóstico inequívoco, con disponibilidad instantánea en nuestro portal de estudios online.'
+    },
+    // 4. Preparación Previa y Pautas para el Paciente
+    preparacion: [
+      'Generalidades: La inmensa mayoría de los estudios radiológicos simples NO requieren ayuno ni preparación farmacológica previa.',
+      'Vestimenta y Metales: Se debe concurrir con ropa cómoda sin elementos metálicos en la zona a estudiar (sin cierres metálicos, ganchos de corpiño, botones a presión o aplicaciones brillantes).',
+      'Accesorios personales: Antes del disparo radiológico, se solicitará retirar collares, cadenas, aros, piercings corporales, cinturones o prótesis dentales removibles que puedan superponerse al área anatómica de interés.',
+      'Precaución por Embarazo: En caso de sospecha o certeza de embarazo, la paciente debe informar indefectiblemente al personal técnico antes de la práctica para evaluar la justificación clínica y colocar los elementos de protección plomada pertinentes.',
+      'Documentación requerida: Concurrir con la orden médica física o digital debidamente autorizada, DNI y estudios radiológicos previos para valoración comparativa.'
     ]
   }
   // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.
