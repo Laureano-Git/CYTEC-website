@@ -5,6 +5,23 @@
 // ============================================================
 export const WHATSAPP_LA_PLATA = 'https://api.whatsapp.com/send?phone=5492216139002';
 export const PORTAL_WEB = "http://cytec.ddns.net:8080/login"
+export const DOPPLER = {titulo: 'Doppler:', subtipos:[
+      'Ecocardiagrafía bidimensional.', ' Doppler color cardíaco.', 'Doppler color carotídeo.','Doppler color periférico arterial y venoso.','Doppler color transesofágico.',
+      'Doppler Color en la Evaluación de la Circulación de la Mano (Art./Ven.).', 'Doppler color en la Evaluación de la Circulación del Pie (Art./Ven.).', 
+      'Doppler Color en la Evaluación de Tumores de Mama.', 'Doppler Color Ginecológico Endovaginal (Descarte de C.A. ovárico, etc)', 'Doppler Color Obstétrico Endovaginal.',
+      'Doppler Color Prostático Endorectal.', 'Doppler Color en la Evaluación de procesos Musculoesqueléticos.', 'Doppler Color Peneano.'
+      ]};
+export const GENERAL ={ titulo: 'General:', subtipos:[
+      'Completa de Abdomen.', 'Hepática Biliar.', 'Renal Bilateral.',
+      'Pancreática.', 'Vesical Prostática.', 'Testicular Tocoginecológica.',
+      'De Tiroides.', 'Mamaria Bilateral.'
+      ]};
+export const ESPECIALES = {titulo: 'Especiales:', subtipos:[
+        'Ultrasonido transvaginal o endovaginal.', 'Ultrasonido transrectal.', 'Tendón de Aquiles.', 
+        'Tendón patelar.', 'Cerebral.', 'Caderas.','Glándulas Submaxilares.',
+        'De Pene y testículos.', 'De Músculos.', '4D - 5D fetal'
+      ]};
+
 
 
 // Menú multinivel: un ítem con "hijos" se muestra como dropdown
@@ -708,6 +725,80 @@ export const serviciosDetalle = {
     // 7. Localidad donde se realiza
     localidad:[
       'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs.'
+    ]
+  },
+  'ecografia': {
+    slug: 'ecografia',
+    titulo: 'Ecografía General, 4D-5D y Doppler Color',
+    subtitulo: 'Exploración no invasiva en tiempo real mediante ultrasonido de alta resolución',
+    descripcion: [
+      'La Ecografía o Ultrasonografía es un método diagnóstico por imágenes seguro, inocuo y en tiempo real que emplea ondas sonoras de alta frecuencia para generar imágenes anatómicas y funcionales del interior del cuerpo humano.',
+      'Al no utilizar radiaciones ionizantes, es el estudio de primera elección en obstetricia, pediatría y evaluación de órganos abdominales, pélvicos, vasculares y partes blandas superficiales. En CYTEC contamos con ecógrafos digitales con tecnología Doppler Color, Doppler Pulsado y transductores multifrecuencia de máxima definición.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Evaluación estructural de órganos abdominales (hígado, vesícula biliar, páncreas, bazo y riñones).',
+      'Diagnóstico de patología vesicular: litiasis (cálculos biliares), pólipos y colecistitis aguda.',
+      'Exploración ginecológica y urológica (útero, ovarios, vejiga y glándula prostática).',
+      'Ecografía musculoesquelética y articular: tendinitis, desgarros fibrilares, derrames y lesiones ligamentarias.',
+      'Estudio de glándula tiroides, glándulas salivales, ganglios cervicales y partes blandas superficiales.',
+      'Eco-Doppler Vascular: evaluación de estenosis carotídea, trombosis venosa profunda e insuficiencia venosa periférica.'
+    ],
+    // 2. Aplicaciones Clínicas por Especialidad
+    aplicacionesClinicas: [
+      {
+        area: 'Ecografía Abdominal y Renovesiocprostática',
+        descripcion: 'Estudio morfológico detallado del abdomen y vías urinarias:',
+        items: [
+          'Hígado y vías biliares: esteatosis hepática (hígado graso), quistes, nódulos y dilatación de vía biliar.',
+          'Riñones y vías urinarias: cólico renal, litiasis, quistes renales e hidronefrosis.',
+          'Próstata y residuo post-miccional: medición del volumen prostático y control de vaciamiento vesical.'
+        ]
+      },
+      {
+        area: 'Eco-Doppler Color y Vascular',
+        descripcion: 'Análisis hemodinámico no invasivo del flujo sanguíneo:',
+        items: [
+          'Doppler de Vasos de Cuello (Carotídeo y Vertebral): detección de placas de ateroma y riesgo cardiovascular.',
+          'Doppler Venoso de Miembros Inferiores: diagnóstico de várices, trombosis venosa profunda (TVP) e insuficiencia valvular.',
+          'Doppler Arterial de Miembros Inferiores: claudicación intermitente y arteriopatía periférica.'
+        ]
+      },
+      {
+        area: 'Tiroides, Músculo y Partes Blandas',
+        descripcion: 'Transductores lineales de alta frecuencia para estructuras superficiales:',
+        items: [
+          'Tiroides: medición volumétrica, caracterización de nódulos (clasificación TI-RADS) y tiroiditis.',
+          'Músculo y tendón: hombro (manguito rotador), tendón de Aquiles, fascia plantar y articulaciones.',
+          'Gineco-mamaria y testicular: diferenciación de masas quísticas vs. sólidas y control escrotal.'
+        ]
+      }
+    ],
+    // 3. Tecnología de Imagen y Confort
+    fusionPETRM: {
+      titulo: 'Equipamiento Digital con Doppler Multifrecuencia',
+      descripcion: 'Nuestros ecógrafos cuentan con tecnología de procesamiento armónico tisular, elastografía y software de reducción de ruido granular (speckle reduction). Esto permite una diferenciación nítida de interfases tisulares, optimizando el confort del paciente mediante exploraciones dinámicas, rápidas e indoloras.'
+    },
+    // 4. Preparación Previa según el Tipo de Estudio
+    preparacion: [
+      'Ecografía Abdominal / Hepatobiliopancreática: Ayuno estricto de sólidos de 6 a 8 horas previas al turno. No fumar ni mascar chicle antes del examen (evita la aerofagia que dificulta la visión).',
+      'Ecografía Renal, Vesical, Prostática o Ginecológica (Pelviana): Requiere vejiga llena. Debe beber 1 litro de agua sin gas 1 hora antes del turno y retener la orina hasta la realización del estudio.',
+      'Ecografía Abdominal y Renal / Prostática combinada: Debe cumplir AMBAS condiciones: ayuno de sólidos de 6 horas y finalizar la ingesta de 1 litro de agua 1 hora antes sin concurrir al baño.',
+      'Ecografías de Tiroides, Partes Blandas, Muscular o Testicular: NO requieren ayuno ni retención de orina.',
+      'Eco-Doppler de Vasos de Cuello o Miembros: Generalmente no requieren preparación, excepto Doppler de Arterias Renales o Abdominal (requiere ayuno de 8 horas).',
+      'Documentación: Concurrir con ropa cómoda de dos piezas, orden médica autorizada y estudios ecográficos previos para evaluación comparativa.'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
+    ],
+    // 6. Tipos de ECOGRAFIA
+    tipo:[
+      DOPPLER, GENERAL, ESPECIALES
+    ],
+    // 8. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes.'
     ]
   }
   // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.

@@ -57,12 +57,23 @@ let servicio = $derived(data.servicio);
         <article class="bloque-seccion">
         <h2>{servicio.titulo} que realizamos</h2>
         <ul class="lista-checks">
-            {#each servicio.tipo as item}
-            <li>
-                <span class="punto-check" aria-hidden="true">*</span>
-                <span>{item}</span>
-            </li>
-            {/each}
+                    <!-- Recorremos cada grupo/categoría -->
+        {#each servicio.tipo as grupo}
+            <div class="categoria-servicio">
+                <!-- Usamos h3 o h4 ya que h2 es el título principal de la sección -->
+                <h3>{grupo.titulo}</h3> 
+                
+                <ul class="lista-checks">
+                    <!-- Segundo bucle dinámico y universal usando .subtipos -->
+                    {#each grupo.subtipos as subtipo}
+                        <li>
+                            <span class="punto-check" aria-hidden="true">-</span>
+                            <span>{subtipo}</span>
+                        </li>
+                    {/each}
+                </ul>
+            </div>
+        {/each}
         </ul>
         </article>
     {/if}
