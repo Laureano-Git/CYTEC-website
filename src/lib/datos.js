@@ -800,6 +800,80 @@ export const serviciosDetalle = {
     localidad:[
       'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes.'
     ]
+  },
+  'densitometria-osea': {
+    slug: 'densitometria-osea',
+    titulo: 'Densitometría Ósea Digital (DEXA)',
+    subtitulo: 'Evaluación de densidad mineral ósea y diagnóstico precoz de osteopenia y osteoporosis',
+    descripcion: [
+      'La Densitometría Ósea por absorciometría de rayos X de doble energía (DEXA / DXA) es el estudio de referencia internacional para cuantificar de manera no invasiva, indolora y precisa la masa mineral de los huesos.',
+      'Permite determinar con exactitud el nivel de desmineralización ósea, predecir el riesgo futuro de fracturas por fragilidad y monitorizar la eficacia clínica de tratamientos médicos farmacológicos contra la osteoporosis en pacientes posmenopáusicas o con factores de riesgo asociados.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Diagnóstico certero y temprano de osteopenia y osteoporosis antes de la aparición de fracturas espontáneas.',
+      'Detección de pérdida de masa ósea en mujeres en etapa peri y posmenopáusica o tras menopausia quirúrgica.',
+      'Evaluación del riesgo de fractura osteoporótica en columna lumbar y cadera (cuello femoral).',
+      'Monitoreo periódico y control evolutivo en pacientes bajo tratamiento con fijadores de calcio, bifosfonatos o terapia hormonal.',
+      'Control de pacientes bajo tratamientos prolongados con corticoides, inmunosupresores, quimioterapia o fármacos antiepilépticos.',
+      'Estudio óseo en trastornos endocrinos y metabólicos (hiperparatiroidismo, hipotiroidismo, celiaquía o insuficiencia renal crónica).'
+    ],
+    // 2. Regiones Anatómicas y Evaluación Clínica
+    aplicacionesClinicas: [
+      {
+        area: 'Columna Lumbar y Fémur Proximal (Cadera)',
+        descripcion: 'Sitios anatómicos estándar de referencia clínica:',
+        items: [
+          'Columna Lumbar (L1 a L4): evalúa el hueso trabecular, el más activo metabólicamente y el primero en perder calcio.',
+          'Cadera y Cuello Femoral: evalúa el hueso cortical y trabecular, crucial para calcular el riesgo de fractura de cadera.',
+          'Antebrazo (Radio 33%): región complementaria indicada en pacientes con prótesis de cadera bilateral, artrosis severa de columna o hiperparatiroidismo.'
+        ]
+      },
+      {
+        area: 'Escala y Clasificación Estandarizada OMS',
+        descripcion: 'Parámetros cuantitativos de diagnóstico médico:',
+        items: [
+          'T-Score Normal: valores de densidad mineral mayores a -1.0 desviaciones estándar.',
+          'Osteopenia: T-Score entre -1.0 y -2.5 (pérdida moderada de densidad ósea que requiere prevención y control).',
+          'Osteoporosis: T-Score inferior a -2.5 (alto riesgo de fractura que requiere tratamiento médico específico).',
+          'Z-Score: comparativa ajustada por edad, peso y sexo biológico (utilizada en pediatría y premenopausia).'
+        ]
+      },
+      {
+        area: 'Composición Corporal Total',
+        descripcion: 'Análisis complementario opcional de alta precisión:',
+        items: [
+          'Cuantificación porcentual y en gramos de masa magra (músculo), tejido adiposo (grasa) y contenido mineral óseo.',
+          'Detección y seguimiento de sarcopenia (pérdida de masa muscular) en adultos mayores y valoración en medicina deportiva.'
+        ]
+      }
+    ],
+    // 3. Tecnología de Dosis Ultrabaja
+    fusionPETRM: {
+      titulo: 'Tecnología Digital DEXA de Mínima Dosis',
+      descripcion: 'Nuestros densitómetros óseos de última generación operan con emisiones de radiación extremadamente bajas, equivalentes a una fracción de la exposición ambiental diaria. La exploración es totalmente indolora, rápida y confortable, completándose en pocos minutos sin necesidad de confinamiento ni inyecciones.'
+    },
+    // 4. Preparación Previa y Pautas para el Paciente
+    preparacion: [
+      'SUSPENSIÓN DE CALCIO: No ingerir suplementos de calcio, tabletas vitamínicas con calcio ni antiácidos que contengan calcio durante las 24 a 48 horas previas al examen (pueden falsear la lectura si se ubican en el tubo digestivo).',
+      'Estudios Contrastados Recientes: Si se realizó un estudio con contraste iodado o baritado (tomografía con contraste, seriada esofagogástrica) o estudios de medicina nuclear, debe aguardar al menos 7 días antes de realizar la densitometría.',
+      'Alimentación y Ayuno: NO requiere ayuno; el paciente puede ingerir comidas y líquidos habituales con normalidad.',
+      'Vestimenta recomendada: Concurrir con ropa cómoda sin elementos metálicos en la zona pélvica y lumbar (evitar cinturones con hebillas, cierres metálicos, botones a presión de jean o apliques metálicos).',
+      'Embarazo: Como todo estudio que emplea radiación, se encuentra contraindicado en caso de sospecha o certeza de embarazo.',
+      'Documentación: Concurrir con la orden médica autorizada, DNI y traer informes de densitometrías anteriores para evaluar la curva comparativa de evolución de la masa ósea.'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
+    ],
+    // 6. Tipos de DENSITOMETRIAS
+    tipo:[
+      'Densitometría de cuerpo entero.', 'Análisis vertebral.', 'Software pediátrico.', 'Cadera periprotésica.', 'Antebrazo distal (muñeca).'
+    ],
+    // 8. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes.'
+    ]
   }
   // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.
 };

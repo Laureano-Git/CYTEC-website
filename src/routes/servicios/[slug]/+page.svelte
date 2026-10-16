@@ -53,30 +53,43 @@ let servicio = $derived(data.servicio);
     {/if}
 
     <!-- Tipos de estudios que realizamos del SERVICIO -->
-    {#if servicio.tipo}
-        <article class="bloque-seccion">
+    {#if servicio.tipo && servicio.tipo.length > 0}
+    <article class="bloque-seccion">
+    
+    <!-- Evaluamos si el primer elemento es un objeto (Caso A) o un string plano (Caso B) -->
+    {#if typeof servicio.tipo[0] === 'object'}
+    
         <h2>{servicio.titulo} que realizamos</h2>
-        <ul class="lista-checks">
-                    <!-- Recorremos cada grupo/categoría -->
+    
         {#each servicio.tipo as grupo}
             <div class="categoria-servicio">
-                <!-- Usamos h3 o h4 ya que h2 es el título principal de la sección -->
-                <h3>{grupo.titulo}</h3> 
-                
-                <ul class="lista-checks">
-                    <!-- Segundo bucle dinámico y universal usando .subtipos -->
-                    {#each grupo.subtipos as subtipo}
-                        <li>
-                            <span class="punto-check" aria-hidden="true">-</span>
-                            <span>{subtipo}</span>
-                        </li>
-                    {/each}
-                </ul>
+            <h3>{grupo.titulo}</h3> 
+            <ul class="lista-checks">
+                {#each grupo.subtipos as subtipo}
+                <li>
+                    <span class="punto-check" aria-hidden="true">-</span>
+                    <span>{subtipo}</span>
+                </li>
+                {/each}
+            </ul>
             </div>
         {/each}
+
+        {:else}
+    
+    <!-- Caso B: El array contiene strings directos -->
+        <h2>Realizamos estudios de {servicio.titulo} en:</h2>
+        <ul class="lista-checks">
+            {#each servicio.tipo as item}
+            <li>
+                <span class="punto-check" aria-hidden="true">-</span>
+                <span>{item}</span>
+            </li>
+            {/each}
         </ul>
-        </article>
+        {/if}</article>
     {/if}
+
     <!-- 1. Aplicaciones Principales -->
     {#if servicio.aplicacionesPrincipales}
         <article class="bloque-seccion">
