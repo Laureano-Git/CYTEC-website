@@ -60,7 +60,8 @@ let servicio = $derived(data.servicio);
             {#each servicio.aplicacionesClinicas as area}
             <div class="tarjeta-clinica">
                 <header class="header-clinica">
-                <span class="badge-area">Especialidad</span>
+                <!-- Subtitulo para cada Especialidad -->
+                <!--<span class="badge-area">Especialidad</span>-->
                 <h3>{area.area}</h3>
                 </header>
                 <p class="desc-clinica">{area.descripcion}</p>
@@ -109,7 +110,7 @@ let servicio = $derived(data.servicio);
     <div class="tarjeta-turno">
         <span class="badge-atencion">Atención Especializada</span>
         <h3>Solicitá tu Turno</h3>
-        <p>Los estudios de PET-CT requieren coordinación de radiofármaco y orden médica autorizada.</p>
+        <p>Los estudios de {servicio.titulo} requieren {servicio.requisito}.</p>
         
         <!-- Botón prioritario único para no distraer al usuario -->
         <a 
@@ -252,7 +253,8 @@ let servicio = $derived(data.servicio);
     margin-bottom: 0.75rem;
 }
 
-.badge-area {
+/*CSS para subtitulo de especialidad*/
+/*.badge-area {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -263,7 +265,7 @@ let servicio = $derived(data.servicio);
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 0.35rem;
-}
+}*/
 
 .header-clinica h3 {
     margin: 0;

@@ -327,6 +327,142 @@ export const serviciosDetalle = {
       'Asistir con ropa cómoda y abrigada, sin cierres, tachas, botones metálicos ni joyas.',
       'Disponer de una permanencia aproximada en el centro de 2 a 3 horas (incluye tiempo de reposo, incorporación del trazador y escaneo).',
       'Presentar orden médica autorizada y todos los estudios diagnósticos previos relacionados (TAC, RMN, informes de biopsia o PET previos).'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'coordinación de radiofármaco, carnet de obra social y orden médica'
+    ]
+  },
+  'tomografia': {
+    slug: 'tomografia',
+    titulo: 'Tomografía Computada Multislice',
+    subtitulo: 'Diagnóstico anatómico rápido de alta resolución y reconstrucción tridimensional (3D)',
+    descripcion: [
+      'La Tomografía Computada Multislice (TAC) es una técnica diagnóstica no invasiva que emplea rayos X combinados con detectores digitales de alta sensibilidad para obtener imágenes axiales transversales del cuerpo.',
+      'El sistema multidetector de CYTEC permite adquisiciones volumétricas en escasos segundos, generando reconstrucciones multiplanares (coronal, sagital, oblicuas) y representaciones tridimensionales de vasos sanguíneos, huesos y órganos blandos con una nitidez milimétrica.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Estudio integral de traumatismos agudos, fracturas complejas y evaluación de politraumatizados.',
+      'Diagnóstico de patología respiratoria y pulmonar mediante Tomografía de Alta Resolución (TACAR).',
+      'Evaluación de dolor abdominal agudo (apendicitis, diverticulitis, litiasis renal, obstrucción intestinal).',
+      'Detección y control de procesos oncológicos, adenopatías y estadificación de tumores abdominales y torácicos.',
+      'Angiotomografía computada (Angio-TAC) para mapeo vascular cerebral, aórtico, pulmonar y periférico.',
+      'Planificación prequirúrgica mediante navegación y renderizado 3D de estructuras anatómicas.'
+    ],
+    // 2. Aplicaciones Clínicas por Área
+    aplicacionesClinicas: [
+      {
+        area: 'Neurología y Cabeza / Cuello',
+        descripcion: 'Exploración veloz del sistema nervioso central y macizo facial:',
+        items: [
+          'Accidente Cerebrovascular (ACV) isquémico o hemorrágico agudo.',
+          'Traumatismo encéfalo-craneano (TEC) y evaluación de hematomas intracraneales.',
+          'Senos paranasales, órbitas, peñascos y mastoides en cortes ultrafinos.'
+        ]
+      },
+      {
+        area: 'Tórax, Abdomen y Pelvis',
+        descripcion: 'Estudio exhaustivo de cavidades y órganos internos:',
+        items: [
+          'Evaluación de parénquima pulmonar, nódulos, tromboembolismo pulmonar (TEP) e infecciones.',
+          'Hígado, vías biliares, páncreas, bazo, glándulas suprarrenales y riñones.',
+          'Patología ginecológica y urológica en pelvis menor.'
+        ]
+      },
+      {
+        area: 'Vascular y Osteoarticular',
+        descripcion: 'Resolución de alta fidelidad para vasos y huesos:',
+        items: [
+          'Aneurismas y disecciones de la arteria aorta torácica y abdominal.',
+          'Estudio de columna vertebral, articulaciones y reconstrucciones óseas 3D en fracturas.'
+        ]
+      }
+    ],
+    // 3. Tecnología y Equipamiento
+    fusionPETRM: {
+      titulo: 'Tecnología Multislice con Reducción de Dosis',
+      descripcion: 'Nuestros tomógrafos multidetector incorporan algoritmos avanzados de modulación de dosis (Dose Reduction), permitiendo adquirir estudios de máxima calidad diagnóstica con la menor exposición a radiación posible para el paciente, además de tiempos de apnea respiratoria sustancialmente más cortos.'
+    },
+    // 4. Preparación Previa
+    preparacion: [
+      'Estudios Simples (sin contraste): Generalmente requieren un ayuno leve de 2 a 4 horas previas.',
+      'Estudios con Contraste Endovenoso: Ayuno estricto de sólidos y líquidos de 6 horas previas al turno.',
+      'Laboratorio renal obligatorio: En estudios con contraste endovenoso, presentar análisis de Urea y Creatinina en sangre (con validez no mayor a 30 días) para verificar la función renal.',
+      'Alergias previas: Pacientes con antecedentes alérgicos a iodo, medicamentos o alimentos deben informar al momento de solicitar el turno para evaluar una premedicación antialérgica.',
+      'Tomografía de Abdomen/Pelvis: Puede requerir la ingesta previa de líquido de contraste oral o agua en sala de espera previa al escaneo.',
+      'Concurrir con ropa cómoda sin metales y presentar orden médica autorizada junto a estudios previos (TAC o radiografías anteriores).'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
+    ]
+  },
+  'resonancia-magnetica': {
+    slug: 'resonancia-magnetica',
+    titulo: 'Resonancia Magnética (RMN)',
+    subtitulo: 'Diagnóstico de máxima resolución en tejidos blandos sin radiación ionizante',
+    descripcion: [
+      'La Resonancia Magnética Nuclear (RMN) es un procedimiento no invasivo y altamente avanzado que utiliza potentes campos magnéticos y ondas de radiofrecuencia para generar imágenes anatómicas y funcionales tridimensionales del interior del cuerpo humano.',
+      'Al no emplear radiaciones ionizantes (rayos X), es el método de elección para la evaluación del sistema nervioso central, columna vertebral, articulaciones, estructuras osteomusculares, patología mamaria y órganos de la pelvis menor, ofreciendo un contraste insuperable en partes blandas.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Evaluación exhaustiva del Sistema Nervioso Central (encéfalo, tronco cerebral, médula espinal).',
+      'Diagnóstico de patología articular y muscular (ligamentos, meniscos, tendones y cartílagos).',
+      'Estudio anatómico y funcional de la columna vertebral en toda su extensión (cervical, dorsal, lumbosacra).',
+      'Caracterización avanzada de lesiones tumorales y diferenciación tisular de alta precisión.',
+      'Angioresonancia (Angio-RM): estudio detallado de la circulación arterial y venosa sin necesidad de cateterismo ni contraste iodado.',
+      'Resonancia de mamas: screening en pacientes de alto riesgo y evaluación de implantes mamarios (ruptura intra/extracapsular).'
+    ],
+    // 2. Aplicaciones Clínicas por Especialidad
+    aplicacionesClinicas: [
+      {
+        area: 'Neurorradiología y Columna',
+        descripcion: 'Estudio de referencia absoluta para enfermedades neurológicas y del eje espinal:',
+        items: [
+          'Accidente Cerebrovascular (ACV) en etapa hiperaguda mediante secuencias de Difusión (DWI).',
+          'Enfermedades desmielinizantes (Esclerosis Múltiple), neurodegenerativas e infecciosas.',
+          'Hernias discales, compresiones radiculares, estenosis del canal raquídeo y espondilodiscitis.',
+          'Tumores primarios y secundarios del encéfalo y de la médula espinal.'
+        ]
+      },
+      {
+        area: 'Músculo-Esquelético (Traumatología)',
+        descripcion: 'Resolución de máxima nitidez en articulaciones complejas:',
+        items: [
+          'Rodilla: roturas meniscales, lesiones del ligamento cruzado anterior (LCA) y lesiones condrales.',
+          'Hombro: roturas del manguito rotador, inestabilidad glenohumeral y lesiones de labrum (SLAP).',
+          'Tobillo, muñeca, cadera y codo: tendinitis, edema óseo, fracturas por estrés y osteonecrosis.'
+        ]
+      },
+      {
+        area: 'Abdomen, Pelvis y Patología Femenina',
+        descripcion: 'Caracterización tisular profunda de órganos abdominales y pélvicos:',
+        items: [
+          'Colangiorresonancia: visualización no invasiva de la vía biliar y conducto pancreático sin contraste.',
+          'Pelvis femenina y masculina: estadificación de neoplasias de próstata (RM Multiparamétrica), endometrio, cuello uterino y endometriosis profunda.',
+          'Hígado: caracterización de nódulos hepáticos benignos y malignos mediante agentes hepatobiliares.'
+        ]
+      }
+    ],
+    // 3. Equipamiento y Bioseguridad en Alto Campo
+    fusionPETRM: {
+      titulo: 'Equipamiento de Alto Campo y Protocolos Silenciosos',
+      descripcion: 'En CYTEC contamos con resonadores de alto campo magnético (1.5 Tesla) equipados con bobinas multicanal dedicadas a cada región anatómica. Esta tecnología minimiza los tiempos de exploración, cuenta con secuencias diseñadas para reducir el ruido acústico ambiental y dispone de túneles más amplios para brindar mayor confort y reducir la sensación de claustrofobia en el paciente.'
+    },
+    // 4. Preparación Previa y Protocolo de Bioseguridad
+    preparacion: [
+      'CUESTIONARIO DE SEGURIDAD OBLIGATORIO: Se prohíbe el ingreso con marcapasos cardíacos no compatibles, implantes cocleares, clips metálicos cerebrales ferromagnéticos o esquirlas metálicas en ojos.',
+      'Estudios Simples (sin contraste): Generalmente no requieren ayuno, salvo estudios de abdomen, pelvis o colangiorresonancia (ayuno de 6 horas para vaciamiento de la vesícula biliar).',
+      'Estudios con Contraste (Gadolinio): Ayuno estricto de sólidos de 4 a 6 horas previas al turno.',
+      'Evaluación de Función Renal: Presentar informe de laboratorio reciente con valores de Creatinina y Filtrado Glomerular si tiene más de 65 años, padece diabetes, hipertensión o insuficiencia renal conocida.',
+      'Claustrofobia o Ansiedad: Si el paciente presenta dificultad para permanecer en espacios cerrados, consultar con su médico tratante la indicación de una premedicación sedante suave.',
+      'Vestimenta y Metales: Concurrir con prendas confortables de algodón, sin cierres metálicos, botones a presión ni estampados con purpurina. Dejar en el vestidor tarjetas de crédito, celulares, relojes, llaves, prótesis dentales removibles y piercings.'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
     ]
   }
   // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.
