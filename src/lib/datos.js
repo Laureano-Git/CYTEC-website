@@ -331,6 +331,10 @@ export const serviciosDetalle = {
     // 5. Requisitos
     requisito:[
       'coordinación de radiofármaco, carnet de obra social y orden médica'
+    ],
+    // 6. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.'
     ]
   },
   'tomografia': {
@@ -397,11 +401,15 @@ export const serviciosDetalle = {
     requisito:[
       'carnet de obra social y orden médica'
     ],
-    // 6. Tipo de RMN
+    // 6. Tipo de TC
     tipo:[
       'Tomografía Computada de cuerpo entero.', 'Tomografía computada con filtros de imágenes para la exquisita valoración de parénquina pulmonar', 
       'TC con Filtros especiales para la valoración de la arquitectura trabecular ósea.','Estudios tomográficos de abdomen de gran utilidad en el estudio angiodinámico de lesiones focales hepáticas y pancreáticas.',
       'Programa de Reconstrucción 3D.', 'Reconstrucción de imágenes 3D color (Work Station).'
+    ],
+    // 7. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.'
     ]
   },
   'resonancia-magnetica': {
@@ -473,6 +481,11 @@ export const serviciosDetalle = {
     // 6. Tipo de RMN
     tipo:[
       'Resonancia Magnética convencional.', 'RM con técnica Difusión-Perfusión.', 'RM Dinámica.','Artro resonancia.','Resonancia de ATM.', 'RM con espectroscopía.'
+    ],
+    // 7. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.',
+      'Florencio Varela - Bartolomé Mitre Nº 40 - Lunes a Viernes: 9:00 a 15:00 hs.'
     ]
   },
   'radiologia-digital': {
@@ -534,6 +547,94 @@ export const serviciosDetalle = {
       'Accesorios personales: Antes del disparo radiológico, se solicitará retirar collares, cadenas, aros, piercings corporales, cinturones o prótesis dentales removibles que puedan superponerse al área anatómica de interés.',
       'Precaución por Embarazo: En caso de sospecha o certeza de embarazo, la paciente debe informar indefectiblemente al personal técnico antes de la práctica para evaluar la justificación clínica y colocar los elementos de protección plomada pertinentes.',
       'Documentación requerida: Concurrir con la orden médica física o digital debidamente autorizada, DNI y estudios radiológicos previos para valoración comparativa.'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
+    ],
+    // 6. Tipo de RX
+    tipo:[
+      'Rx Cráneo, Cara, Senos Paranasales.', ' Rx Hueso Temporal-Agujeros ópticos.', 'Rx Panorámica de Cráneo.','Rx Raquis-Columna.','Rx Hombro, Húmero, Pelvis, Cadera.',
+      'Rx Codo. Mano. Pie, etc.','Rx de Tórax.', 'Medición Comparativa de Miembros Inferiores.', 'Espinografia'
+    ],
+    // 7. Localidad donde se realiza
+    localidad:[
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.',
+      'Florencio Varela - Bartolomé Mitre Nº 40 - Lunes a Viernes: 9:00 a 15:00 hs.'
+    ]
+  },
+  'medicina-nuclear': {
+    slug: 'medicina-nuclear',
+    titulo: 'Medicina Nuclear (Cámara Gamma / SPECT)',
+    subtitulo: 'Diagnóstico funcional, metabólico y molecular de órganos y sistemas',
+    descripcion: [
+      'La Medicina Nuclear es una rama médica que utiliza cantidades seguras y controladas de sustancias denominadas radiofármacos para evaluar el funcionamiento y la fisiología de órganos vitales, detectando alteraciones a nivel celular mucho antes de que se manifiesten cambios estructurales anatómicos.',
+      'Mediante el uso de Cámaras Gamma y tecnología tomográfica SPECT (Single Photon Emission Computed Tomography), en CYTEC obtenemos imágenes dinámicas y tridimensionales de alta sensibilidad clínica para cardiología, oncología, endocrinología, nefrología y traumatología.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Detección precoz de metástasis óseas en patologías oncológicas (próstata, mama, pulmón) mediante Centellograma Óseo Corporal Total.',
+      'Evaluación de viabilidad y perfusión miocárdica (Spect Cardíaco con esfuerzo y reposo) para detección de isquemia coronaria.',
+      'Estudio funcional de nódulos tiroideos, bocio y desórdenes del eje tiroidal (Centellograma Tiroideo y Captación de Iodo-131).',
+      'Análisis funcional renal y urodinámico (Centellograma Renal con DMSA y Radiorrenograma con DTPA).',
+      'Localización precisa del Ganglio Centinela en biopsias de mama y melanoma antes de la cirugía.',
+      'Detección de reflujo vesicoureteral, divertículo de Meckel y vaciamiento gástrico en gastroenterología.'
+    ],
+    // 2. Aplicaciones Clínicas por Especialidad
+    aplicacionesClinicas: [
+      {
+        area: 'Oncología y Osteoarticular',
+        descripcion: 'Máxima sensibilidad en el metabolismo del esqueleto:',
+        items: [
+          'Centellograma Óseo Total: detección temprana de secundarismo neoplásico y microfisuras por estrés.',
+          'Evaluación de aflojamiento o infección en prótesis de cadera y rodilla.',
+          'Diagnóstico de patología osteomielítica, necrosis avascular y osteocondritis.'
+        ]
+      },
+      {
+        area: 'Cardiología Nuclear',
+        descripcion: 'Estudio de perfusión y contractilidad miocárdica (SPECT):',
+        items: [
+          'Evaluación de cardiopatía isquémica en esfuerzo (cicloergómetro / cinta) y en reposo.',
+          'Determinación de isquemia inducible, extensión de infartos previos y cálculo de Fracción de Eyección (FEVI).',
+          'Protocolos con apremio farmacológico (Dipiridamol) en pacientes con dificultad motriz.'
+        ]
+      },
+      {
+        area: 'Nefrourología y Endocrinología',
+        descripcion: 'Valoración funcional dividida por órgano:',
+        items: [
+          'Centellograma Renal con DMSA: cuantificación del parénquima funcionante y cicatrices post-pielonefritis.',
+          'Radiorrenograma con DTPA/MAG3: análisis de permeabilidad de vías urinarias y patrones obstructivos.',
+          'Centellograma de Paratiroides con MIBI para localización de adenomas en hiperparatiroidismo.'
+        ]
+      }
+    ],
+    // 3. Equipamiento y Radioprotección
+    fusionPETRM: {
+      titulo: 'Tecnología SPECT y Protección al Paciente',
+      descripcion: 'Nuestras Cámaras Gamma con detectores de alta sensibilidad permiten disminuir notablemente la dosis de radiofármaco administrada al paciente, asegurando una mínima radiación biológica efectiva. Los radiofármacos utilizados tienen una vida media física de escasas horas y son eliminados rápidamente por vías naturales sin producir efectos adversos ni reacciones alérgicas.'
+    },
+    // 4. Preparación Previa y Pautas para el Paciente
+    preparacion: [
+      'Embarazo y Lactancia: Examen estrictamente contraindicado en mujeres embarazadas. En caso de lactancia, informar al momento de solicitar el turno para coordinar la suspensión transitoria de la extracción de leche materna según el radiofármaco.',
+      'Centellograma Óseo: No requiere ayuno. Tras la inyección del trazador, el paciente debe aguardar de 2 a 3 horas antes de la captura de imágenes, debiendo beber entre 1 y 1.5 litros de agua para favorecer la fijación ósea y la eliminación urinaria.',
+      'SPECT Cardíaco: Requiere ayuno de 4 a 6 horas y suspensión de cafeína, café descafeinado, mate, té, chocolate y bebidas cola durante las 24 horas previas. Consultar con su cardiólogo sobre la suspensión temporal de medicaciones como betabloqueantes.',
+      'Centellograma Tiroideo: Suspender medicamentos tiroideos (Levotiroxina, Danantizol), suplementos multivitamínicos con iodo o estudios contrastados recientes según indicación del médico.',
+      'Pauta Posterior al Estudio: Se recomienda mantener abundante hidratación el resto del día para acelerar la eliminación y evitar el contacto físico estrecho y prolongado con niños pequeños o embarazadas durante las primeras 12 a 24 horas.'
+    ],
+    // 5. Requisitos
+    requisito:[
+      'carnet de obra social y orden médica'
+    ],
+    // 6. Tipo de RX
+    tipo:[
+      'Rx Cráneo, Cara, Senos Paranasales.', ' Rx Hueso Temporal-Agujeros ópticos.', 'Rx Panorámica de Cráneo.','Rx Raquis-Columna.','Rx Hombro, Húmero, Pelvis, Cadera.',
+      'Rx Codo. Mano. Pie, etc.','Rx de Tórax.', 'Medición Comparativa de Miembros Inferiores.', 'Espinografia'
+    ],
+    // 7. Localidad donde se realiza
+    localidad:[
+      'Florencio Varela - Bartolomé Mitre Nº 40 - Lunes a Viernes: 9:00 a 15:00 hs.'
     ]
   }
   // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.
