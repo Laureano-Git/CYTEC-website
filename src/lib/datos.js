@@ -11,15 +11,25 @@ export const PORTAL_WEB = "http://cytec.ddns.net:8080/login"
 export const menu = [
   { texto: 'Home', href: '/' },
   { texto: 'Nosotros', hijos: [
-    { texto: 'Qué hacemos', href: '/#que-hacemos' }, { texto: 'Staff', href: '/#staff' },
-    { texto: 'Nuestra calidad', href: '/#calidad' }, { texto: 'Convenios y Formacion', href: '/#formacion' },
-    { texto: 'PACS', href: '/#pacs' } ] },
+      { texto: 'Qué hacemos', href: '/#que-hacemos' },
+      { texto: 'Staff', href: '/#staff' },
+      {texto: 'Nuestra calidad', href: '/#calidad' },
+      { texto: 'Convenios y Formacion', href: '/#formacion' },
+      { texto: 'PACS', href: '/#pacs' } 
+    ] 
+  },
   { texto: 'Servicios', hijos: [
-    { texto: 'PET CT Multislice', href: '/#servicios' }, { texto: 'Tomografía', href: '/#servicios' },
-    { texto: 'Resonancia Magnética', href: '/#servicios' }, { texto: 'Radiología Digital', href: '/#servicios' },
-    { texto: 'Medicina Nuclear', href: '/#servicios' }, { texto: 'Mamografía Digital', href: '/#servicios' },
-    { texto: 'Espinografía Digital', href: '/#servicios' }, { texto: 'Ecografía', href: '/#servicios' },
-    { texto: 'Densitometría Ósea', href: '/#servicios' } ] },
+      { texto: 'PET CT Multislice', href: '/servicios/pet-ct-multislice' }, 
+      { texto: 'Tomografía', href: '/servicios/tomografia' },
+      { texto: 'Resonancia Magnética', href: '/servicios/resonancia-magnetica' },
+      { texto: 'Radiología Digital', href: '/servicios/radiologia-digital' },
+      { texto: 'Medicina Nuclear', href: '/servicios/medicina-nuclear' },
+      { texto: 'Mamografía Digital', href: '/servicios/mamografia-digital' },
+      { texto: 'Espinografía Digital', href: '/servicios/espinografia-digital' },
+      { texto: 'Ecografía', href: '/servicios/ecografia' },
+      { texto: 'Densitometría Ósea', href: '/servicios/densitometria-osea' } 
+    ] 
+  },
   { texto: 'Cytec Bebé', href: '/#servicios' },
   { texto: 'Novedades', href: '/#novedades' },
   { texto: 'Coberturas', href: '/#coberturas' },
@@ -252,4 +262,72 @@ export const pacsData = {
     textoBoton: 'Acceder al Portal PACS'
   }
 };
-//
+//Seccion SERVICIOS
+export const serviciosDetalle = {
+  'pet-ct-multislice': {
+    slug: 'pet-ct-multislice',
+    titulo: 'PET-CT Multislice',
+    subtitulo: 'Tomografía por Emisión de Positrones fusionada con Tomografía Computada Multicorte',
+    descripcion: [
+      'El PET-CT es uno de los métodos diagnósticos más avanzados de la medicina moderna. Integra en una única exploración la información metabólica y biológica molecular que aporta el PET con el detalle anatómico milimétrico que brinda la tomografía multicorte de alta resolución.',
+      'Esta correlación anatomo-funcional permite evaluar la actividad biológica de los tejidos antes de que se produzcan alteraciones morfológicas estructurales detectables por métodos convencionales.'
+    ],
+    // 1. Aplicaciones Principales
+    aplicacionesPrincipales: [
+      'Detección precoz y caracterización de lesiones.',
+      'Diferenciación certera entre tejidos tumorales viables y fibrosis o necrosis post-tratamiento.',
+      'Estadificación inicial precisa y reestadificación tras cirugía, quimioterapia o radioterapia.',
+      'Monitorización temprana de la eficacia terapéutica en ciclos oncológicos.',
+      'Detección precoz de recurrencias o recidivas ante elevación de marcadores tumorales.',
+      'Localización y selección óptima del sitio de biopsia en masas heterogéneas.',
+      'Planificación tridimensional guiada de volúmenes biológicos en radioterapia.'
+    ],
+    // 2. Aplicaciones Clínicas por Especialidad
+    aplicacionesClinicas: [
+      {
+        area: 'Oncología',
+        descripcion: 'Es el campo de mayor impacto. Proporciona información determinante en el manejo y pronóstico de patologías como:',
+        items: [
+          'Linfomas (Hodgkin y No Hodgkin): estadificación y control post-quimioterapia.',
+          'Cáncer de pulmón y caracterización de nódulo pulmonar solitario.',
+          'Cáncer colorrectal, esofágico, gástrico y de páncreas.',
+          'Melanoma maligno y tumores de cabeza y cuello.',
+          'Cáncer de mama, tumores ginecológicos (cérvix, ovario) y urológicos.'
+        ]
+      },
+      {
+        area: 'Neurodiagnóstico',
+        descripcion: 'Evaluación no invasiva de la actividad metabólica cerebral y el consumo regional de glucosa:',
+        items: [
+          'Detección y diagnóstico diferencial de demencias (Enfermedad de Alzheimer vs. Demencia Frontotemporal).',
+          'Localización precisa del foco epileptógeno refractario para evaluación prequirúrgica.',
+          'Diferenciación entre radionecrosis y recidiva en tumores cerebrales primarios.'
+        ]
+      },
+      {
+        area: 'Cardiología',
+        descripcion: 'Estudio funcional de precisión miocárdica:',
+        items: [
+          'Evaluación de viabilidad miocárdica en miocardiopatías isquémicas.',
+          'Determinación de tejido hibernado antes de procedimientos de revascularización coronaria (angioplastia o bypass).'
+        ]
+      }
+    ],
+    // 3. Fusión Tecnológica Avanzada: PET-CT + RM
+    fusionPETRM: {
+      titulo: 'Tecnología Avanzada: PET-CT + RM',
+      descripcion: 'En CYTEC integramos la información metabólica del PET-CT con imágenes morfológicas de Resonancia Magnética (RM). Este protocolo combinado de co-registro híbrido proporciona un contraste insuperable en tejidos blandos, fundamental en la evaluación de patologías del sistema nervioso central, tumores pélvicos, patología musculoesquelética y lesiones hepáticas complejas, minimizando la exposición y maximizando la exactitud diagnóstica.'
+    },
+    // 4. Preparación Previa
+    preparacion: [
+      'Ayuno estricto de 6 horas previas al estudio (sólo se permite ingerir agua pura sin gas).',
+      'No consumir azúcares, pastas, harinas, cafeína, alcohol ni bebidas gaseosas las 24 horas previas (dieta hipoglúcida e hiperproteica).',
+      'Suspender la actividad física intensa, deportes o esfuerzos musculares durante las 48 horas previas al examen.',
+      'Pacientes diabéticos: dar aviso obligatorio al solicitar el turno para coordinar un régimen glucémico y horario de turno especial.',
+      'Asistir con ropa cómoda y abrigada, sin cierres, tachas, botones metálicos ni joyas.',
+      'Disponer de una permanencia aproximada en el centro de 2 a 3 horas (incluye tiempo de reposo, incorporación del trazador y escaneo).',
+      'Presentar orden médica autorizada y todos los estudios diagnósticos previos relacionados (TAC, RMN, informes de biopsia o PET previos).'
+    ]
+  }
+  // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.
+};
