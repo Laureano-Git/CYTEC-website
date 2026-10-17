@@ -176,7 +176,7 @@ export const sedes = [
 
 //Seccion NOSOTROS - DATA
 export const queHacemosData = {
-	titulo: "Qué Hacemos",
+	titulo: "Quienes somos",
 	subtitulo: "Centro de Diagnóstico por Imágenes de Alta Complejidad",
 	descripcion: [
 		"Somos un grupo profesional, técnico y administrativo capacitado para la atención y contención del paciente.",
@@ -368,6 +368,12 @@ export const serviciosDetalle = {
     slug: 'pet-ct-multislice',
     titulo: 'PET-CT Multislice',
     subtitulo: 'Tomografía por Emisión de Positrones fusionada con Tomografía Computada Multicorte',
+    // 📸 Propiedad de imagen del equipamiento
+    equipoImagen: {
+      src: '/img/pet.jpg', // o pet.webp en static/img/
+      alt: 'Consola y gantry del sistema PET-CT Multislice en Sede Central',
+      modelo: 'PET-CT Multislice de Alta Resolución'
+    },
     descripcion: [
       'El PET-CT es uno de los métodos diagnósticos más avanzados de la medicina moderna. Integra en una única exploración la información metabólica y biológica molecular que aporta el PET con el detalle anatómico milimétrico que brinda la tomografía multicorte de alta resolución.',
       'Esta correlación anatomo-funcional permite evaluar la actividad biológica de los tejidos antes de que se produzcan alteraciones morfológicas estructurales detectables por métodos convencionales.'
@@ -441,6 +447,12 @@ export const serviciosDetalle = {
     slug: 'tomografia',
     titulo: 'Tomografía Computada Multislice',
     subtitulo: 'Diagnóstico anatómico rápido de alta resolución y reconstrucción tridimensional (3D)',
+    // 📸 Propiedad de imagen del equipamiento
+    equipoImagen: {
+      src: '/img/tomografo.jpg',
+      alt: 'Tomógrafo Computado Multislice con tecnología de modulación de dosis',
+      modelo: 'Tomógrafo Multislice de Adquisición Volumétrica'
+    },
     descripcion: [
       'La Tomografía Computada Multislice (TAC) es una técnica diagnóstica no invasiva que emplea rayos X combinados con detectores digitales de alta sensibilidad para obtener imágenes axiales transversales del cuerpo.',
       'El sistema multidetector de CYTEC permite adquisiciones volumétricas en escasos segundos, generando reconstrucciones multiplanares (coronal, sagital, oblicuas) y representaciones tridimensionales de vasos sanguíneos, huesos y órganos blandos con una nitidez milimétrica.'
@@ -516,6 +528,12 @@ export const serviciosDetalle = {
     slug: 'resonancia-magnetica',
     titulo: 'Resonancia Magnética (RMN)',
     subtitulo: 'Diagnóstico de máxima resolución en tejidos blandos sin radiación ionizante',
+    // 📸 Propiedad de imagen del equipamiento
+    equipoImagen: {
+      src: '/img/resonador.jpg',
+      alt: 'Resonancia Magnetica Nuclear',
+      modelo: 'Resonador'
+    },
     descripcion: [
       'La Resonancia Magnética Nuclear (RMN) es un procedimiento no invasivo y altamente avanzado que utiliza potentes campos magnéticos y ondas de radiofrecuencia para generar imágenes anatómicas y funcionales tridimensionales del interior del cuerpo humano.',
       'Al no emplear radiaciones ionizantes (rayos X), es el método de elección para la evaluación del sistema nervioso central, columna vertebral, articulaciones, estructuras osteomusculares, patología mamaria y órganos de la pelvis menor, ofreciendo un contraste insuperable en partes blandas.'
@@ -592,6 +610,8 @@ export const serviciosDetalle = {
     slug: 'radiologia-digital',
     titulo: 'Radiología Digital Directa (RX)',
     subtitulo: 'Diagnóstico radiológico de alta definición con mínima dosis de exposición',
+    // 📸 Propiedad de imagen del equipamiento
+
     descripcion: [
       'La Radiología Digital es la evolución tecnológica de la radiografía convencional. Emplea detectores digitales de captura directa de última generación que sustituyen a las placas radiográficas analógicas y a los químicos de revelado.',
       'Este sistema permite adquirir imágenes de máxima definición en fracciones de segundo, optimizando el contraste de tejidos óseos y blandos, reduciendo sensiblemente la dosis de radiación recibida por el paciente y posibilitando el almacenamiento y distribución inmediata a través de la red digital PACS.'
@@ -667,6 +687,8 @@ export const serviciosDetalle = {
     slug: 'medicina-nuclear',
     titulo: 'Medicina Nuclear (Cámara Gamma / SPECT)',
     subtitulo: 'Diagnóstico funcional, metabólico y molecular de órganos y sistemas',
+    // 📸 Propiedad de imagen del equipamiento
+
     descripcion: [
       'La Medicina Nuclear es una rama médica que utiliza cantidades seguras y controladas de sustancias denominadas radiofármacos para evaluar el funcionamiento y la fisiología de órganos vitales, detectando alteraciones a nivel celular mucho antes de que se manifiesten cambios estructurales anatómicos.',
       'Mediante el uso de Cámaras Gamma y tecnología tomográfica SPECT (Single Photon Emission Computed Tomography), en CYTEC obtenemos imágenes dinámicas y tridimensionales de alta sensibilidad clínica para cardiología, oncología, endocrinología, nefrología y traumatología.'
@@ -741,6 +763,8 @@ export const serviciosDetalle = {
     slug: 'mamografia-digital',
     titulo: 'Mamografía Digital Directa',
     subtitulo: 'Detección precoz de lesiones mamarias con alta definición y mínima compresión',
+    // 📸 Propiedad de imagen del equipamiento
+
     descripcion: [
       'La Mamografía Digital Directa es el método de exploración por excelencia para el tamizaje, diagnóstico y seguimiento de las patologías de la glándula mamaria. Utiliza detectores digitales de alta sensibilidad que convierten los rayos X directamente en señales electrónicas, brindando imágenes con una resolución espacial y contraste superiores a los sistemas analógicos convencionales.',
       'Su máxima ventaja radica en la detección temprana de anomalías microscópicas y microcalcificaciones agrupadas antes de que se manifiesten síntomas clínicos o nódulos palpables, incrementando sustancialmente las tasas de curación y permitiendo tratamientos conservadores de mínima invasión.'
@@ -814,6 +838,8 @@ export const serviciosDetalle = {
     slug: 'ecografia',
     titulo: 'Ecografía General, 4D-5D y Doppler Color',
     subtitulo: 'Exploración no invasiva en tiempo real mediante ultrasonido de alta resolución',
+    // 📸 Propiedad de imagen del equipamiento
+
     descripcion: [
       'La Ecografía o Ultrasonografía es un método diagnóstico por imágenes seguro, inocuo y en tiempo real que emplea ondas sonoras de alta frecuencia para generar imágenes anatómicas y funcionales del interior del cuerpo humano.',
       'Al no utilizar radiaciones ionizantes, es el estudio de primera elección en obstetricia, pediatría y evaluación de órganos abdominales, pélvicos, vasculares y partes blandas superficiales. En CYTEC contamos con ecógrafos digitales con tecnología Doppler Color, Doppler Pulsado y transductores multifrecuencia de máxima definición.'
@@ -888,6 +914,8 @@ export const serviciosDetalle = {
     slug: 'densitometria-osea',
     titulo: 'Densitometría Ósea Digital (DEXA)',
     subtitulo: 'Evaluación de densidad mineral ósea y diagnóstico precoz de osteopenia y osteoporosis',
+    // 📸 Propiedad de imagen del equipamiento
+
     descripcion: [
       'La Densitometría Ósea por absorciometría de rayos X de doble energía (DEXA / DXA) es el estudio de referencia internacional para cuantificar de manera no invasiva, indolora y precisa la masa mineral de los huesos.',
       'Permite determinar con exactitud el nivel de desmineralización ósea, predecir el riesgo futuro de fracturas por fragilidad y monitorizar la eficacia clínica de tratamientos médicos farmacológicos contra la osteoporosis en pacientes posmenopáusicas o con factores de riesgo asociados.'
@@ -962,6 +990,8 @@ export const serviciosDetalle = {
     slug: 'espirometria-computada',
     titulo: 'Espirometría Computada con Curva Flujo-Volumen',
     subtitulo: 'Evaluación funcional respiratoria pre y post-broncodilatador (PBD)',
+    // 📸 Propiedad de imagen del equipamiento
+
     descripcion: [
       'La Espirometría Computada es el estudio funcional respiratorio estándar de oro para medir la capacidad ventilatoria y los volúmenes pulmonares en movimiento. Evalúa la cantidad total de aire que los pulmones son capaces de inhalar y exhalar, así como la velocidad de los flujos aéreos.',
       'El test con curva Flujo-Volumen pre y post-broncodilatador (PBD) permite diagnosticar patrones obstructivos y restrictivos, determinar si la limitación al flujo aéreo es reversible tras la administración de un aerosol broncodilatador, y evaluar la respuesta terapéutica en patologías de la vía aérea.'

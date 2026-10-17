@@ -158,14 +158,33 @@ let servicio = $derived(data.servicio);
 
     </section>
 
-    <!-- Barra Lateral: Solo CTA WhatsApp y Datos Clave -->
-    <aside class="sidebar-lateral" aria-label="Solicitud de turnos e información">
+    <!-- Barra Lateral: Tarjeta Visual + Tarjeta de Turnos -->
+    <aside class="sidebar-lateral" aria-label="Información del equipamiento y turnos">
+    <!-- 📸 1. Tarjeta de Equipamiento Tecnológico (Optimizado para Web Performance) -->
+    {#if servicio.equipoImagen}
+        <article class="tarjeta-equipo">
+        <div class="marco-foto">
+            <img 
+            src={servicio.equipoImagen.src} 
+            alt={servicio.equipoImagen.alt}
+            loading="lazy"
+            decoding="async"
+            width="340"
+            height="210"
+            />
+            <span class="etiqueta-foto">Tecnología CYTEC</span>
+        </div>
+        <div class="pie-foto">
+            <h3>Nuestro Equipamiento</h3>
+            <p>{servicio.equipoImagen.modelo}</p>
+        </div>
+        </article>
+    {/if}
+    <!-- 📅 2. Tarjeta Sticky de Solicitud de Turnos -->
     <div class="tarjeta-turno">
         <span class="badge-atencion">Atención Especializada</span>
         <h3>Solicitá tu Turno</h3>
-        <p>Los estudios de {servicio.titulo} requieren {servicio.requisito}.</p>
-        
-        <!-- Botón prioritario único para no distraer al usuario -->
+        <p>Coordiná tu estudio con antelación enviando tu prescripción médica.</p>
         <a 
         href={WHATSAPP_TURNOS_LA_PLATA} 
         target="_blank" 
@@ -180,13 +199,14 @@ let servicio = $derived(data.servicio);
             <strong>Sede:</strong> Sede Central La Plata (Calle 8 Nº 607)
         </div>
         <div class="dato-util">
-            <strong>Requisitos:</strong> DNI físico, orden médica y carnet de obra social / prepaga.
+            <strong>Requisitos:</strong> DNI físico, orden médica y carnet de cobertura.
         </div>
         <div class="dato-util">
-            <strong>Duración estimada:</strong> 2 a 3 horas en institución.
+            <strong>Informes:</strong> Disponibles en línea mediante Portal PACS.
         </div>
         </div>
     </div>
+
     </aside>
 </div>
 </div>
@@ -220,7 +240,7 @@ let servicio = $derived(data.servicio);
     letter-spacing: 0.02em;
 }
 
-.hero-subtitulo {
+  .hero-subtitulo {
     font-size: 1.15rem;
     max-width: 850px;
     margin: 0;
@@ -228,11 +248,11 @@ let servicio = $derived(data.servicio);
     line-height: 1.5;
 }
 
-.contenido-servicio {
+  .contenido-servicio {
     margin-bottom: 5rem;
-}
+  }
 
-.layout-detalle {
+  .layout-detalle {
     display: grid;
     grid-template-columns: 1fr 340px;
     gap: 3.5rem;
@@ -249,7 +269,6 @@ let servicio = $derived(data.servicio);
     font-size: 1.45rem;
     color: var(--primario-oscuro);
     margin-bottom: 1.25rem;
-    position: relative;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--gris-borde);
 }
@@ -261,7 +280,6 @@ let servicio = $derived(data.servicio);
     margin-bottom: 1rem;
 }
 
-/* Lista de Checks para Aplicaciones Principales */
 .lista-checks {
     list-style: none;
     padding: 0;
@@ -287,7 +305,6 @@ let servicio = $derived(data.servicio);
     line-height: 1.3;
 }
 
-  /* Grilla de Aplicaciones Clínicas */
 .grilla-clinica {
     display: grid;
     grid-template-columns: 1fr;
@@ -306,8 +323,7 @@ let servicio = $derived(data.servicio);
     margin-bottom: 0.75rem;
 }
 
-/*CSS para subtitulo de especialidad*/
-/*.badge-area {
+.badge-area {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -318,35 +334,27 @@ let servicio = $derived(data.servicio);
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 0.35rem;
-}*/
+}
 
 .header-clinica h3 {
     margin: 0;
     font-size: 1.25rem;
-    color: var(--primario-oscuro);
-}
-
+    color: var(--primario-oscuro);}
 .desc-clinica {
     font-size: 0.95rem;
     color: var(--texto);
-    margin-bottom: 1rem !important;
-}
-
+    margin-bottom: 1rem !important;}
 .lista-items-clinica {
     margin: 0;
     padding-left: 1.2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-
+    gap: 0.5rem;}
 .lista-items-clinica li {
     font-size: 0.92rem;
     line-height: 1.5;
-    color: var(--texto);
-}
+    color: var(--texto);}
 
-  /* Bloque Híbrido PET-CT + RM */
 .bloque-destacado-hibrido {
     background: linear-gradient(135deg, rgba(10, 127, 181, 0.08) 0%, rgba(7, 95, 135, 0.04) 100%);
     border: 1px solid var(--primario);
@@ -362,36 +370,27 @@ let servicio = $derived(data.servicio);
     color: var(--primario);
     margin-bottom: 0.5rem;
 }
-
 .bloque-destacado-hibrido h2 {
     font-size: 1.4rem;
     color: var(--primario-oscuro);
-    margin: 0 0 1rem 0;
-}
-
+    margin: 0 0 1rem 0;}
 .bloque-destacado-hibrido p {
     margin: 0;
     font-size: 1rem;
     line-height: 1.7;
-    color: var(--texto);
-}
-
-  /* Preparación Previa */
+    color: var(--texto);}
 .caja-preparacion {
     background: #fffdf5;
     border: 1px solid #f6e0b5;
     border-radius: var(--radio);
-    padding: 1.75rem 2rem;
-}
-
+    padding: 1.75rem 2rem;}
 .header-preparacion {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 1.25rem;
     color: #8c5d00;
-    font-size: 0.95rem;
-}
+    font-size: 0.95rem;}
 
 .icono-alerta {
     display: inline-grid;
@@ -416,18 +415,88 @@ let servicio = $derived(data.servicio);
 .lista-pasos li {
     font-size: 0.95rem;
     line-height: 1.6;
-    color: #4d380c;
+    color: #4d3800;
 }
 
-  /* Barra Lateral Sticky */
+/* BARRA LATERAL (SIDEBAR) */
+  .sidebar-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    position: sticky;
+    top: 90px;
+  }
+
+  /* 📸 Estilos de la Tarjeta de Equipamiento */
+  .tarjeta-equipo {
+    background: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.marco-foto {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: var(--gris-claro);
+    overflow: hidden;
+}
+
+.marco-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transicion);
+}
+
+.tarjeta-equipo:hover .marco-foto img {
+    transform: scale(1.04);
+}
+
+.etiqueta-foto {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    background: rgba(10, 127, 181, 0.85);
+    backdrop-filter: blur(4px);
+    color: var(--blanco);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.pie-foto {
+    padding: 1.15rem 1.25rem;
+    background: var(--blanco);
+}
+
+.pie-foto h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 0.98rem;
+    color: var(--primario-oscuro);
+}
+
+.pie-foto p {
+    margin: 0;
+    font-size: 0.84rem;
+    color: var(--texto);
+    line-height: 1.4;
+    opacity: 0.85;
+}
+
+  /* Tarjeta Sticky de Turnos */
 .tarjeta-turno {
     background: var(--blanco);
     border: 1px solid var(--gris-borde);
     border-radius: var(--radio);
-    padding: 2rem 1.75rem;
+    padding: 1.75rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    position: sticky;
-    top: 90px;
 }
 
 .badge-atencion {
@@ -442,17 +511,16 @@ let servicio = $derived(data.servicio);
     border-radius: 4px;
     margin-bottom: 0.75rem;
 }
-
 .tarjeta-turno h3 {
     color: var(--primario-oscuro);
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin: 0 0 0.5rem 0;
 }
 
 .tarjeta-turno p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--texto);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     line-height: 1.5;
 }
 
@@ -460,7 +528,7 @@ let servicio = $derived(data.servicio);
     display: block;
     text-align: center;
     width: 100%;
-    padding: 0.9rem 1rem;
+    padding: 0.85rem 1rem;
     background: var(--acento);
     color: var(--blanco);
     font-weight: 700;
@@ -476,16 +544,16 @@ let servicio = $derived(data.servicio);
 }
 
 .info-adicional {
-    margin-top: 1.75rem;
-    padding-top: 1.25rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--gris-borde);
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
 }
 
 .dato-util {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     line-height: 1.45;
     color: #4a5568;
 }
@@ -500,7 +568,7 @@ let servicio = $derived(data.servicio);
     gap: 3rem;
     }
 
-    .tarjeta-turno {
+    .sidebar-lateral {
     position: static;
     }
 }
