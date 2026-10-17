@@ -20,4 +20,8 @@
 <QueHacemos /> <Staff /> <Calidad /> <Docencia /> <Pacs />
 
 <Valores /><Servicios /><Testimonios /><Novedades /> 
-<section class="seccion" id="coberturas"><div class="contenedor"><h2>Coberturas</h2><p style="text-align:center">Consultá en recepción o por WhatsApp las obras sociales y prepagas con convenio.</p></div></section>
+<section class="seccion" id="coberturas"><div class="contenedor"><h2>Coberturas</h2><p style="text-align:center">Podes consultar en recepción o por WhatsApp por alguna obra social o prepaga con convenio en particular.</p>
+    <div class="acciones-home" style="text-align:center">
+      <a href="/coberturas" class="btn btn-todas">Ver todas las coberturas</a>
+    </div>
+  </div></section>
