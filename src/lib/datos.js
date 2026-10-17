@@ -50,7 +50,7 @@ export const menu = [
   { texto: 'Cytec Bebé', href: '/bebe' },
   { texto: 'Novedades', href: '/novedades' },
   { texto: 'Deportes', href: '/deportes' },
-  { texto: 'Coberturas', href: '/#coberturas' }
+  { texto: 'Coberturas', href: '/coberturas' }
 ];
 
 // Slides del carrusel. "imagen" apunta a /static/img (reemplazar por fotos reales del equipamiento)
@@ -1036,7 +1036,7 @@ export const serviciosDetalle = {
 
 };
 
-//Seccion CYTEC BEBE
+//Seccion CYTEC BEBE - DATA
 export const bebeData = {
   titulo: 'CYTEC Bebé & Pediatría',
   subtitulo: 'Espacios amables, seguros y respetuosos pensados especialmente para nuestros pequeños héroes',
@@ -1084,7 +1084,7 @@ export const bebeData = {
   ]
 };
 
-//Secion DEPORTES
+//Secion DEPORTES - DATA
 export const deportesData = {
   titulo: 'Diagnóstico en Lesiones Deportivas',
   subtitulo: 'Tecnología médica avanzada para deportistas de alto rendimiento y actividad física recreativa',
@@ -1149,5 +1149,41 @@ export const deportesData = {
         'Contusiones óseas (Bone Bruise) post-traumáticas directas.'
       ]
     }
+  ]
+};
+
+//Seccion COBERTURAS - DATA
+export const coberturasData = {
+  titulo: 'Obras Sociales y Prepagas',
+  subtitulo: 'Trabajamos con las principales coberturas de salud para brindarte la mejor atención',
+  informacionGeneral: [
+    'En CYTEC mantenemos convenios activos con una amplia red de entidades de medicina prepaga, obras sociales nacionales, provinciales y mutuales de profesionales.',
+    'Dado que los requisitos de autorización (bonos, copagos, órdenes electrónicas o auditorías médicas previas) varían según el tipo de estudio (baja, media o alta complejidad) y el plan particular de cada afiliado, sugerimos enviar la prescripción médica por WhatsApp para su verificación previa al turno.'
+  ],
+  requisitosIngreso: [
+    'Documento Nacional de Identidad (DNI) físico o en app Mi Argentina.',
+    'Carnet o credencial de afiliación (física o credencial digital con token activo).',
+    'Orden médica original física o impresa debidamente autorizada por la obra social o prepaga (cuando la práctica lo requiera).',
+    'Estudios diagnósticos previos relacionados con la patología a evaluar.'
+  ],
+  entidades: [
+    { nombre: 'IOMA', tipo: 'Obra Social Provincial', detalle: 'Requiere bono / autorización según la práctica médica.' },
+    { nombre: 'PAMI', tipo: 'Obra Social Nacional', detalle: 'Atención sujeta a convenios específicos y cupos asignados.' },
+    { nombre: 'OSDE', tipo: 'Medicina Prepaga', detalle: 'Planes 210, 310, 410, 450 y 510. Token digital en recepción.' },
+    { nombre: 'Swiss Medical', tipo: 'Medicina Prepaga', detalle: 'Credencial digital y autorización de estudios de alta complejidad.' },
+    { nombre: 'Galeno', tipo: 'Medicina Prepaga', detalle: 'Planes Oro, Plata, Azul y Blanco con credencial al día.' },
+    { nombre: 'Medifé', tipo: 'Medicina Prepaga', detalle: 'Planes Plata, Oro y Platinum con validación online.' },
+    { nombre: 'Sancor Salud', tipo: 'Medicina Prepaga', detalle: 'Planes línea 500, 1000, 1500, 2000, 3000, 4000 y 5000.' },
+    { nombre: 'OMINT', tipo: 'Medicina Prepaga', detalle: 'Planes O, F, Clásico y Premium con orden médica autorizada.' },
+    { nombre: 'Accord Salud (Unión Personal)', tipo: 'Medicina Prepaga / O.S.', detalle: 'Planes Accord 110, 210, 310 y afiliados UP.' },
+    { nombre: 'OSDEPYM', tipo: 'Obra Social Empresarial', detalle: 'Planes con copago o directos según categoría de plan.' },
+    { nombre: 'OSPE (Petroleros)', tipo: 'Obra Social', detalle: 'Requiere presentación de carnet y orden médica vigente.' },
+    { nombre: 'OSECAC (Comercio)', tipo: 'Obra Social Sindical', detalle: 'Atención protocolizada con orden autorizada por delegación.' },
+    { nombre: 'OSDOP / SADOP (Docentes Privados)', tipo: 'Obra Social', detalle: 'Convenio activo con presentación de orden.' },
+    { nombre: 'DASPU / Mutuales Universitarias', tipo: 'Obra Social Universitaria', detalle: 'Coberturas para personal docente y no docente.' },
+    { nombre: 'AMFFA (Farmacéuticos)', tipo: 'Mutual Profesional', detalle: 'Cobertura directa de prácticas diagnósticas.' },
+    { nombre: 'Caja Forense / Abogados', tipo: 'Caja Profesional', detalle: 'Validación en recepción con carnet colegiado.' },
+    { nombre: 'Caja de Médicos (Comei)', tipo: 'Caja Profesional', detalle: 'Atención preferencial a colegiados médicos.' },
+    { nombre: 'Prevención Salud', tipo: 'Medicina Prepaga', detalle: 'Grupo Sancor Seguros con validación digital.' }
   ]
 };
