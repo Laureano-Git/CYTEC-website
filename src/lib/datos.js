@@ -265,10 +265,6 @@ export const staffData = {
       profesionales: ["Dr. Guenaga Fernando"]
     },
     {
-      area: "Neurología",
-      profesionales: ["Dr. Pepa Daniel"]
-    },
-    {
       area: "Especialista en Neurología en RM y TAC",
       profesionales: ["Dr. Enrique Mc Guire"]
     }
