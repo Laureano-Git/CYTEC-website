@@ -8,7 +8,8 @@
 
 <div class="topbar">
   <div class="contenedor fila">
-    <span><Icono nombre="telefono" tam={16} /> La Plata: +54 9 2216 13-9002</span>
+    <span><Icono nombre="telefono" tam={16} /> La Plata: +54 221 425-7412 </span>
+    <span><Icono nombre="telefono" tam={16} /> F. Varela: +54 (011) 4237-5458</span>
     <span class="oculto-movil"><Icono nombre="reloj" tam={16} /> Lun a Vie 8:00 a 20:00 hs · Sáb 8:00 a 12:00 hs</span>
     <span class="acciones">
       <a class="btn whatsapp chico" href={WHATSAPP_LA_PLATA} target="_blank" rel="noopener"><Icono nombre="whatsapp" tam={16} /> Turnos WhatsApp</a>

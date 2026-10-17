@@ -5,6 +5,8 @@
 // ============================================================
 export const WHATSAPP_LA_PLATA = 'https://api.whatsapp.com/send?phone=5492216139002';
 export const PORTAL_WEB = "http://cytec.ddns.net:8080/login"
+
+//Tipos de ECOGRAFIAS
 export const DOPPLER = {titulo: 'Doppler:', subtipos:[
       'Ecocardiagrafía bidimensional.', ' Doppler color cardíaco.', 'Doppler color carotídeo.','Doppler color periférico arterial y venoso.','Doppler color transesofágico.',
       'Doppler Color en la Evaluación de la Circulación de la Mano (Art./Ven.).', 'Doppler color en la Evaluación de la Circulación del Pie (Art./Ven.).', 
