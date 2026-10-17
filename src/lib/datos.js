@@ -370,9 +370,10 @@ export const serviciosDetalle = {
     subtitulo: 'Tomografía por Emisión de Positrones fusionada con Tomografía Computada Multicorte',
     // 📸 Propiedad de imagen del equipamiento
     equipoImagen: {
-      src: '/img/pet.jpg', // o pet.webp en static/img/
-      alt: 'Consola y gantry del sistema PET-CT Multislice en Sede Central',
-      modelo: 'PET-CT Multislice de Alta Resolución'
+      src: '/img/pet.jpg',
+      alt: 'Sistema PET-CT Multislice de Cuerpo Entero en Sede Central',
+      modelo: 'Sistema Híbrido PET-CT Multislice de Alta Complejidad',
+      descripcion: 'Doble sistema de detección molecular y tomografía computada de alta sensibilidad oncológica. Permite exploraciones integrales de cuerpo entero con tiempos reducidos y óptima administración del trazador.'
     },
     descripcion: [
       'El PET-CT es uno de los métodos diagnósticos más avanzados de la medicina moderna. Integra en una única exploración la información metabólica y biológica molecular que aporta el PET con el detalle anatómico milimétrico que brinda la tomografía multicorte de alta resolución.',
@@ -450,8 +451,9 @@ export const serviciosDetalle = {
     // 📸 Propiedad de imagen del equipamiento
     equipoImagen: {
       src: '/img/tomografo.jpg',
-      alt: 'Tomógrafo Computado Multislice con tecnología de modulación de dosis',
-      modelo: 'Tomógrafo Multislice de Adquisición Volumétrica'
+      alt: 'Tomógrafo Computado Multislice Volumétrico',
+      modelo: 'Tomógrafo Computado Multislice de Adquisición Volumétrica',
+      descripcion: 'Equipo multidetector de última generación con capacidad de adquisición submilimétrica en escasos segundos. Incorpora algoritmos inteligentes de modulación de dosis que reducen la radiación ionizante y optimizan la precisión en reconstrucciones 3D.'
     },
     descripcion: [
       'La Tomografía Computada Multislice (TAC) es una técnica diagnóstica no invasiva que emplea rayos X combinados con detectores digitales de alta sensibilidad para obtener imágenes axiales transversales del cuerpo.',
@@ -530,9 +532,10 @@ export const serviciosDetalle = {
     subtitulo: 'Diagnóstico de máxima resolución en tejidos blandos sin radiación ionizante',
     // 📸 Propiedad de imagen del equipamiento
     equipoImagen: {
-      src: '/img/resonador.jpg',
-      alt: 'Resonancia Magnetica Nuclear',
-      modelo: 'Resonador'
+      src: '/img/resonador.jpg', // o la foto del resonador
+      alt: 'Resonador Magnético de Alto Campo en Sede Central',
+      modelo: 'Resonador Magnético de Alto Campo (1.5 Tesla)',
+      descripcion: 'Sistema de alto campo magnético equipado con bobinas multicanal dedicadas a cada región anatómica. Posee protocolos acústicos silenciosos y diseño ergonómico de túnel amplio que incrementa el confort del paciente durante la adquisición tridimensional.'
     },
     descripcion: [
       'La Resonancia Magnética Nuclear (RMN) es un procedimiento no invasivo y altamente avanzado que utiliza potentes campos magnéticos y ondas de radiofrecuencia para generar imágenes anatómicas y funcionales tridimensionales del interior del cuerpo humano.',

@@ -40,7 +40,7 @@ let servicio = $derived(data.servicio);
     <!-- Donde realizamos el SERVICIO -->
     {#if servicio.localidad}
         <article class="bloque-seccion">
-            <h2>Realizamos estudios de {servicio.titulo} en:</h2>
+            <h2>Donde realizamos estudios de {servicio.titulo}:</h2>
             <ul class="lista-checks">
                 {#each servicio.localidad as item}
                 <li>
