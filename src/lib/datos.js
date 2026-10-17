@@ -47,7 +47,7 @@ export const menu = [
       { texto: 'Densitometría Ósea', href: '/servicios/densitometria-osea' } 
     ] 
   },
-  { texto: 'Cytec Bebé', href: '/#servicios' },
+  { texto: 'Cytec Bebé', href: '/bebe' },
   { texto: 'Novedades', href: '/#novedades' },
   { texto: 'Coberturas', href: '/#coberturas' },
   { texto: 'Contacto', href: '/#contacto' }
@@ -60,6 +60,7 @@ export const slides = [
   { titulo: 'Cytec Bebé', texto: 'Espacios amables y respetuosos para nuestros héroes del futuro.', imagen: '/img/slide-3.jpg', color: '#0d93a8' }
 ];
 
+//Seccion VALORES INSTITUCIONALES
 export const valores = [
   { icono: 'responsabilidad', titulo: 'Responsabilidad', texto: 'Contamos con equipos profesionales comprometidos.' },
   { icono: 'formacion', titulo: 'Formación', texto: 'Creemos en la formación científica permanente.' },
@@ -67,23 +68,27 @@ export const valores = [
   { icono: 'atencion', titulo: 'Atención', texto: 'Nos caracteriza la calidad de atención de nuestro personal.' }
 ];
 
+//Seccion SERVICIOS
 export const servicios = [
   'Espirometría computada', 'PET CT Multislice y PET CT+RM', 'Resonancia magnética', 'Tomografía',
   'Mamografía digital', 'Ecografía', 'Medicina nuclear', 'Radiología digital', 'Densitometría ósea digital'
 ];
 
+//Seccion TESTIMONIOS
 export const testimonios = [
   { autor: 'Mirta del Carmen Lopez', texto: 'El lugar es muy agradable. Todos muy respetuosos. Me gustó mucho.' },
   { autor: 'Sonia Varela', texto: 'Excelente atención desde que entré. Me hicieron un PET CT de cuerpo entero y me sentí muy bien.' },
   { autor: 'Pablo Tejero', texto: 'Excelente atención y amabilidad de sus empleados.' }
 ];
 
+//Seccion NOVEDADES
 export const novedades = [
   { fecha: '30 May', titulo: 'Héroes Cytec', texto: 'Madres y padres confían en CYTEC para el diagnóstico de sus hijos. Creamos espacios amables para ellos.' },
   { fecha: '1 May', titulo: '¡Feliz día!', texto: 'Saludamos a nuestra comunidad y agradecemos a todo nuestro staff por su dedicación y profesionalismo.' },
   { fecha: '30 Abr', titulo: 'El encuentro de dos campeones', texto: 'Compartimos el encuentro con quienes nos eligen como su centro de diagnóstico por imágenes.' }
 ];
 
+//Seccion SEDES
 export const sedes = [
   { nombre: 'La Plata', direccion: 'Calle 8 nº 607 e/ 44 y 45 [B1900TGQ]', telefonos: '+54 221 425-7412 | 421-1067 / 1892 / 2074',
     whatsapp: 'https://api.whatsapp.com/send?phone=5492216139002', horario: 'Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.' },
@@ -91,7 +96,7 @@ export const sedes = [
     whatsapp: 'https://api.whatsapp.com/send?phone=5491153388292', horario: 'Lunes a Viernes: 9:00 a 15:00 hs.' }
 ];
 
-//Seccion NOSOTROS
+//Seccion NOSOTROS - DATA
 export const queHacemosData = {
 	titulo: "Qué Hacemos",
 	subtitulo: "Centro de Diagnóstico por Imágenes de Alta Complejidad",
@@ -122,6 +127,7 @@ export const queHacemosData = {
 		enlace: "#servicios"
 	}
 };
+//Seccion STAFF - DATA
 export const staffData = {
   titulo: "Nuestro Staff",
   subtitulo: "Equipo médico multidisciplinario de excelencia y permanente actualización científica",
@@ -190,6 +196,7 @@ export const staffData = {
     }
   ]
 };
+//Seccion CALIDAD - DATA
 export const calidadData = {
   titulo: 'Nuestra Calidad',
   subtitulo: 'Sistema de Gestión de la Calidad según lineamientos de la Norma ISO 9001:2015',
@@ -229,6 +236,7 @@ export const calidadData = {
     }
   ]
 };
+//Seccion FORMACION - DATA
 export const formacionData = {
   titulo: 'Docencia e Investigación',
   subtitulo: 'Compromiso con la formación médica continua y la excelencia académica',
@@ -255,6 +263,7 @@ export const formacionData = {
     }
   ]
 };
+//Seccion PACS - DATA
 export const pacsData = {
   titulo: 'Sistema PACS',
   subtitulo: 'Picture Archiving and Communication System — Archivo y visualización digital de estudios médicos',
@@ -279,7 +288,7 @@ export const pacsData = {
     textoBoton: 'Acceder al Portal PACS'
   }
 };
-//Seccion SERVICIOS
+//Seccion SERVICIO - DATA
 export const serviciosDetalle = {
   'pet-ct-multislice': {
     slug: 'pet-ct-multislice',
@@ -949,5 +958,53 @@ export const serviciosDetalle = {
       'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes.'
     ]
   }
-  // En los siguientes pasos se pueden incorporar 'tomografia', 'resonancia-magnetica', etc.
+
+};
+
+//Seccion CYTEC BEBE
+export const bebeData = {
+  titulo: 'CYTEC Bebé & Pediatría',
+  subtitulo: 'Espacios amables, seguros y respetuosos pensados especialmente para nuestros pequeños héroes',
+  mision: [
+    'En CYTEC entendemos que la atención diagnóstica en bebés y niños requiere una mirada humana, afectuosa y de máxima contención. Hemos diseñado un entorno cálido que transforma la experiencia médica en un espacio libre de miedos y tensiones tanto para el niño como para su familia.',
+    'Contamos con equipamiento tecnológico adaptado a la anatomía pediátrica, protocolos de reducción drástica de dosis de radiación y profesionales especializados en el trato con pacientes neonatales y pediátricos.'
+  ],
+  pilares: [
+    {
+      titulo: 'Ambiente Lúdico y Amable',
+      detalle: 'Salas especialmente ambientadas con temáticas infantiles para reducir la ansiedad y lograr una experiencia médica reconfortante.'
+    },
+    {
+      titulo: 'Mínima Dosis (Protocolos ALARA Pediátricos)',
+      detalle: 'Ajuste milimétrico de la radiación ionizante al peso y talla de cada niño, garantizando la máxima bioseguridad.'
+    },
+    {
+      titulo: 'Contención Familiar Permanente',
+      detalle: 'Acompañamiento cercano de los padres durante toda la realización de los estudios para brindar calma y seguridad.'
+    }
+  ],
+  estudiosPediatricos: [
+    {
+      nombre: 'Ecografía 4D / 5D y Diagnóstico Prenatal',
+      descripcion: 'Visualización de alta definición del desarrollo fetal y screening prenatal integral en tiempo real con transductores volumétricos.'
+    },
+    {
+      nombre: 'Ecografía Pediátrica y Encefálica',
+      descripcion: 'Ecografía cerebral transfontanelar en recién nacidos, ecografía de caderas para despistaje de displasia del desarrollo, abdominal y renal.'
+    },
+    {
+      nombre: 'Radiología Digital Pediátrica Directa',
+      descripcion: 'Estudios óseos y de tórax con detectores digitales ultrasensibles que reducen al mínimo indispensable el tiempo y la dosis de exposición.'
+    },
+    {
+      nombre: 'Resonancia Magnética y TAC Pediátrica',
+      descripcion: 'Tiempos de adquisición ultrarrápidos y secuencias silenciosas para evitar la necesidad de sedación en la mayor medida posible.'
+    }
+  ],
+  recomendacionesFamilia: [
+    'Explicar al niño con palabras sencillas y positivas en qué consistirá el examen antes de asistir.',
+    'Traer su juguete, manta o chupete favorito para brindar confort y familiaridad durante el estudio.',
+    'Vestirlo con prendas cómodas y fáciles de retirar, preferentemente de algodón y sin botones metálicos.',
+    'En caso de lactantes, coordinar la toma de leche o mamadera cerca del horario del estudio para favorecer el reposo espontáneo.'
+  ]
 };
