@@ -323,7 +323,7 @@ let servicio = $derived(data.servicio);
     margin-bottom: 0.75rem;
 }
 
-.badge-area {
+/*.badge-area {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -334,7 +334,7 @@ let servicio = $derived(data.servicio);
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 0.35rem;
-}
+}*/
 
 .header-clinica h3 {
     margin: 0;
