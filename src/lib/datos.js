@@ -48,9 +48,9 @@ export const menu = [
     ] 
   },
   { texto: 'Cytec Bebé', href: '/bebe' },
-  { texto: 'Novedades', href: '/#novedades' },
-  { texto: 'Coberturas', href: '/#coberturas' },
-  { texto: 'Contacto', href: '/#contacto' }
+  { texto: 'Novedades', href: '/novedades' },
+  { texto: 'Deportes', href: '/deportes' },
+  { texto: 'Coberturas', href: '/#coberturas' }
 ];
 
 // Slides del carrusel. "imagen" apunta a /static/img (reemplazar por fotos reales del equipamiento)
@@ -81,11 +81,86 @@ export const testimonios = [
   { autor: 'Pablo Tejero', texto: 'Excelente atención y amabilidad de sus empleados.' }
 ];
 
-//Seccion NOVEDADES
+//Seccion NOVEDADES - Si se modifica afecta a src/routes/novedades/+page.svelte y src/lib/componentes/novedades.svelte
 export const novedades = [
-  { fecha: '30 May', titulo: 'Héroes Cytec', texto: 'Madres y padres confían en CYTEC para el diagnóstico de sus hijos. Creamos espacios amables para ellos.' },
-  { fecha: '1 May', titulo: '¡Feliz día!', texto: 'Saludamos a nuestra comunidad y agradecemos a todo nuestro staff por su dedicación y profesionalismo.' },
-  { fecha: '30 Abr', titulo: 'El encuentro de dos campeones', texto: 'Compartimos el encuentro con quienes nos eligen como su centro de diagnóstico por imágenes.' }
+  {
+    slug: 'heroes-cytec-pediatria',
+    fecha: '30 May 2026',
+    categoria: 'Institucional',
+    titulo: 'Héroes Cytec: Espacios amables para los más chicos',
+    resumen: 'Madres y padres confían en CYTEC para el diagnóstico de sus hijos. Diseñamos espacios amables, cálidos y adaptados a la atención pediátrica.',
+    imagen: '/img/slide-3.jpg',
+    cuerpo: [
+      'En CYTEC entendemos que la realización de un estudio médico en la infancia puede ser un momento de inquietud tanto para los niños como para sus familias. Por esta razón, creamos el programa Héroes CYTEC.',
+      'A través de salas ambientadas, personal especialmente capacitado en pedagogía y contención neonatal y pediátrica, y equipamiento de baja dosis de radiación ionizante, garantizamos una experiencia respetuosa y de máximo confort.',
+      'Invitamos a los padres a ingresar a las salas y acompañar a sus hijos durante los exámenes de radiología, ecografía y resonancia silenciosa, haciendo de la salud un camino seguro y sin temores.'
+    ]
+  },
+  {
+    slug: 'feliz-dia-del-trabajador-salud',
+    fecha: '01 May 2026',
+    categoria: 'Comunidad',
+    titulo: '¡Feliz día a nuestro staff de profesionales!',
+    resumen: 'Saludamos a toda nuestra comunidad y agradecemos a nuestro staff médico, técnico y administrativo por su dedicación permanente.',
+    imagen: '/img/slide-1.jpg',
+    cuerpo: [
+      'En este día especial, desde la Dirección de CYTEC queremos expresar nuestro más sincero agradecimiento a cada una de las personas que integran nuestra institución: médicos especialistas, licenciados en bioimágenes, enfermeros, personal administrativo y de maestranza.',
+      'Su incansable labor diaria, calidez humana y compromiso constante con la excelencia científica y la norma de calidad ISO 9001:2015 son el auténtico motor que nos posiciona como referentes en la región de La Plata.',
+      'Reafirmamos nuestro compromiso de seguir creciendo, incorporando innovación y fomentando la docencia y formación continua de nuestros equipos.'
+    ]
+  },
+  {
+    slug: 'encuentro-dos-campeones-deporte',
+    fecha: '30 Abr 2026',
+    categoria: 'Deporte & Salud',
+    titulo: 'El encuentro de dos campeones: Diagnóstico en deportistas',
+    resumen: 'Compartimos el encuentro con atletas y deportistas de alto rendimiento que eligen a CYTEC para el seguimiento de sus lesiones.',
+    imagen: '/img/slide-2.jpg',
+    cuerpo: [
+      'La medicina del deporte y el diagnóstico por imágenes de alta resolución son aliados fundamentales para el rendimiento y la pronta recuperación de los deportistas de élite.',
+      'Recibimos en nuestra sede de Calle 8 a destacados deportistas de la región para la realización de resonancias articulares de alto campo y ecografías musculoesqueléticas dinámicas.',
+      'La precisión en el diagnóstico de desgarros musculares, lesiones de ligamentos cruzados y meniscopatías permite a los cuerpos médicos de los clubes diseñar programas de rehabilitación personalizados con tiempos exactos de retorno a la competencia.'
+    ]
+  },
+  {
+    slug: 'incorporacion-segundo-equipo-pet-ct',
+    fecha: '15 Mar 2026',
+    categoria: 'Tecnología',
+    titulo: 'CYTEC incorpora su segundo equipo de PET-CT Multislice',
+    resumen: 'Consolidamos nuestro liderazgo nacional en diagnóstico oncológico con la puesta en marcha de un segundo tomógrafo por emisión de positrones.',
+    imagen: '/img/slide-1.jpg',
+    cuerpo: [
+      'Con gran orgullo anunciamos la operatividad plena de nuestro segundo equipo de PET-CT de última generación en la Sede Central La Plata.',
+      'Esta incorporación estratégica nos posiciona como el segundo centro en todo el país con dos sistemas PET-CT dedicados, permitiendo duplicar la capacidad de atención y reducir sustancialmente los plazos de otorgamiento de turnos para pacientes oncológicos que requieren estadificación inmediata.',
+      'Agradecemos a la comunidad médica y a los centros derivadores por continuar confiando en nuestra solvencia tecnológica y rigor diagnóstico.'
+    ]
+  },
+  {
+    slug: 'recertificacion-norma-iso-9001-2015',
+    fecha: '20 Feb 2026',
+    categoria: 'Calidad',
+    titulo: 'Recertificación exitosa de la Norma Internacional ISO 9001:2015',
+    resumen: 'Superamos una nueva auditoría externa que avala la excelencia en todos nuestros procesos de atención y seguridad del paciente.',
+    imagen: '/img/slide-2.jpg',
+    cuerpo: [
+      'La mejora continua y la seguridad de nuestros pacientes no son solo una meta, sino una política transversal aplicada en cada etapa de nuestro servicio.',
+      'Tras un exhaustivo proceso de auditoría externa que abarcó tanto a la Sede Central de La Plata como al Anexo Florencio Varela, CYTEC ha renovado formalmente su certificación bajo los lineamientos de la Norma ISO 9001:2015.',
+      'Este logro valida nuestros estándares en gestión de turnos, calibración permanente de equipamiento biomédico, confidencialidad en el portal PACS y satisfacción de nuestros pacientes.'
+    ]
+  },
+  {
+    slug: 'prevencion-cancer-de-mama-screening',
+    fecha: '10 Ene 2026',
+    categoria: 'Prevención',
+    titulo: 'La importancia del screening mamográfico preventivo',
+    resumen: 'El diagnóstico precoz salva vidas: especialistas de CYTEC explican las pautas anuales de mamografía digital y ecografía mamaria.',
+    imagen: '/img/slide-3.jpg',
+    cuerpo: [
+      'El cáncer de mama detectado en etapas iniciales posee tasas de curación superiores al 90%. El control mamográfico anual a partir de los 40 años es la herramienta preventiva más eficaz.',
+      'En CYTEC disponemos de mamógrafos digitales de compresión anatómica confortable que permiten estudiar mamas de alta densidad y descubrir microcalcificaciones milimétricas mucho antes de que sean detectables por palpación física.',
+      'Recordá consultar con tu ginecólogo de cabecera y programar tu chequeo anual preventivo en nuestras sedes.'
+    ]
+  }
 ];
 
 //Seccion SEDES
@@ -1006,5 +1081,73 @@ export const bebeData = {
     'Traer su juguete, manta o chupete favorito para brindar confort y familiaridad durante el estudio.',
     'Vestirlo con prendas cómodas y fáciles de retirar, preferentemente de algodón y sin botones metálicos.',
     'En caso de lactantes, coordinar la toma de leche o mamadera cerca del horario del estudio para favorecer el reposo espontáneo.'
+  ]
+};
+
+//Secion DEPORTES
+export const deportesData = {
+  titulo: 'Diagnóstico en Lesiones Deportivas',
+  subtitulo: 'Tecnología médica avanzada para deportistas de alto rendimiento y actividad física recreativa',
+  introduccion: [
+    'En CYTEC contamos con un área especializada en Medicina y Traumatología del Deporte, enfocada en la detección precoz, caracterización milimétrica y seguimiento evolutivo de lesiones musculares, tendinosas, articulares y óseas.',
+    'La rapidez y precisión diagnóstica son determinantes para definir los tiempos biológicos de cicatrización, planificar la rehabilitación kinesiológica y garantizar un retorno seguro a la competencia (Return to Play), minimizando el riesgo de recidivas.'
+  ],
+  pilares: [
+    {
+      titulo: 'Atención Prioritaria para Atletas',
+      detalle: 'Turnos y protocolos ágiles para brindar un diagnóstico inmediato a cuerpos médicos, clubes y deportistas federados.'
+    },
+    {
+      titulo: 'Equipamiento de Alto Campo',
+      detalle: 'Resonancia Magnética 1.5T con bobinas dedicadas para articulaciones complejas y Ecografía Dinámica con Doppler Color.'
+    },
+    {
+      titulo: 'Enfoque Interdisciplinario',
+      detalle: 'Trabajo conjunto entre médicos radiólogos subespecialistas en músculo-esquelético, traumatólogos y kinesiólogos deportivos.'
+    }
+  ],
+  estudiosDeportivos: [
+    {
+      nombre: 'Resonancia Magnética Articular y Muscular',
+      descripcion: 'Estudio de referencia para evaluar ligamentos (cruzados, colaterales), roturas de meniscos, labrum de cadera y hombro, desgarros fibrilares y edema óseo por estrés.'
+    },
+    {
+      nombre: 'Ecografía Musculoesquelética Dinámica',
+      descripcion: 'Exploración en tiempo real con contracción y estiramiento muscular activo. Permite evaluar tendinitis (rotuliana, aquiliana), bursitis, hematomas y evolución de cicatrices.'
+    },
+    {
+      nombre: 'Radiología Digital en Apoyo y Estrés',
+      descripcion: 'Placas radiográficas directas con maniobras funcionales y de carga bipodal/monopodal para diagnosticar inestabilidades articulares y microfisuras óseas.'
+    },
+    {
+      nombre: 'Tomografía Multislice 3D',
+      descripcion: 'Reconstrucciones volumétricas tridimensionales para fracturas articulares complejas, luxaciones y planificación prequirúrgica traumatológica.'
+    }
+  ],
+  lesionesFrecuentes: [
+    {
+      categoria: 'Lesiones Musculares y Tendinosas',
+      items: [
+        'Desgarros musculares (isquiotibiales, cuádriceps, gemelos) y grados de distensión miofascial.',
+        'Tendinopatías crónicas y roturas del tendón de Aquiles, manguito rotador y rotuliano.',
+        'Pubalgia del deportista y entesopatías de aductores.'
+      ]
+    },
+    {
+      categoria: 'Lesiones Articulares y Ligamentarias',
+      items: [
+        'Roturas del Ligamento Cruzado Anterior (LCA) y ligamentos colaterales de rodilla.',
+        'Lesiones meniscales y condrales (daño del cartílago articular).',
+        'Inestabilidad de hombro (lesiones de Bankart y SLAP) y esguinces graves de tobillo.'
+      ]
+    },
+    {
+      categoria: 'Patología Ósea por Sobrecarga',
+      items: [
+        'Fracturas por fatiga o estrés (tibia, metatarsianos, cuello femoral).',
+        'Periostitis tibial y síndromes por sobreuso biomecánico.',
+        'Contusiones óseas (Bone Bruise) post-traumáticas directas.'
+      ]
+    }
   ]
 };
