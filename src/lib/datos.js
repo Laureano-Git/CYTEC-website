@@ -3,7 +3,8 @@
 // Separar contenido de presentación permite editar textos sin
 // tocar componentes. En producción podría venir de un CMS/API.
 // ============================================================
-export const WHATSAPP_LA_PLATA = 'https://api.whatsapp.com/send?phone=5492216139002';
+export const WHATSAPP_TURNOS_LA_PLATA = 'https://api.whatsapp.com/send?phone=5492216139002';
+export const WHATSAPP_CONSULTAS_LAPLATA = 'https://api.whatsapp.com/send?phone=5492216151566';
 export const PORTAL_WEB = "http://cytec.ddns.net:8080/login"
 
 //Tipos de ECOGRAFIAS
