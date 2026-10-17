@@ -5,14 +5,14 @@
 
   // Diccionario para normalizar los nombres del array a sus slugs de ruta
   const mapaSlugs = {
-    'Espirometría computada': 'espirometria-computada',
-    'Espirometria computada': 'espirometria-computada',
     'PET CT Multislice y PET CT+RM': 'pet-ct-multislice',
     'PET CT Multislice': 'pet-ct-multislice',
     'Resonancia magnética': 'resonancia-magnetica',
     'Tomografía': 'tomografia',
     'Mamografía digital': 'mamografia-digital',
     'Ecografía': 'ecografia',
+    'Espirometría computada': 'espirometria-computada',
+    'Espirometria computada': 'espirometria-computada',
     'Medicina nuclear': 'medicina-nuclear',
     'Radiología digital': 'radiologia-digital',
     'Densitometría ósea digital': 'densitometria-osea'
