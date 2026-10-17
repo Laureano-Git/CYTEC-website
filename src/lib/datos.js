@@ -58,9 +58,9 @@ export const menu = [
 
 // Slides del carrusel. "imagen" apunta a /static/img (reemplazar por fotos reales del equipamiento)
 export const slides = [
-  { titulo: 'Diagnóstico por imágenes de alta complejidad', texto: 'Tecnología de avanzada al servicio de tu salud.', imagen: '/img/slide-1.jpg', color: '#0a7fb5' },
-  { titulo: 'PET CT Multislice y PET CT + RM', texto: 'Estudios de cuerpo entero con equipamiento de última generación.', imagen: '/img/slide-2.jpg', color: '#075f87' },
-  { titulo: 'Cytec Bebé', texto: 'Espacios amables y respetuosos para nuestros héroes del futuro.', imagen: '/img/slide-3.jpg', color: '#0d93a8' }
+  { titulo: 'Diagnóstico por imágenes de alta complejidad', texto: 'Tecnología de avanzada al servicio de tu salud.', imagen: '/img/diagnostico.jpg', color: '#0a7fb5' },
+  { titulo: 'PET CT Multislice y PET CT + RM', texto: 'Estudios de cuerpo entero con equipamiento de última generación.', imagen: '/img/pet.jpg', color: '#075f87' },
+  { titulo: 'Cytec Bebé', texto: 'Espacios amables y respetuosos para nuestros héroes del futuro.', imagen: '/img/bebe.jpg', color: '#0d93a8' }
 ];
 
 //Seccion VALORES INSTITUCIONALES
