@@ -1,6 +1,6 @@
 <!-- src/routes/servicios/[slug]/+page.svelte -->
 <script>
-import { WHATSAPP_LA_PLATA } from '$lib/datos.js';
+import { WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
 let { data } = $props();
 let servicio = $derived(data.servicio);
@@ -167,7 +167,7 @@ let servicio = $derived(data.servicio);
         
         <!-- Botón prioritario único para no distraer al usuario -->
         <a 
-        href={WHATSAPP_LA_PLATA} 
+        href={WHATSAPP_TURNOS_LA_PLATA} 
         target="_blank" 
         rel="noopener noreferrer" 
         class="btn btn-whatsapp"

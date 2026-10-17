@@ -1,6 +1,6 @@
 <!-- src/routes/deportes/+page.svelte -->
 <script>
-import { deportesData, WHATSAPP_LA_PLATA } from '$lib/datos.js';
+import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 </script>
 
 <svelte:head>
@@ -96,7 +96,7 @@ import { deportesData, WHATSAPP_LA_PLATA } from '$lib/datos.js';
         <p>Priorizamos la agenda de atletas y deportistas con lesiones agudas para iniciar el tratamiento de inmediato.</p>
 
         <a 
-        href={WHATSAPP_LA_PLATA} 
+        href={WHATSAPP_TURNOS_LA_PLATA} 
         target="_blank" 
         rel="noopener noreferrer" 
         class="btn btn-whatsapp"

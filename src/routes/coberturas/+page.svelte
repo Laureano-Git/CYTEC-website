@@ -1,6 +1,6 @@
 <!-- src/routes/coberturas/+page.svelte -->
 <script>
-import { coberturasData, WHATSAPP_LA_PLATA } from '$lib/datos.js';
+import { coberturasData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
   // Svelte 5: Estados reactivos para filtrado en tiempo real
 let busqueda = $state('');
@@ -132,7 +132,7 @@ let entidadesFiltradas = $derived(
         <p>Envianos una foto clara de tu orden médica y credencial por WhatsApp para que verifiquemos los requisitos de cobertura antes de tu turno.</p>
 
         <a 
-        href={WHATSAPP_LA_PLATA} 
+        href={WHATSAPP_TURNOS_LA_PLATA} 
         target="_blank" 
         rel="noopener noreferrer" 
         class="btn btn-whatsapp"

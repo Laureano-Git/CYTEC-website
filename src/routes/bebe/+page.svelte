@@ -1,6 +1,6 @@
 <!-- src/routes/bebe/+page.svelte -->
 <script>
-import { bebeData, WHATSAPP_LA_PLATA } from '$lib/datos.js';
+import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 </script>
 
 <svelte:head>
@@ -88,7 +88,7 @@ import { bebeData, WHATSAPP_LA_PLATA } from '$lib/datos.js';
         <p>Priorizamos turnos con tiempos ampliados para respetar el ritmo biológico y de descanso de cada bebé y niño.</p>
 
         <a 
-        href={WHATSAPP_LA_PLATA} 
+        href={WHATSAPP_TURNOS_LA_PLATA} 
         target="_blank" 
         rel="noopener noreferrer" 
         class="btn btn-whatsapp"
