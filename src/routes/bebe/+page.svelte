@@ -80,8 +80,29 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
     </main>
 
-    <!-- Barra Lateral de Contacto y Turnos -->
-    <aside class="sidebar-bebe" aria-label="Turnos de atención pediátrica">
+<!-- Barra Lateral Sticky (Todo el contenedor flota) -->
+    <aside class="sidebar-bebe" aria-label="Información pediátrica y turnos">
+    
+    <!-- 📸 1. Tarjeta Visual del Área Pediátrica -->
+    <article class="tarjeta-visual-sidebar">
+        <div class="marco-foto">
+        <img 
+            src="/img/bebe.jpg" 
+            alt="Espacio pediátrico adaptado para bebés y niños en CYTEC" 
+            loading="lazy"
+            decoding="async"
+            width="340"
+            height="210"
+        />
+        <span class="etiqueta-foto">Espacio Amigable</span>
+        </div>
+        <div class="pie-foto">
+        <h3>Entorno Libre de Miedos</h3>
+        <p>Salas especialmente diseñadas con contención familiar constante y reducción de dosis ALARA.</p>
+        </div>
+    </article>
+
+    <!-- 📅 2. Tarjeta de Turnos -->
     <div class="tarjeta-turno-bebe">
         <span class="etiqueta-reserva">Espacio Pediátrico</span>
         <h3>Turnos Pediátricos</h3>
@@ -104,16 +125,16 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
             <strong>Horarios:</strong> Lunes a Viernes de 8:00 a 20:00 hs.
         </div>
         <div class="item-info">
-            <strong>Acompañamiento:</strong> Se permite el ingreso con ambos progenitores en sala.
+            <strong>Acompañamiento:</strong> Se permite el ingreso de ambos progenitores en sala.[cite: 4]
         </div>
         </div>
     </div>
+
     </aside>
 </div>
 </div>
 
 <style>
-  /* Hero con gradiente azul-cian cálido y amable */
 .bebe-hero {
     background: linear-gradient(135deg, #0d93a8 0%, #0a7fb5 100%);
     color: var(--blanco);
@@ -195,7 +216,6 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     margin-bottom: 1rem;
 }
 
-  /* Tarjetas de Pilares */
 .tarjeta-pilar {
     background: var(--gris-claro);
     border: 1px solid var(--gris-borde);
@@ -229,7 +249,6 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     margin: 0;
 }
 
-  /* Grilla de Estudios */
 .grilla-estudios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -276,7 +295,6 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     margin: 0;
 }
 
-  /* Caja de Consejos Familiares */
 .caja-consejos {
     background: #f0fdfa;
     border: 1px solid #ccfbf1;
@@ -307,17 +325,86 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     font-weight: 800;
 }
 
-  /* Sidebar Sticky */
-.tarjeta-turno-bebe {
-    background: var(--blanco);
-    border: 1px solid var(--gris-borde);
-    border-radius: var(--radio);
-    padding: 2rem 1.75rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+/* ============================================================
+SIDEBAR STICKY MEJORADO (Solución al espacio en blanco)
+============================================================ */
+.sidebar-bebe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
     position: sticky;
     top: 90px;
 }
 
+.tarjeta-visual-sidebar {
+    background: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.marco-foto {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: var(--gris-claro);
+    overflow: hidden;
+}
+
+.marco-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transicion);
+}
+
+.tarjeta-visual-sidebar:hover .marco-foto img {
+    transform: scale(1.04);
+}
+
+.etiqueta-foto {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    background: rgba(13, 147, 168, 0.9);
+    backdrop-filter: blur(4px);
+    color: var(--blanco);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.pie-foto {
+    padding: 1.15rem 1.25rem;
+    background: var(--blanco);
+}
+
+.pie-foto h3 {
+    margin: 0 0 0.35rem 0;
+    font-size: 1rem;
+    color: var(--primario-oscuro);
+}
+
+.pie-foto p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--texto);
+    line-height: 1.45;
+    opacity: 0.88;
+}
+
+.tarjeta-turno-bebe {
+    background: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-radius: var(--radio);
+    padding: 1.75rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
 .etiqueta-reserva {
     display: inline-block;
     font-size: 0.72rem;
@@ -333,28 +420,47 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
 .tarjeta-turno-bebe h3 {
     color: var(--primario-oscuro);
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin: 0 0 0.5rem 0;
 }
 
 .tarjeta-turno-bebe p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--texto);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     line-height: 1.5;
 }
 
+.btn-whatsapp {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: var(--acento);
+    color: var(--blanco);
+    font-weight: 700;
+    border-radius: var(--radio);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: background var(--transicion), transform var(--transicion);
+}
+
+.btn-whatsapp:hover {
+    background: var(--acento-oscuro);
+    transform: translateY(-2px);
+}
+
 .info-pediatrica {
-    margin-top: 1.75rem;
-    padding-top: 1.25rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--gris-borde);
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
 }
 
 .item-info {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     line-height: 1.45;
     color: #4a5568;
 }
@@ -371,7 +477,7 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     .grilla-estudios {
     grid-template-columns: 1fr;
     }
-    .tarjeta-turno-bebe {
+    .sidebar-bebe {
     position: static;
     }
 }

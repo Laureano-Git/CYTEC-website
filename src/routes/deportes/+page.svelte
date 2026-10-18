@@ -70,7 +70,7 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
         {#each deportesData.lesionesFrecuentes as bloque}
             <div class="tarjeta-lesion">
             <header class="header-lesion">
-                <span class="badge-cat-lesion">Especialidad</span>
+                <span class="badge-cat-lesion">Medico</span>
                 <h3>{bloque.categoria}</h3>
             </header>
             <ul class="lista-lesiones">
@@ -349,6 +349,7 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
 /* Sidebar Sticky */
 .tarjeta-turno-deporte {
+    display: inline-block;
     background: var(--blanco);
     border: 1px solid var(--gris-borde);
     border-radius: var(--radio);

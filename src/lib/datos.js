@@ -1158,27 +1158,21 @@ export const deportesData = {
   ],
   lesionesFrecuentes: [
     {
-      categoria: 'Lesiones Musculares y Tendinosas',
+      categoria: 'Agustín Marrero - MP: 117.783',
       items: [
-        'Desgarros musculares (isquiotibiales, cuádriceps, gemelos) y grados de distensión miofascial.',
-        'Tendinopatías crónicas y roturas del tendón de Aquiles, manguito rotador y rotuliano.',
-        'Pubalgia del deportista y entesopatías de aductores.'
+        'Parte del staff médico del club Estudiantes de La Plata. Miembro del capítulo músculo esquelético de la Sociedad Argentina de Radiología. Especialista en diagnóstico por imágenes, sub especializado en el diagnóstico de lesiones deportivas y traumatológicas.'
       ]
     },
     {
-      categoria: 'Lesiones Articulares y Ligamentarias',
+      categoria: 'Leandro Ariel Mazza - MP: 117.599',
       items: [
-        'Roturas del Ligamento Cruzado Anterior (LCA) y ligamentos colaterales de rodilla.',
-        'Lesiones meniscales y condrales (daño del cartílago articular).',
-        'Inestabilidad de hombro (lesiones de Bankart y SLAP) y esguinces graves de tobillo.'
+        'Especialista en diagnóstico por imágenes, sub especializado en el diagnóstico de lesiones deportivas y traumatológicas. Docente de la facultad de medicina UNLP.'
       ]
     },
     {
-      categoria: 'Patología Ósea por Sobrecarga',
+      categoria: 'Nicolas Cédola - MP: 117.511',
       items: [
-        'Fracturas por fatiga o estrés (tibia, metatarsianos, cuello femoral).',
-        'Periostitis tibial y síndromes por sobreuso biomecánico.',
-        'Contusiones óseas (Bone Bruise) post-traumáticas directas.'
+        'Miembro del capítulo músculo esquelético de la sociedad argentina de radiología SAR. Especialista en diagnóstico por imágenes, sub especializado en el diagnóstico de lesiones deportivas y traumatológicas.'
       ]
     }
   ]

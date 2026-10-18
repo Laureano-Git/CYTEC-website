@@ -419,16 +419,16 @@ let servicio = $derived(data.servicio);
 }
 
 /* BARRA LATERAL (SIDEBAR) */
-  .sidebar-lateral {
+.sidebar-lateral {
     display: flex;
     flex-direction: column;
     gap: 1.75rem;
     position: sticky;
     top: 90px;
-  }
+}
 
   /* 📸 Estilos de la Tarjeta de Equipamiento */
-  .tarjeta-equipo {
+.tarjeta-equipo {
     background: var(--blanco);
     border: 1px solid var(--gris-borde);
     border-radius: var(--radio);
