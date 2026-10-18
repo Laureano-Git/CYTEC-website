@@ -88,11 +88,11 @@ export const testimonios = [
 export const novedades = [
   {
     slug: 'heroes-cytec-pediatria',
-    fecha: '30 May 2026',
+    fecha: '30 May',
     categoria: 'Institucional',
     titulo: 'Héroes Cytec: Espacios amables para los más chicos',
     resumen: 'Madres y padres confían en CYTEC para el diagnóstico de sus hijos. Diseñamos espacios amables, cálidos y adaptados a la atención pediátrica.',
-    imagen: '/img/slide-3.jpg',
+    imagen: '/img/heroes.png',
     cuerpo: [
       'En CYTEC entendemos que la realización de un estudio médico en la infancia puede ser un momento de inquietud tanto para los niños como para sus familias. Por esta razón, creamos el programa Héroes CYTEC.',
       'A través de salas ambientadas, personal especialmente capacitado en pedagogía y contención neonatal y pediátrica, y equipamiento de baja dosis de radiación ionizante, garantizamos una experiencia respetuosa y de máximo confort.',
@@ -101,11 +101,11 @@ export const novedades = [
   },
   {
     slug: 'feliz-dia-del-trabajador-salud',
-    fecha: '01 May 2026',
+    fecha: '01 May',
     categoria: 'Comunidad',
     titulo: '¡Feliz día a nuestro staff de profesionales!',
     resumen: 'Saludamos a toda nuestra comunidad y agradecemos a nuestro staff médico, técnico y administrativo por su dedicación permanente.',
-    imagen: '/img/slide-1.jpg',
+    imagen: '/img/trabajador.png',
     cuerpo: [
       'En este día especial, desde la Dirección de CYTEC queremos expresar nuestro más sincero agradecimiento a cada una de las personas que integran nuestra institución: médicos especialistas, licenciados en bioimágenes, enfermeros, personal administrativo y de maestranza.',
       'Su incansable labor diaria, calidez humana y compromiso constante con la excelencia científica y la norma de calidad ISO 9001:2015 son el auténtico motor que nos posiciona como referentes en la región de La Plata.',
@@ -114,11 +114,11 @@ export const novedades = [
   },
   {
     slug: 'encuentro-dos-campeones-deporte',
-    fecha: '30 Abr 2026',
+    fecha: '30 Abr',
     categoria: 'Deporte & Salud',
     titulo: 'El encuentro de dos campeones: Diagnóstico en deportistas',
     resumen: 'Compartimos el encuentro con atletas y deportistas de alto rendimiento que eligen a CYTEC para el seguimiento de sus lesiones.',
-    imagen: '/img/slide-2.jpg',
+    imagen: '/img/campeones.png',
     cuerpo: [
       'La medicina del deporte y el diagnóstico por imágenes de alta resolución son aliados fundamentales para el rendimiento y la pronta recuperación de los deportistas de élite.',
       'Recibimos en nuestra sede de Calle 8 a destacados deportistas de la región para la realización de resonancias articulares de alto campo y ecografías musculoesqueléticas dinámicas.',
@@ -126,42 +126,54 @@ export const novedades = [
     ]
   },
   {
-    slug: 'incorporacion-segundo-equipo-pet-ct',
-    fecha: '15 Mar 2026',
-    categoria: 'Tecnología',
-    titulo: 'CYTEC incorpora su segundo equipo de PET-CT Multislice',
-    resumen: 'Consolidamos nuestro liderazgo nacional en diagnóstico oncológico con la puesta en marcha de un segundo tomógrafo por emisión de positrones.',
-    imagen: '/img/slide-1.jpg',
+    slug: 'atencion-por-pami',
+    fecha: '14 Feb',
+    categoria: 'Convenios',
+    titulo: 'Atendemos por PAMI',
+    resumen: '👉🏼 𝐒𝐢 𝐬𝐨𝐬 𝐣𝐮𝐛𝐢𝐥𝐚𝐝𝐨/𝐚 𝐨 𝐩𝐞𝐧𝐬𝐢𝐨𝐧𝐚𝐝𝐨/𝐚, 𝐩𝐨𝐝é𝐬 𝐯𝐞𝐧𝐢𝐫 𝐚 𝐂𝐲𝐭𝐞𝐜!! 😊',
+    imagen: '/img/pami.png',
     cuerpo: [
-      'Con gran orgullo anunciamos la operatividad plena de nuestro segundo equipo de PET-CT de última generación en la Sede Central La Plata.',
-      'Esta incorporación estratégica nos posiciona como el segundo centro en todo el país con dos sistemas PET-CT dedicados, permitiendo duplicar la capacidad de atención y reducir sustancialmente los plazos de otorgamiento de turnos para pacientes oncológicos que requieren estadificación inmediata.',
-      'Agradecemos a la comunidad médica y a los centros derivadores por continuar confiando en nuestra solvencia tecnológica y rigor diagnóstico.'
+      '𝐂𝐨𝐛𝐞𝐫𝐭𝐮𝐫𝐚 𝐝𝐞𝐥 𝟏𝟎𝟎% 𝐞𝐧:⁣',
+      '✔️ Resonancias Magnéticas.',
+      '⁣✔️ Tomografías.⁣',
+      '✔️ PET – CT Multislice.',
+      'Comunicarte con nosotros, podés sacar turno por WhatsApp, La Plata 📲 54 9 (221) 613-9002⁣⁣⁣, Florencio Varela 📲＋54 9 (11) 5338-8292.⁣',
+      'Además atendemos a través de otras obras sociales, ingresa a 🌐 𝗵𝘁𝘁𝗽𝘀://𝗰𝘆𝘁𝗲𝗰𝗹𝗮𝗽𝗹𝗮𝘁𝗮.𝗰𝗼𝗺.𝗮𝗿/ y en el área de cobertura médica enterate todas las disponibles.⁣'
     ]
   },
   {
-    slug: 'recertificacion-norma-iso-9001-2015',
-    fecha: '20 Feb 2026',
-    categoria: 'Calidad',
-    titulo: 'Recertificación exitosa de la Norma Internacional ISO 9001:2015',
-    resumen: 'Superamos una nueva auditoría externa que avala la excelencia en todos nuestros procesos de atención y seguridad del paciente.',
-    imagen: '/img/slide-2.jpg',
-    cuerpo: [
-      'La mejora continua y la seguridad de nuestros pacientes no son solo una meta, sino una política transversal aplicada en cada etapa de nuestro servicio.',
-      'Tras un exhaustivo proceso de auditoría externa que abarcó tanto a la Sede Central de La Plata como al Anexo Florencio Varela, CYTEC ha renovado formalmente su certificación bajo los lineamientos de la Norma ISO 9001:2015.',
-      'Este logro valida nuestros estándares en gestión de turnos, calibración permanente de equipamiento biomédico, confidencialidad en el portal PACS y satisfacción de nuestros pacientes.'
-    ]
-  },
-  {
-    slug: 'prevencion-cancer-de-mama-screening',
-    fecha: '10 Ene 2026',
+    slug: 'prevencion-cancer-de-mama',
+    fecha: '20 Oct ',
     categoria: 'Prevención',
-    titulo: 'La importancia del screening mamográfico preventivo',
-    resumen: 'El diagnóstico precoz salva vidas: especialistas de CYTEC explican las pautas anuales de mamografía digital y ecografía mamaria.',
-    imagen: '/img/slide-3.jpg',
+    titulo: 'NO DEJES DE LADO TU SALUD',
+    resumen: 'El diagnóstico precoz es la clave para vencer al cáncer de mama.⁣ 👉Ya te hiciste tu chequeo anual?⁣',
+    imagen: '/img/mamas.png',
     cuerpo: [
-      'El cáncer de mama detectado en etapas iniciales posee tasas de curación superiores al 90%. El control mamográfico anual a partir de los 40 años es la herramienta preventiva más eficaz.',
-      'En CYTEC disponemos de mamógrafos digitales de compresión anatómica confortable que permiten estudiar mamas de alta densidad y descubrir microcalcificaciones milimétricas mucho antes de que sean detectables por palpación física.',
-      'Recordá consultar con tu ginecólogo de cabecera y programar tu chequeo anual preventivo en nuestras sedes.'
+      'En Cytec podes realizarte todos!⁣','💟 Mamografía.',
+      '💟 Ecografía.⁣',
+      '💟 RX.⁣',
+      '💟 Laboratorio.⁣',
+      '💟 Densitometría',
+      'Los estudios a realizar dependerán de lo indicado por el médico a cada paciente. Solicitá un turno por Whatsapp 👉 ＋54 9 221 613-9002',
+      'Cytec Diagnóstico por Imágenes de alta complejidad 📍 Calle 8 n° 607 entre 44 y 45, La Plata, Buenos Aires.⁣',
+      '⏰ Lunes a Viernes: 8:00 a 20:00 hs.',
+      'Teléfono: (0221) 421-1067 425-7412⁣'
+    ]
+  },
+  {
+    slug: 'lucha-cancer-de-mama',
+    fecha: '19 Oct',
+    categoria: 'Prevención',
+    titulo: 'Día internacional de la lucha contra el cáncer de mama',
+    resumen: '19 de octubre día internacional de la lucha contra el cáncer de mama.',
+    imagen: '/img/lucha.png',
+    cuerpo: [
+      'El día 19 de octubre se celebra mundialmente el día internacional de la lucha contra el cáncer de mama con el objetivo de crear conciencia y promover que cada vez más mujeres accedan a controles, diagnósticos y tratamientos oportunos y efectivos.⁣',
+      'Cuidate! Solicitá un turno por Whatsapp 👉 ＋54 9 221 613-9002',
+      'Cytec Diagnóstico por Imágenes de alta complejidad',
+      '📍 Calle 8 n° 607 entre 44 y 45, La Plata, Buenos Aires.',
+      '⏰ Lunes a Viernes: 8:00 a 20:00 hs.',
+      'Teléfono: (0221) 421-1067 425-7412'
     ]
   }
 ];

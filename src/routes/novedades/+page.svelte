@@ -48,8 +48,17 @@ function cambiarPagina(nuevaPagina) {
     {#each articulosVisibles as item (item.slug)}
     <article class="card-noticia">
         <div class="portada-noticia">
-        <span class="etiqueta-fecha">{item.fecha}</span>
-        <span class="etiqueta-categoria">{item.categoria}</span>
+            <!-- 📸 Imagen real de la publicación -->
+            <img 
+                src={item.imagen} 
+                alt={item.titulo} 
+                loading="lazy" 
+                decoding="async" 
+            />
+            <div class="etiquetas-flotantes">
+                <span class="etiqueta-fecha">{item.fecha}</span>
+                <span class="etiqueta-categoria">{item.categoria}</span>
+            </div>
         </div>
         <div class="cuerpo-noticia">
         <h2>{item.titulo}</h2>
@@ -110,22 +119,9 @@ function cambiarPagina(nuevaPagina) {
     padding: 3.5rem 0 3rem;
     margin-bottom: 3.5rem;
 }
-
-.breadcrumb {
-    font-size: 0.85rem;
-    margin-bottom: 1.25rem;
-    opacity: 0.9;
-}
-
-.breadcrumb a {
-    color: var(--blanco);
-    text-decoration: underline;
-}
-
-.breadcrumb span {
-    margin: 0 0.5rem;
-}
-
+.breadcrumb { font-size: 0.85rem; margin-bottom: 1.25rem; opacity: 0.9; }
+.breadcrumb a { color: var(--blanco); text-decoration: underline; }
+.breadcrumb span { margin: 0 0.5rem; }
 .badge-seccion {
     display: inline-block;
     text-transform: uppercase;
@@ -137,25 +133,10 @@ function cambiarPagina(nuevaPagina) {
     border-radius: 9999px;
     margin-bottom: 0.75rem;
 }
+.novedades-hero h1 { font-size: clamp(2.2rem, 4.5vw, 3rem); margin: 0 0 0.5rem 0; }
+.hero-subtitulo { font-size: 1.15rem; max-width: 750px; margin: 0; opacity: 0.95; line-height: 1.5; }
+.seccion-novedades { margin-bottom: 6rem; }
 
-.novedades-hero h1 {
-    font-size: clamp(2.2rem, 4.5vw, 3rem);
-    margin: 0 0 0.5rem 0;
-}
-
-.hero-subtitulo {
-    font-size: 1.15rem;
-    max-width: 750px;
-    margin: 0;
-    opacity: 0.95;
-    line-height: 1.5;
-}
-
-.seccion-novedades {
-    margin-bottom: 6rem;
-}
-
-/* Tarjetas del Blog */
 .card-noticia {
     background: var(--blanco);
     border-radius: var(--radio);
@@ -164,66 +145,65 @@ function cambiarPagina(nuevaPagina) {
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-    transition: transform var(--transicion), box-shadow var(--transicion);
-}
-
+  }
 .card-noticia:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 28px rgba(10, 127, 181, 0.12);
 }
+.card-noticia:hover .portada-noticia img {
+    transform: scale(1.04);
+}
 
 .portada-noticia {
-    height: 180px;
-    background: linear-gradient(135deg, var(--primario), #0d93a8);
+    height: 190px;
     position: relative;
-    padding: 1rem;
+    overflow: hidden;
+    background: var(--gris-claro);
+}
+
+.portada-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transicion);
+}
+
+.etiquetas-flotantes {
+    position: absolute;
+    top: 0.85rem;
+    left: 0.85rem;
+    right: 0.85rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    z-index: 2;
 }
 
 .etiqueta-fecha {
     background: var(--acento);
     color: var(--blanco);
-    padding: 0.3rem 0.75rem;
+    padding: 0.25rem 0.65rem;
     border-radius: 4px;
     font-weight: 700;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
 .etiqueta-categoria {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(4px);
     color: var(--blanco);
-    padding: 0.3rem 0.75rem;
+    padding: 0.25rem 0.65rem;
     border-radius: 4px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.cuerpo-noticia {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.cuerpo-noticia h2 {
-    font-size: 1.2rem;
-    color: var(--primario-oscuro);
-    margin: 0 0 0.75rem 0;
-    line-height: 1.35;
-}
-
-.cuerpo-noticia p {
-    font-size: 0.92rem;
-    line-height: 1.6;
-    color: var(--texto);
-    margin: 0 0 1.5rem 0;
-    flex-grow: 1;
-}
+.cuerpo-noticia { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
+.cuerpo-noticia h2 { font-size: 1.2rem; color: var(--primario-oscuro); margin: 0 0 0.75rem 0; line-height: 1.35; }
+.cuerpo-noticia p { font-size: 0.92rem; line-height: 1.6; color: var(--texto); margin: 0 0 1.5rem 0; flex-grow: 1; }
 
 .btn-leer-mas {
     align-self: flex-start;
@@ -237,27 +217,10 @@ function cambiarPagina(nuevaPagina) {
     gap: 0.4rem;
     transition: color var(--transicion), transform var(--transicion);
 }
+.btn-leer-mas:hover { color: var(--primario-oscuro); transform: translateX(4px); }
 
-.btn-leer-mas:hover {
-    color: var(--primario-oscuro);
-    transform: translateX(4px);
-}
-
-/* Controles de Paginación */
-.paginador-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-    margin-top: 4rem;
-    flex-wrap: wrap;
-}
-
-.numeros-lista {
-    display: flex;
-    gap: 0.4rem;
-}
-
+.paginador-contenedor { display: flex; justify-content: center; align-items: center; gap: 0.75rem; margin-top: 4rem; flex-wrap: wrap; }
+.numeros-lista { display: flex; gap: 0.4rem; }
 .btn-numero, .btn-nav {
     font-family: var(--fuente);
     background: var(--blanco);
@@ -268,35 +231,9 @@ function cambiarPagina(nuevaPagina) {
     font-weight: 600;
     transition: all var(--transicion);
 }
-
-.btn-numero {
-    width: 42px;
-    height: 42px;
-    display: grid;
-    place-items: center;
-    font-size: 0.95rem;
-}
-
-.btn-numero:hover, .btn-nav:hover:not(:disabled) {
-    border-color: var(--primario);
-    color: var(--primario);
-    background: var(--gris-claro);
-}
-
-.btn-numero.activo {
-    background: var(--primario);
-    color: var(--blanco);
-    border-color: var(--primario);
-}
-
-.btn-nav {
-    padding: 0 1.25rem;
-    height: 42px;
-    font-size: 0.88rem;
-}
-
-.btn-nav:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
+.btn-numero { width: 42px; height: 42px; display: grid; place-items: center; font-size: 0.95rem; }
+.btn-numero:hover, .btn-nav:hover:not(:disabled) { border-color: var(--primario); color: var(--primario); background: var(--gris-claro); }
+.btn-numero.activo { background: var(--primario); color: var(--blanco); border-color: var(--primario); }
+.btn-nav { padding: 0 1.25rem; height: 42px; font-size: 0.88rem; }
+.btn-nav:disabled { opacity: 0.4; cursor: not-allowed; }
 </style>

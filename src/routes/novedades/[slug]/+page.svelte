@@ -25,6 +25,15 @@ let noticia = $derived(data.noticia);
 </header>
 
 <article class="contenedor contenido-articulo">
+<!-- 📸 Imagen destacada arriba de todo el cuerpo del texto -->
+<div class="banner-destacado-articulo">
+    <img 
+    src={noticia.imagen} 
+    alt={noticia.titulo}
+    decoding="async" 
+    />
+</div>
+
 <div class="cuerpo-lectura">
     {#each noticia.cuerpo as parrafo}
     <p>{parrafo}</p>
@@ -41,30 +50,13 @@ let noticia = $derived(data.noticia);
     background: linear-gradient(135deg, var(--primario) 0%, var(--primario-oscuro) 100%);
     color: var(--blanco);
     padding: 3.5rem 0 3rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
+.breadcrumb { font-size: 0.85rem; margin-bottom: 1.25rem; opacity: 0.9; }
+.breadcrumb a { color: var(--blanco); text-decoration: underline; }
+.breadcrumb span { margin: 0 0.5rem; }
 
-.breadcrumb {
-    font-size: 0.85rem;
-    margin-bottom: 1.25rem;
-    opacity: 0.9;
-}
-
-.breadcrumb a {
-    color: var(--blanco);
-    text-decoration: underline;
-}
-
-.breadcrumb span {
-    margin: 0 0.5rem;
-}
-
-.meta-articulo {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-}
-
+.meta-articulo { display: flex; gap: 0.75rem; margin-bottom: 1rem; }
 .badge-fecha {
     background: var(--acento);
     color: var(--blanco);
@@ -73,7 +65,6 @@ let noticia = $derived(data.noticia);
     font-size: 0.8rem;
     font-weight: 700;
 }
-
 .badge-cat {
     background: rgba(255, 255, 255, 0.2);
     color: var(--blanco);
@@ -90,13 +81,32 @@ let noticia = $derived(data.noticia);
 }
 
 .contenido-articulo {
-    max-width: 820px;
+    max-width: 860px;
     margin-bottom: 6rem;
+}
+
+/* Marco de la imagen destacada superior */
+.banner-destacado-articulo {
+    width: 100%;
+    max-height: 440px;
+    border-radius: var(--radio);
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    background: var(--gris-claro);
+}
+
+.banner-destacado-articulo img {
+    width: 100%;
+    height: 100%;
+    max-height: 440px;
+    object-fit: cover;
+    display: block;
 }
 
 .cuerpo-lectura p {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.85;
     color: var(--texto);
     margin-bottom: 1.75rem;
 }
