@@ -124,8 +124,19 @@ let entidadesFiltradas = $derived(
 
     </main>
 
-    <!-- Sidebar Sticky de Asesoramiento en Línea -->
+    <!-- Barra Lateral Sticky Completa -->
     <aside class="sidebar-coberturas" aria-label="Consulta directa de planes y convenios">
+    
+    <!-- 📸 1. Tarjeta Informativa de Validación -->
+    <article class="tarjeta-info-sidebar">
+        <div class="cabecera-info-sidebar">
+        <span class="icono-info-side" aria-hidden="true">🛡️</span>
+        <h3>Validación Online</h3>
+        </div>
+        <p>Al coordinar su turno por WhatsApp validamos credenciales digitales con token activo (Swiss Medical, Galeno, Medifé, etc).</p>
+    </article>
+
+    <!-- 📅 2. Tarjeta de Consulta por WhatsApp -->
     <div class="tarjeta-consulta-cobertura">
         <span class="badge-asesoria">Asesoramiento Online</span>
         <h3>¿Tenés dudas sobre tu plan?</h3>
@@ -142,16 +153,17 @@ let entidadesFiltradas = $derived(
 
         <div class="info-adicional-cob">
         <div class="item-cob">
-            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata
+            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata[cite: 4]
         </div>
         <div class="item-cob">
-            <strong>Sede Varela:</strong> Bartolomé Mitre Nº 40
+            <strong>Sede Varela:</strong> Bartolomé Mitre Nº 40[cite: 4]
         </div>
         <div class="item-cob">
-            <strong>Particulares:</strong> Ofrecemos facilidades de pago para estudios de alta complejidad no cubiertos.
+            <strong>Particulares:</strong> Ofrecemos planes de financiación para estudios de alta complejidad no cubiertos.[cite: 4]
         </div>
         </div>
     </div>
+
     </aside>
 </div>
 </div>
@@ -236,7 +248,6 @@ let entidadesFiltradas = $derived(
     margin-bottom: 1rem;
 }
 
-/* Caja Requisitos */
 .caja-requisitos {
     background: #f0fdf4;
     border: 1px solid #bbf7d0;
@@ -284,7 +295,6 @@ let entidadesFiltradas = $derived(
     font-weight: 800;
 }
 
-/* Buscador y Filtros */
 .buscador-header {
     display: flex;
     justify-content: space-between;
@@ -380,7 +390,6 @@ let entidadesFiltradas = $derived(
     border-color: var(--primario);
 }
 
-/* Grilla de Entidades */
 .grilla-entidades {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -449,15 +458,57 @@ let entidadesFiltradas = $derived(
     margin-top: 0.5rem;
 }
 
-/* Sidebar Sticky */
+/* ============================================================
+SIDEBAR STICKY COBERTURAS (Flota con la lista)
+============================================================ */
+.sidebar-coberturas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    position: sticky;
+    top: 90px;
+}
+
+.tarjeta-info-sidebar {
+    background: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-left: 4px solid var(--primario);
+    border-radius: var(--radio);
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.cabecera-info-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.icono-info-side {
+    font-size: 1.2rem;
+}
+
+.cabecera-info-sidebar h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--primario-oscuro);
+}
+
+.tarjeta-info-sidebar p {
+    margin: 0;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: var(--texto);
+    opacity: 0.9;
+}
+
 .tarjeta-consulta-cobertura {
     background: var(--blanco);
     border: 1px solid var(--gris-borde);
     border-radius: var(--radio);
-    padding: 2rem 1.75rem;
+    padding: 1.75rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    position: sticky;
-    top: 90px;
 }
 
 .badge-asesoria {
@@ -475,28 +526,27 @@ let entidadesFiltradas = $derived(
 
 .tarjeta-consulta-cobertura h3 {
     color: var(--primario-oscuro);
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin: 0 0 0.5rem 0;
 }
 
 .tarjeta-consulta-cobertura p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--texto);
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-}
+    margin-bottom: 1.25rem;
+  }
 
 .info-adicional-cob {
-    margin-top: 1.75rem;
-    padding-top: 1.25rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--gris-borde);
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
 }
 
 .item-cob {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     line-height: 1.45;
     color: #4a5568;
 }
@@ -513,7 +563,7 @@ let entidadesFiltradas = $derived(
     .grilla-entidades {
     grid-template-columns: 1fr;
     }
-    .tarjeta-consulta-cobertura {
+    .sidebar-coberturas {
     position: static;
     }
 }
