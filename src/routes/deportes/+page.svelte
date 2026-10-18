@@ -88,8 +88,29 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
     </main>
 
-    <!-- Barra Lateral de Turnos Deportivos -->
+<!-- Barra Lateral Sticky Completa -->
     <aside class="sidebar-deportes" aria-label="Turnos de traumatología y deporte">
+    
+    <!-- 📸 1. Tarjeta Visual Deportiva -->
+    <article class="tarjeta-visual-sidebar">
+        <div class="marco-foto">
+        <img 
+            src="/img/msk.png" 
+            alt="Diagnóstico por imágenes de alta resolución en lesiones de deportistas" 
+            loading="lazy"
+            decoding="async"
+            width="340"
+            height="210"
+        />
+        <span class="etiqueta-foto">Alto Rendimiento</span>
+        </div>
+        <div class="pie-foto">
+        <h3>Músculo-Esquelético & RMN</h3>
+        <p>Protocolos de alta resolución en rodilla, hombro y tobillo para acortar tiempos de diagnóstico y rehabilitación.</p>
+        </div>
+    </article>
+
+    <!-- 📅 2. Tarjeta de Coordinación de Turnos -->
     <div class="tarjeta-turno-deporte">
         <span class="etiqueta-atencion">Atención Deportiva</span>
         <h3>Turnos y Coordinación</h3>
@@ -106,16 +127,17 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
         <div class="info-adicional-dep">
         <div class="item-dep">
-            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata
+            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata[cite: 4]
         </div>
         <div class="item-dep">
-            <strong>Requisitos:</strong> Orden médica con diagnóstico presuntivo y DNI.
+            <strong>Requisitos:</strong> Orden médica con diagnóstico presuntivo y DNI.[cite: 4]
         </div>
         <div class="item-dep">
-            <strong>Entrega de Informes:</strong> Acceso digital inmediato mediante Portal PACS.
+            <strong>Entrega de Informes:</strong> Acceso digital inmediato mediante Portal PACS.[cite: 4]
         </div>
         </div>
     </div>
+
     </aside>
 </div>
 </div>
@@ -202,7 +224,6 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     margin-bottom: 1rem;
 }
 
-/* Pilares Deportivos */
 .tarjeta-pilar-deporte {
     background: var(--gris-claro);
     border: 1px solid var(--gris-borde);
@@ -236,7 +257,6 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     margin: 0;
 }
 
-/* Grilla de Estudios */
 .grilla-estudios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -286,7 +306,6 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     margin: 0;
 }
 
-/* Sección de Lesiones Frecuentes */
 .grilla-lesiones {
     display: grid;
     grid-template-columns: 1fr;
@@ -347,16 +366,85 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     font-weight: 800;
 }
 
-/* Sidebar Sticky */
-.tarjeta-turno-deporte {
-    display: inline-block;
+/* ============================================================
+SIDEBAR STICKY DEPORTES (Flota en todo el recorrido)
+============================================================ */
+.sidebar-deportes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    position: sticky;
+    top: 90px;
+}
+
+.tarjeta-visual-sidebar {
     background: var(--blanco);
     border: 1px solid var(--gris-borde);
     border-radius: var(--radio);
-    padding: 2rem 1.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.marco-foto {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: var(--gris-claro);
+    overflow: hidden;
+}
+
+.marco-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transicion);
+}
+
+.tarjeta-visual-sidebar:hover .marco-foto img {
+    transform: scale(1.04);
+}
+
+.etiqueta-foto {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    background: rgba(10, 127, 181, 0.88);
+    backdrop-filter: blur(4px);
+    color: var(--blanco);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.pie-foto {
+    padding: 1.15rem 1.25rem;
+    background: var(--blanco);
+}
+
+.pie-foto h3 {
+    margin: 0 0 0.35rem 0;
+    font-size: 1rem;
+    color: var(--primario-oscuro);
+}
+
+.pie-foto p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--texto);
+    line-height: 1.45;
+    opacity: 0.88;
+}
+
+.tarjeta-turno-deporte {
+    background: var(--blanco);
+    border: 1px solid var(--gris-borde);
+    border-radius: var(--radio);
+    padding: 1.75rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    position: sticky;
-    top: 90px;
 }
 
 .etiqueta-atencion {
@@ -374,28 +462,28 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
 .tarjeta-turno-deporte h3 {
     color: var(--primario-oscuro);
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin: 0 0 0.5rem 0;
 }
 
 .tarjeta-turno-deporte p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--texto);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     line-height: 1.5;
 }
 
 .info-adicional-dep {
-    margin-top: 1.75rem;
-    padding-top: 1.25rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--gris-borde);
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
 }
 
 .item-dep {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     line-height: 1.45;
     color: #4a5568;
 }
@@ -412,7 +500,7 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
     .grilla-estudios {
     grid-template-columns: 1fr;
     }
-    .tarjeta-turno-deporte {
+    .sidebar-deportes {
     position: static;
     }
 }
