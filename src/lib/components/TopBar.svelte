@@ -22,7 +22,7 @@
 <style>
   .topbar { background: var(--primario); color: var(--blanco); font-size: 0.8rem; padding-block: 0.5rem; }
   .fila { display: flex; justify-content: space-between; align-items: center; gap: 0.4rem; flex-wrap: wrap;}
-  span { display: inline-flex; align-items: center; gap: 0.4rem;}
+  span { color: var(--secundario); display: inline-flex; align-items: center; gap: 0.4rem;}
   .acciones { gap: 0.5rem; }
   .chico { padding: 0.35rem 0.75rem; font-size: 0.72rem; display: inline-flex; align-items: center; gap: 0.35rem; white-space: nowrap;}
   .portal { background: var(--primario-oscuro); padding: 0.35rem 0.75rem; font-size: 0.72rem; display: inline-flex; align-items: center; gap: 0.35rem; white-space: nowrap;}
