@@ -36,3 +36,10 @@ Desarrollado con arquitectura moderna orientada a datos utilizando **SvelteKit**
    ```bash
    git clone [https://github.com/Laureano-Git/CYTEC-website.git](https://github.com/Laureano-Git/CYTEC-website.git)
    cd CYTEC-website
+2. Instalar dependecias:
+    ```bash
+    Dentro de la carpeta de donde se clono el repositorio utilizar el siguiente comando: npm install
+3.  Iniciar el servidor de desarrollo:
+   Dentro de la carpeta donde se clono el repositorio e instalaron las dependencias, utilizar el siguiente comando: npm run dev
+4. Compilar para producción:
+    Dentro de la carpeta donde se clono el repositorio e instalaron las dependencias, utilizar el siguiente comando: npm run build

@@ -1,4 +1,16 @@
-// Configuración de SvelteKit: el adapter-auto detecta la plataforma de despliegue.
+// svelte.config.js
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-export default { preprocess: vitePreprocess(), kit: { adapter: adapter() } };
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+  // preprocess permite procesar CSS avanzado y componentes
+preprocess: vitePreprocess(),
+
+kit: {
+    // adapter-auto detecta automáticamente Netlify, Vercel o Cloudflare en el despliegue
+    adapter: adapter()
+}
+};
+
+export default config;
