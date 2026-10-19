@@ -56,7 +56,7 @@
   .logo { 
     font-weight: 700; 
     font-size: 1.6rem; 
-    color: var(--primario); 
+    color: var(--primario-oscuro); 
     letter-spacing: 0.05em; 
     line-height: 1; 
   }

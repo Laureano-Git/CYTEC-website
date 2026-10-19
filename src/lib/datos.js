@@ -51,8 +51,8 @@ export const menu = [
     ] 
   },
   { texto: 'Cytec Bebé', href: '/bebe' },
-  { texto: 'Novedades', href: '/novedades' },
   { texto: 'Deportes', href: '/deportes' },
+  { texto: 'Novedades', href: '/novedades' },
   { texto: 'Coberturas', href: '/coberturas' }
 ];
 
