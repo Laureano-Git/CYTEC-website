@@ -65,7 +65,7 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
     <!-- Lesiones Frecuentes por Categoría -->
     <section class="seccion-lesiones" aria-labelledby="titulo-lesiones">
-        <h2 id="titulo-lesiones">Patologías y Lesiones más Frecuentes</h2>
+        <h2 id="titulo-lesiones">Cuerpo médico</h2>
         <div class="grilla-lesiones">
         {#each deportesData.lesionesFrecuentes as bloque}
             <div class="tarjeta-lesion">
@@ -76,7 +76,7 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
             <ul class="lista-lesiones">
                 {#each bloque.items as item}
                 <li>
-                    <span class="tilde-check" aria-hidden="true">✔</span>
+                    <span class="tilde-check" aria-hidden="true">-</span>
                     <span>{item}</span>
                 </li>
                 {/each}
