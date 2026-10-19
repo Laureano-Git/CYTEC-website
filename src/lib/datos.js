@@ -5,7 +5,7 @@
 // ============================================================
 export const WHATSAPP_TURNOS_LA_PLATA = 'https://api.whatsapp.com/send?phone=5492216139002';
 export const WHATSAPP_CONSULTAS_LAPLATA = 'https://api.whatsapp.com/send?phone=5492216151566';
-export const PORTAL_WEB = "http://cytec.ddns.net:8080/login"
+export const PORTAL_WEB = "https://pacientes.cytec.ar/login"
 
 //Tipos de ECOGRAFIAS
 export const DOPPLER = {titulo: 'Doppler:', subtipos:[
@@ -1205,8 +1205,8 @@ export const coberturasData = {
     'Estudios diagnósticos previos relacionados con la patología a evaluar.'
   ],
   entidades: [
-    { nombre: 'IOMA', tipo: 'Obra Social Provincial', detalle: 'Requiere bono / autorización según la práctica médica.' },
-    { nombre: 'PAMI', tipo: 'Obra Social Nacional', detalle: 'Atención sujeta a convenios específicos y cupos asignados.' },
+    { nombre: 'IOMA', tipo: 'Obra Social Provincial', detalle: 'Realizamos estudios PET-CT, RMN, TAC, RX, MX, DMO, ESPIROMETRIA, PANGONIOMETRIA y ESPINOGRAFIA.' },
+    { nombre: 'PAMI', tipo: 'Obra Social Nacional', detalle: 'Realizamos estudios PET-CT, RMN y TAC.' },
     { nombre: 'OSDE', tipo: 'Medicina Prepaga', detalle: 'Planes 210, 310, 410, 450 y 510. Token digital en recepción.' },
     { nombre: 'Swiss Medical', tipo: 'Medicina Prepaga', detalle: 'Credencial digital y autorización de estudios de alta complejidad.' },
     { nombre: 'Galeno', tipo: 'Medicina Prepaga', detalle: 'Planes Oro, Plata, Azul y Blanco con credencial al día.' },
