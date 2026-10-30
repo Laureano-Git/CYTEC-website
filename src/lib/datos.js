@@ -1120,8 +1120,8 @@ export const bebeData = {
   ],
   pilares: [
     {
-      titulo: 'Ambiente Lúdico y Amable',
-      detalle: 'Salas especialmente ambientadas con temáticas infantiles para reducir la ansiedad y lograr una experiencia médica reconfortante.'
+      titulo: 'Atención Especializada',
+      detalle: 'Un equipo de profesionales expertos en el cuidado y diagnóstico por imágenes de pacientes prenatales, neonatales y pediátricos.'
     },
     {
       titulo: 'Mínima Dosis (Protocolos ALARA Pediátricos)',
@@ -1134,27 +1134,26 @@ export const bebeData = {
   ],
   estudiosPediatricos: [
     {
-      nombre: 'Ecografía 4D / 5D y Diagnóstico Prenatal',
-      descripcion: 'Visualización de alta definición del desarrollo fetal y screening prenatal integral en tiempo real con transductores volumétricos.'
+      nombre: 'Ecografía 4D / 5D - SEMANAS 24 a 32',
+      descripcion: 'Las ecografías 5D ofrecen la experiencia inolvidable de ver a tu hijo no sólo en la forma tridimensional sino en tiempo real y en movimiento.'
     },
     {
-      nombre: 'Ecografía Pediátrica y Encefálica',
-      descripcion: 'Ecografía cerebral transfontanelar en recién nacidos, ecografía de caderas para despistaje de displasia del desarrollo, abdominal y renal.'
+      nombre: 'Ecografía de translucencia nucal - SEMANAS 11 a 14',
+      descripcion: 'Estudio no invasivo para medir por ultrasonido de alta resolución un espacio líquido que se encuentra en la zona posterior de la nuca del bebé, con el fin de la detección de riesgos de anomalías cromosómicas. También se pueden detectar problemas estructurales, especialmente cardíacos.'
     },
     {
-      nombre: 'Radiología Digital Pediátrica Directa',
-      descripcion: 'Estudios óseos y de tórax con detectores digitales ultrasensibles que reducen al mínimo indispensable el tiempo y la dosis de exposición.'
+      nombre: 'Scan morfológico Fetal - SEMANAS 20 a 24',
+      descripcion: 'Ecografía morfológica detallada con screening de parto pretérmino y disfunción placentaria.'
     },
     {
-      nombre: 'Resonancia Magnética y TAC Pediátrica',
-      descripcion: 'Tiempos de adquisición ultrarrápidos y secuencias silenciosas para evitar la necesidad de sedación en la mayor medida posible.'
+      nombre: 'Doppler Fetal - SEMANAS 30 a 32',
+      descripcion: 'Es un estudio de salud fetal. Basado en el efecto Doppler nos permite evaluar velocidad y caudal de sangre que pasa por las distintas arterias y venas fetales y maternas.'
     }
   ],
   recomendacionesFamilia: [
     'Explicar al niño con palabras sencillas y positivas en qué consistirá el examen antes de asistir.',
     'Traer su juguete, manta o chupete favorito para brindar confort y familiaridad durante el estudio.',
-    'Vestirlo con prendas cómodas y fáciles de retirar, preferentemente de algodón y sin botones metálicos.',
-    'En caso de lactantes, coordinar la toma de leche o mamadera cerca del horario del estudio para favorecer el reposo espontáneo.'
+    'Vestirlo con prendas cómodas, fáciles de retirar y sin botones metálicos.',
   ]
 };
 
@@ -1173,7 +1172,7 @@ export const deportesData = {
     },
     {
       titulo: 'Equipamiento de Alto Campo',
-      detalle: 'Resonancia Magnética 1.5T con bobinas dedicadas para articulaciones complejas y Ecografía Dinámica con Doppler Color.'
+      detalle: 'Resonancia Magnética 1.5T con bobinas dedicadas para articulaciones complejas y Ecografía con Doppler Color.'
     },
     {
       titulo: 'Enfoque Interdisciplinario',
@@ -1186,7 +1185,7 @@ export const deportesData = {
       descripcion: 'Estudio de referencia para evaluar ligamentos (cruzados, colaterales), roturas de meniscos, labrum de cadera y hombro, desgarros fibrilares y edema óseo por estrés.'
     },
     {
-      nombre: 'Ecografía Musculoesquelética Dinámica',
+      nombre: 'Ecografía Musculoesquelética',
       descripcion: 'Exploración en tiempo real con contracción y estiramiento muscular activo. Permite evaluar tendinitis (rotuliana, aquiliana), bursitis, hematomas y evolución de cicatrices.'
     },
     {

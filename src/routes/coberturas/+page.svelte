@@ -153,13 +153,16 @@ let entidadesFiltradas = $derived(
 
         <div class="info-adicional-cob">
         <div class="item-cob">
-            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata[cite: 4]
+            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata
         </div>
         <div class="item-cob">
-            <strong>Sede Varela:</strong> Bartolomé Mitre Nº 40[cite: 4]
+            <strong>WhatsApp:</strong> +54 9 221 613-9002
         </div>
         <div class="item-cob">
-            <strong>Particulares:</strong> Ofrecemos planes de financiación para estudios de alta complejidad no cubiertos.[cite: 4]
+            <strong>Sede Varela:</strong> Bartolomé Mitre Nº 40
+        </div>
+        <div class="item-cob">
+            <strong>Particulares:</strong> Ofrecemos planes de financiación para estudios de alta complejidad no cubiertos.
         </div>
         </div>
     </div>

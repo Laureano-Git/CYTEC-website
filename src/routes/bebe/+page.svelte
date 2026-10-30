@@ -122,10 +122,13 @@ import { bebeData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
             <strong>Sede:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata
         </div>
         <div class="item-info">
+            <strong>WhatsApp:</strong> +54 9 221 613-9002
+        </div>
+        <div class="item-info">
             <strong>Horarios:</strong> Lunes a Viernes de 8:00 a 20:00 hs.
         </div>
         <div class="item-info">
-            <strong>Acompañamiento:</strong> Se permite el ingreso de ambos progenitores en sala.[cite: 4]
+            <strong>Acompañamiento:</strong> Se permite el ingreso de ambos progenitores en sala.
         </div>
         </div>
     </div>

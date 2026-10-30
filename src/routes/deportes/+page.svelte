@@ -127,13 +127,16 @@ import { deportesData, WHATSAPP_TURNOS_LA_PLATA } from '$lib/datos.js';
 
         <div class="info-adicional-dep">
         <div class="item-dep">
-            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata[cite: 4]
+            <strong>Sede Central:</strong> Calle 8 nº 607 e/ 44 y 45, La Plata
         </div>
         <div class="item-dep">
-            <strong>Requisitos:</strong> Orden médica con diagnóstico presuntivo y DNI.[cite: 4]
+            <strong>WhatsApp:</strong> +54 9 221 613-9002
         </div>
         <div class="item-dep">
-            <strong>Entrega de Informes:</strong> Acceso digital inmediato mediante Portal PACS.[cite: 4]
+            <strong>Requisitos:</strong> Orden médica con diagnóstico presuntivo y DNI.
+        </div>
+        <div class="item-dep">
+            <strong>Entrega de Informes:</strong> Acceso digital inmediato mediante Portal PACS.
         </div>
         </div>
     </div>
