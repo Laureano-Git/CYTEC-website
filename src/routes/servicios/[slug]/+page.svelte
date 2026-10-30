@@ -78,7 +78,7 @@ let servicio = $derived(data.servicio);
         {:else}
     
     <!-- Caso B: El array contiene strings directos -->
-        <h2>Realizamos estudios de {servicio.titulo} en:</h2>
+        <h2>Realizamos estudios de {servicio.titulo}:</h2>
         <ul class="lista-checks">
             {#each servicio.tipo as item}
             <li>
@@ -199,6 +199,9 @@ let servicio = $derived(data.servicio);
             <strong>Sede:</strong> Sede Central La Plata (Calle 8 Nº 607)
         </div>
         <div class="dato-util">
+            <strong>WhatsApp:</strong> +54 9 221 613-9002
+        </div>
+        <div class="dato-util">
             <strong>Requisitos:</strong> DNI físico, orden médica y carnet de cobertura.
         </div>
         <div class="dato-util">
@@ -240,7 +243,7 @@ let servicio = $derived(data.servicio);
     letter-spacing: 0.02em;
 }
 
-  .hero-subtitulo {
+.hero-subtitulo {
     font-size: 1.15rem;
     max-width: 850px;
     margin: 0;
@@ -248,11 +251,11 @@ let servicio = $derived(data.servicio);
     line-height: 1.5;
 }
 
-  .contenido-servicio {
+.contenido-servicio {
     margin-bottom: 5rem;
-  }
+}
 
-  .layout-detalle {
+.layout-detalle {
     display: grid;
     grid-template-columns: 1fr 340px;
     gap: 3.5rem;

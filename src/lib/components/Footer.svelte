@@ -15,6 +15,7 @@
           <h3>Sede {s.nombre}</h3>
           <p><Icono nombre="pin" tam={18} /> <span>{s.direccion}</span></p>
           <p><Icono nombre="telefono" tam={18} /> <span>{s.telefonos}</span></p>
+          <p><Icono nombre="whatsapp" tam={18} /> <span>{s.wsp}</span></p>
           <p><Icono nombre="reloj" tam={18} /> <span>{s.horario}</span></p>
         </div>
         

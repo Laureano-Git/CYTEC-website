@@ -4,12 +4,13 @@
 // tocar componentes. En producción podría venir de un CMS/API.
 // ============================================================
 export const WHATSAPP_TURNOS_LA_PLATA = 'https://api.whatsapp.com/send?phone=5492216139002';
+export const WHATSAPP_TURNOS_VARELA = 'https://api.whatsapp.com/send?phone=5491153388292';
 export const WHATSAPP_CONSULTAS_LAPLATA = 'https://api.whatsapp.com/send?phone=5492216151566';
 export const PORTAL_WEB = "https://pacientes.cytec.ar/login"
 
 //Tipos de ECOGRAFIAS
 export const DOPPLER = {titulo: 'Doppler:', subtipos:[
-      'Ecocardiagrafía bidimensional.', ' Doppler color cardíaco.', 'Doppler color carotídeo.','Doppler color periférico arterial y venoso.','Doppler color transesofágico.',
+      ' Doppler color cardíaco.', 'Doppler color carotídeo.','Doppler color periférico arterial y venoso.','Doppler color transesofágico.',
       'Doppler Color en la Evaluación de la Circulación de la Mano (Art./Ven.).', 'Doppler color en la Evaluación de la Circulación del Pie (Art./Ven.).', 
       'Doppler Color en la Evaluación de Tumores de Mama.', 'Doppler Color Ginecológico Endovaginal (Descarte de C.A. ovárico, etc)', 'Doppler Color Obstétrico Endovaginal.',
       'Doppler Color Prostático Endorectal.', 'Doppler Color en la Evaluación de procesos Musculoesqueléticos.', 'Doppler Color Peneano.'
@@ -20,7 +21,7 @@ export const GENERAL ={ titulo: 'General:', subtipos:[
       'De Tiroides.', 'Mamaria Bilateral.'
       ]};
 export const ESPECIALES = {titulo: 'Especiales:', subtipos:[
-        'Ultrasonido transvaginal o endovaginal.', 'Ultrasonido transrectal.', 'Tendón de Aquiles.', 
+        'Ecocardiagrafía bidimensional.', 'Ultrasonido transvaginal o endovaginal.', 'Ultrasonido transrectal.', 'Tendón de Aquiles.', 
         'Tendón patelar.', 'Cerebral.', 'Caderas.','Glándulas Submaxilares.',
         'De Pene y testículos.', 'De Músculos.', '4D - 5D fetal'
       ]};
@@ -180,9 +181,9 @@ export const novedades = [
 
 //Seccion SEDES
 export const sedes = [
-  { nombre: 'La Plata', direccion: 'Calle 8 nº 607 e/ 44 y 45 [B1900TGQ]', telefonos: '+54 221 425-7412 | 421-1067 / 1892 / 2074',
+  { nombre: 'La Plata', direccion: 'Calle 8 nº 607 e/ 44 y 45 [B1900TGQ]', telefonos: '+54 221 425-7412 | 421-1067 / 1892 / 2074', wsp:'+54 9 221 613-9002',
     whatsapp: 'https://api.whatsapp.com/send?phone=5492216139002', horario: 'Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.' },
-  { nombre: 'Florencio Varela', direccion: 'Bartolomé Mitre Nº 40', telefonos: '(011) 4237-5458 | 4355-2957 | 4355-4833',
+  { nombre: 'Florencio Varela', direccion: 'Bartolomé Mitre Nº 40', telefonos: '(011) 4237-5458 | 4355-2957 | 4355-4833', wsp:'+54 9 11 5338-8292',
     whatsapp: 'https://api.whatsapp.com/send?phone=5491153388292', horario: 'Lunes a Viernes: 9:00 a 15:00 hs.' }
 ];
 
@@ -192,8 +193,9 @@ export const queHacemosData = {
 	subtitulo: "Centro de Diagnóstico por Imágenes de Alta Complejidad",
 	descripcion: [
 		"Somos un grupo profesional, técnico y administrativo capacitado para la atención y contención del paciente.",
-		"Nuestro staff médico integra un equipo multidisciplinario en diagnóstico por imágenes y medicina nuclear con permanente actualización científica, lo que permite la interpretación de imágenes médicas integradas para obtener diagnósticos de máxima precisión.",
-		"Trabajamos en estrecha colaboración con los médicos derivadores para garantizar la indicación del tratamiento adecuado y personalizado para cada paciente."
+		"Nuestro staff médico integra un equipo multidisciplinario en diagnóstico por imágenes y medicina nuclear con permanente actualización científica, lo que permite la interpretación de imágenes médicas de los sistemas integrados entre sí para obtener diagnósticos de máxima precisión.",
+		"De esta manera, los médicos derivadores con quienes trabajamos en conjunto, indicarán un tratamiento correcto para cada paciente.",
+    "La responsabilidad y la calidad de la atención son los valores fundamentales de nuestra institución."
 	],
 	pilares: [
 		{
@@ -237,7 +239,9 @@ export const staffData = {
         "Dr. Leandro Mazza",
         "Dr. Nicolás Cédola",
         "Dr. Enrique Mc Guire",
-        "Dra. Florencia Polichella"
+        "Dr. Simon Mendoza",
+        "Dra. Florencia Polichella",
+        "Dra. Florencia Neville",
       ]
     },
     {
@@ -246,26 +250,27 @@ export const staffData = {
         "Dr. Agustín Marrero",
         "Dr. Leandro Mazza",
         "Dr. Nicolás Cédola",
-        "Dra. Florencia Polichella"
+        "Dra. Florencia Polichella",
       ]
     },
     {
       area: "Medicina Nuclear",
-      profesionales: ["Dr. Lucio Oscar Cendoya", "Dr. Héctor Guillermo Marrero", "Dr. Victor Mártire"]
+      profesionales: ["Dr. Lucio Oscar Cendoya", "Dr. Victor Mártire"]
     },
     {
       area: "Ecografía y Radiología Digital (ECO / RX)",
       profesionales: [
         "Dr. Luciano Melita",
-        "Dra. Laura Martínez",
-        "Dra. Laura Ivankovic",
-        "Dra. Ana Pievani",
-        "Dra. Evangelina Calzone",
-        "Dra. Victoria Mártire",
         "Dr. Agustín Marrero",
         "Dr. Leandro Mazza",
         "Dr. Nicolás Cédola",
-        "Dra. Florencia Polichella"
+        "Dr. Simon Mendoza",
+        "Dra. Laura Martínez",
+        "Dra. Laura Ivankovic",
+        "Dra. Ana Pievani",
+        "Dra. Victoria Mártire",
+        "Dra. Florencia Polichella",
+        "Dra. Silvia Ortiz"
       ]
     },
     {
@@ -286,14 +291,29 @@ export const staffData = {
 export const calidadData = {
   titulo: 'Nuestra Calidad',
   subtitulo: 'Sistema de Gestión de la Calidad según lineamientos de la Norma ISO 9001:2015',
+  // 📸 Imagen institucional de Calidad y Certificación
+  imagen: {
+    src: '/img/calidad-iso.jpg', // Podés usar una imagen de static/img/ (ej. /img/heroes.png o el logo de IRAM/ISO)
+    alt: 'Certificación de Calidad Internacional ISO 9001:2015 en CYTEC'
+  },
   declaracion: [
-    'Con el propósito de dar satisfacción a sus pacientes y médicos derivadores, desde la recepción previa a la práctica hasta la medición final de la conformidad, CyTec S.A. mantiene un Sistema de Gestión de la Calidad certificado internacionalmente.',
+    'Con el propósito de dar satisfacción a sus pacientes y médicos derivadores, desde la recepción previa a la práctica hasta la medición final de la conformidad, CyTec S.A. mantiene un Sistema de Gestión de la Calidad según lineamientos de la norma ISO 9001:2015.',
     'Esta política es entendida, implantada y mantenida en todos los niveles de la organización, contando con el total compromiso y apoyo de la Dirección.'
   ],
   certificacion: {
     norma: 'ISO 9001:2015',
     organismo: 'Sistema de Gestión Certificado',
-    sedes: ['Sede Central La Plata', 'Anexo Florencio Varela']
+    // 📄 Enlaces directos a los PDFs de certificación para abrir en nueva pestaña (sin descarga forzada)
+    sedes: [
+      {
+        nombre: 'Sede Central La Plata',
+        pdf: '/pdf/certificado-iso-central.pdf'
+      },
+      {
+        nombre: 'Anexo Florencio Varela',
+        pdf: '/pdf/certificado-iso-varela.pdf'
+      }
+    ]
   },
   politicas: [
     {
@@ -439,13 +459,16 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa
     preparacion: [
-      'Ayuno estricto de 6 horas previas al estudio (sólo se permite ingerir agua pura sin gas).',
-      'No consumir azúcares, pastas, harinas, cafeína, alcohol ni bebidas gaseosas las 24 horas previas (dieta hipoglúcida e hiperproteica).',
-      'Suspender la actividad física intensa, deportes o esfuerzos musculares durante las 48 horas previas al examen.',
-      'Pacientes diabéticos: dar aviso obligatorio al solicitar el turno para coordinar un régimen glucémico y horario de turno especial.',
-      'Asistir con ropa cómoda y abrigada, sin cierres, tachas, botones metálicos ni joyas.',
+      'Presentarse 15 minutos antes del horario del turno otorgado.',
+      'AYUNO Y SIN FUMAR: 6hs antes de realizar el estudio. Puede durante ese lapso beber agua no saborizada, té con edulcorante NO café).',
+      '24hs antes de realizar el estudio hacer una dieta liviana y no realizar actividad física.',
+      'No realizar actividad física intensa el día anterior, ni tampoco el día del estudio.',
+      'Tomar medicación habitual excepto patología relacionada con diabetes y tiroides. (En estos dos casos consultar al administrativo quien le dará la indicación correcta).',
+      'ASISTENCIA el día pactado para la realización de la práctica.',
+      'Asistir con ropa cómoda, sin cierres, tachas, botones metálicos ni joyas.',
       'Disponer de una permanencia aproximada en el centro de 2 a 3 horas (incluye tiempo de reposo, incorporación del trazador y escaneo).',
-      'Presentar orden médica autorizada y todos los estudios diagnósticos previos relacionados (TAC, RMN, informes de biopsia o PET previos).'
+      'Presentar orden médica autorizada y todos los estudios diagnósticos previos relacionados (TAC, RMN, informes de biopsia o PET previos). Le serán devueltos el mismo día.',
+      'Evitar el contacto con embarazadas y niños menores de 12 años seis horas posteriores a la realización del estudio.'
     ],
     // 5. Requisitos
     requisito:[
@@ -516,12 +539,13 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa
     preparacion: [
-      'Estudios Simples (sin contraste): Generalmente requieren un ayuno leve de 2 a 4 horas previas.',
-      'Estudios con Contraste Endovenoso: Ayuno estricto de sólidos y líquidos de 6 horas previas al turno.',
-      'Laboratorio renal obligatorio: En estudios con contraste endovenoso, presentar análisis de Urea y Creatinina en sangre (con validez no mayor a 30 días) para verificar la función renal.',
-      'Alergias previas: Pacientes con antecedentes alérgicos a iodo, medicamentos o alimentos deben informar al momento de solicitar el turno para evaluar una premedicación antialérgica.',
-      'Tomografía de Abdomen/Pelvis: Puede requerir la ingesta previa de líquido de contraste oral o agua en sala de espera previa al escaneo.',
-      'Concurrir con ropa cómoda sin metales y presentar orden médica autorizada junto a estudios previos (TAC o radiografías anteriores).'
+      'Presentarse 15 minutos antes del horario del turno otorgado.',
+      'Las Tomografías Computadas sin contraste no requieren ninguna preparación.',
+      '6 horas de ayuno de sólidos si el estudio es con contraste.',
+      'En caso de EMBARAZO informe al personal técnico y administrativo sin excepción.',
+      'Llevar estudios anteriores (si tuviere) relacionados con el estudio actual.',
+      'Concurrir con el cabello seco, evitar maquillaje, bijouterie y objetos de valor.',
+      'Concurrir con ropa y calzado cómodo.'
     ],
     // 5. Requisitos
     requisito:[
@@ -600,16 +624,17 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa y Protocolo de Bioseguridad
     preparacion: [
-      'CUESTIONARIO DE SEGURIDAD OBLIGATORIO: Se prohíbe el ingreso con marcapasos cardíacos no compatibles, implantes cocleares, clips metálicos cerebrales ferromagnéticos o esquirlas metálicas en ojos.',
-      'Estudios Simples (sin contraste): Generalmente no requieren ayuno, salvo estudios de abdomen, pelvis o colangiorresonancia (ayuno de 6 horas para vaciamiento de la vesícula biliar).',
-      'Estudios con Contraste (Gadolinio): Ayuno estricto de sólidos de 4 a 6 horas previas al turno.',
-      'Evaluación de Función Renal: Presentar informe de laboratorio reciente con valores de Creatinina y Filtrado Glomerular si tiene más de 65 años, padece diabetes, hipertensión o insuficiencia renal conocida.',
+      'CUESTIONARIO DE SEGURIDAD OBLIGATORIO: Por favor de aviso a nuestro staff si posee marcapasos cardíacos no compatibles, implantes cocleares, clips metálicos cerebrales ferromagnéticos o esquirlas metálicas.',
+      'Presentarse 15 minutos antes del horario del turno otorgado.',
+      'Estudios con Contraste (Gadolinio): 6 horas de ayuno de sólidos.',
+      'Llevar estudios anteriores (si tuviere) relacionados con el estudio actual.',
       'Claustrofobia o Ansiedad: Si el paciente presenta dificultad para permanecer en espacios cerrados, consultar con su médico tratante la indicación de una premedicación sedante suave.',
-      'Vestimenta y Metales: Concurrir con prendas confortables de algodón, sin cierres metálicos, botones a presión ni estampados con purpurina. Dejar en el vestidor tarjetas de crédito, celulares, relojes, llaves, prótesis dentales removibles y piercings.'
+      'Vestimenta y Metales: Concurrir con prendas confortables, sin cierres metálicos, botones a presión ni estampados con purpurina.',
+      'Concurrir con el cabello seco, evitar maquillaje, bijouterie y objetos de valor.'
     ],
     // 5. Requisitos
     requisito:[
-      'carnet de obra social y orden médica'
+      'carnet de obra social y orden médica sellada y firmada por el profesional'
     ],
     // 6. Tipo de RMN
     tipo:[
@@ -754,7 +779,8 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa y Pautas para el Paciente
     preparacion: [
-      'Embarazo y Lactancia: Examen estrictamente contraindicado en mujeres embarazadas. En caso de lactancia, informar al momento de solicitar el turno para coordinar la suspensión transitoria de la extracción de leche materna según el radiofármaco.',
+      'Presentarse 15 minutos antes del horario del turno otorgado.',
+      'Embarazo y Lactancia: Examen estrictamente contraindicado en mujeres embarazadas. En caso de lactancia, informar al momento de solicitar el turno.',
       'Centellograma Óseo: No requiere ayuno. Tras la inyección del trazador, el paciente debe aguardar de 2 a 3 horas antes de la captura de imágenes, debiendo beber entre 1 y 1.5 litros de agua para favorecer la fijación ósea y la eliminación urinaria.',
       'SPECT Cardíaco: Requiere ayuno de 4 a 6 horas y suspensión de cafeína, café descafeinado, mate, té, chocolate y bebidas cola durante las 24 horas previas. Consultar con su cardiólogo sobre la suspensión temporal de medicaciones como betabloqueantes.',
       'Centellograma Tiroideo: Suspender medicamentos tiroideos (Levotiroxina, Danantizol), suplementos multivitamínicos con iodo o estudios contrastados recientes según indicación del médico.',
@@ -766,8 +792,8 @@ export const serviciosDetalle = {
     ],
     // 6. Tipo de MEDICINA NUCLEAR
     tipo:[
-      'Centellograma Óseo.', ' Centellograma Tiroideo.', 'SPECT Cardíaco.','Centellograma Renal con DMSA.','Centellograma de Paratiroides con MIBI.',
-      'Radiorrenograma con DTPA/MAG3.'
+      'Centellograma óseo total.', ' Posibilidad de realizar estudios estáticos y dinámicos.', 'Perfusión miocárdica en esfuerzo y redistribución con Spect.','Centellograma renal y radiorrenograma.','Estudios tiroideos, para diagnóstico y tratamiento.',
+      'Estudios Cardiológicos.', 'Cortes Tomográficos mediante el uso del Spect.', 'Linfografía radioisotópica.'
     ],
     // 7. Localidad donde se realiza
     localidad:[
@@ -829,6 +855,7 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa y Recomendaciones
     preparacion: [
+      'Presentarse 15 minutos antes del horario del turno otorgado.',
       'Cosméticos y Desodorantes: NO colocarse talco, desodorante, antitranspirante, perfumes ni cremas corporales en mamas, escote o axilas el día del estudio (los residuos metálicos cosméticos pueden generar falsas microcalcificaciones en la imagen).',
       'Momento Óptimo del Ciclo: En pacientes premenopáusicas, se aconseja realizar el estudio entre el día 7 y 10 después de iniciado el ciclo menstrual, período en el cual la mama presenta menor retención de líquidos y sensibilidad a la compresión.',
       'Vestimenta recomendada: Concurrir con vestimenta de dos piezas (blusa o remera y pantalón/falda) para facilitar desvestir únicamente el torso sin necesidad de quitarse toda la ropa.',
@@ -857,7 +884,7 @@ export const serviciosDetalle = {
 
     descripcion: [
       'La Ecografía o Ultrasonografía es un método diagnóstico por imágenes seguro, inocuo y en tiempo real que emplea ondas sonoras de alta frecuencia para generar imágenes anatómicas y funcionales del interior del cuerpo humano.',
-      'Al no utilizar radiaciones ionizantes, es el estudio de primera elección en obstetricia, pediatría y evaluación de órganos abdominales, pélvicos, vasculares y partes blandas superficiales. En CYTEC contamos con ecógrafos digitales con tecnología Doppler Color, Doppler Pulsado y transductores multifrecuencia de máxima definición.'
+      'Al no utilizar radiaciones ionizantes, es el estudio de primera elección en obstetricia, pediatría y evaluación de órganos abdominales, pélvicos, vasculares y partes blandas superficiales. En CYTEC contamos con ecógrafos digitales con tecnología Doppler Color.'
     ],
     // 1. Aplicaciones Principales
     aplicacionesPrincipales: [
@@ -905,10 +932,12 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa según el Tipo de Estudio
     preparacion: [
-      'Ecografía Abdominal / Hepatobiliopancreática: Ayuno estricto de sólidos de 6 a 8 horas previas al turno. No fumar ni mascar chicle antes del examen (evita la aerofagia que dificulta la visión).',
-      'Ecografía Renal, Vesical, Prostática o Ginecológica (Pelviana): Requiere vejiga llena. Debe beber 1 litro de agua sin gas 1 hora antes del turno y retener la orina hasta la realización del estudio.',
-      'Ecografía Abdominal y Renal / Prostática combinada: Debe cumplir AMBAS condiciones: ayuno de sólidos de 6 horas y finalizar la ingesta de 1 litro de agua 1 hora antes sin concurrir al baño.',
-      'Ecografías de Tiroides, Partes Blandas, Muscular o Testicular: NO requieren ayuno ni retención de orina.',
+      'Presentarse 15 minutos antes del horario del turno otorgado.',
+      'Ecografía Abdominal / Hepatobiliopancreática: Ayuno estricto de sólidos de 6 a 8 horas previas al turno. DIABÉTICOS: si fuera necesario consultar con su médico acerca del ayuno.',
+      'Ecografía Ginecológica, Ginecológica endovaginal y Obstetrica: Debe beber 1 litro de agua sin gas 1 hora antes del turno y retener la orina hasta la realización del estudio. EMBARAZADAS: hasta el 3er mes misma preparación. Del 3ro al 6to mes terminar de tomar ½ litro de líquido sin gas ½ hora antes del estudio y retener la orina.',
+      'Ecografía Renal / Prostática combinada: Finalizar la ingesta de 1 litro de agua 1 hora antes y retener la orina. NIÑOS de 0 a 24 meses: tomar algo de líquido sin gas. De 2 a 8 años: terminar de tomar medio litro de líquido sin gas media hora antes de realizar el estudio y retener la orina.',
+      'Ecografías de Tiroides: Consultar a su medico en caso de consumir medicación para la tiroides',
+      'Ecografias Mamarias, Partes Blandas, Muscular o Testicular: NO requieren ayuno ni retención de orina.',
       'Eco-Doppler de Vasos de Cuello o Miembros: Generalmente no requieren preparación, excepto Doppler de Arterias Renales o Abdominal (requiere ayuno de 8 horas).',
       'Documentación: Concurrir con ropa cómoda de dos piezas, orden médica autorizada y estudios ecográficos previos para evaluación comparativa.'
     ],
@@ -981,8 +1010,8 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa y Pautas para el Paciente
     preparacion: [
-      'SUSPENSIÓN DE CALCIO: No ingerir suplementos de calcio, tabletas vitamínicas con calcio ni antiácidos que contengan calcio durante las 24 a 48 horas previas al examen (pueden falsear la lectura si se ubican en el tubo digestivo).',
-      'Estudios Contrastados Recientes: Si se realizó un estudio con contraste iodado o baritado (tomografía con contraste, seriada esofagogástrica) o estudios de medicina nuclear, debe aguardar al menos 7 días antes de realizar la densitometría.',
+      'SUPLEMENTOS DE CALCIO: Consultar con su medico al ingerir suplementos de calcio, tabletas vitamínicas con calcio o antiácidos que contengan calcio para la realización del estudio.',
+      'Estudios Contrastados Recientes: Si se realizó un estudio con contraste iodado o baritado (tomografía con contraste, seriada esofagogástrica) o estudios de medicina nuclear, debe aguardar al menos 24 hs antes de realizar la densitometría.',
       'Alimentación y Ayuno: NO requiere ayuno; el paciente puede ingerir comidas y líquidos habituales con normalidad.',
       'Vestimenta recomendada: Concurrir con ropa cómoda sin elementos metálicos en la zona pélvica y lumbar (evitar cinturones con hebillas, cierres metálicos, botones a presión de jean o apliques metálicos).',
       'Embarazo: Como todo estudio que emplea radiación, se encuentra contraindicado en caso de sospecha o certeza de embarazo.',
@@ -1057,12 +1086,13 @@ export const serviciosDetalle = {
     },
     // 4. Preparación Previa y Pautas para el Paciente
     preparacion: [
-      'SUSPENSIÓN DE BRONCODILATADORES (Previa consulta médica): Suspender inhaladores de rescate de acción corta (ej. Salbutamol, Bromuro de Ipratropio) 6 horas antes; y los de acción prolongada (ej. Formoterol, Salmeterol) 24 horas antes.',
-      'Tabaco y Vapeo: NO fumar cigarrillos tradicionales ni usar vapeadores/cigarrillos electrónicos durante al menos 2 horas antes de la prueba.',
-      'Estimulantes y Cafeína: No consumir café, mate, té, bebidas cola, bebidas energizantes ni chocolate 4 horas previas al examen.',
+      'SUSPENSIÓN DE BRONCODILATADORES (Previa consulta médica): CONSULTAR con su medico si debe suspender inhaladores de rescate de acción corta (ej. Salbutamol, Bromuro de Ipratropio) 6 horas antes; y los de acción prolongada (ej. Formoterol, Salmeterol) 24 horas antes.',
+      'Tabaco y Vapeo: NO fumar cigarrillos tradicionales ni usar vapeadores/cigarrillos electrónicos durante al menos 24 horas antes de la prueba.',
+      'Estimulantes y Cafeína: Abstenerse de bebidas estimulantes (café, té, gaseosas, energizantes).',
       'Alimentación: No realizar comidas copiosas o pesadas en las 2 horas anteriores para permitir la expansión diafragmática completa.',
-      'Prendas y Actividad: Asistir con ropa holgada que no comprima el tórax ni el abdomen. Evitar ejercicio físico intenso 30 minutos antes.',
-      'Medicamento aerosol: Concurrir al turno con su aerocámara y el inhalador de Salbutamol indicado por su médico (en caso de que el protocolo requiera el propio aerosol del paciente).'
+      'Prendas y Actividad: Asistir con ropa holgada que no comprima el tórax ni el abdomen. Evitar ejercicio físico intenso 1 hora antes.',
+      'Concurrir con el último hemograma realizado',
+      'Paciente con embarazo avanzado (+7 meses) sólo se le realiza el estudio si es de riesgo.'
     ],
     // 5. Requisitos
     requisito:[

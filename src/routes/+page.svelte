@@ -17,9 +17,9 @@
 <svelte:head><title>CYTEC La Plata — Diagnóstico por imágenes de alta complejidad</title></svelte:head>
 <Slider /> 
 <!-- Seccion NOSOTROS -->
-<QueHacemos /> <Staff /> <Calidad /> <Docencia /> <Pacs />
+<QueHacemos /> <Valores /><Staff /> <Calidad /> <Docencia /> <Pacs />
 
-<Valores /><Servicios /><Testimonios /><Novedades /> 
+<Servicios /><Testimonios /><Novedades /> 
 <section class="seccion" id="coberturas"><div class="contenedor"><h2>Coberturas</h2><p style="text-align:center">Podes consultar en recepción o por WhatsApp por alguna obra social o prepaga con convenio en particular.</p>
     <div class="acciones-home" style="text-align:center">
       <a href="/coberturas" class="btn btn-todas">Ver todas las coberturas</a>

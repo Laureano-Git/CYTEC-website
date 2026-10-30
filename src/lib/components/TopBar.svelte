@@ -9,7 +9,7 @@
 <div class="topbar">
   <div class="contenedor fila">
     <span><Icono nombre="telefono" tam={16} /> La Plata: 221 425-7412 </span>
-    <span><Icono nombre="telefono" tam={16} /> F. Varela: (011) 4237-5458</span>
+    <span><Icono nombre="telefono" tam={16} /> Florencio Varela: (011) 4237-5458</span>
     <span class="oculto-movil"><Icono nombre="reloj" tam={16} /> Lun a Vie 8 a 20 hs · Sáb 8 a 12 hs</span>
     <span class="acciones">
       <a class="btn whatsapp chico" href={WHATSAPP_TURNOS_LA_PLATA} target="_blank" rel="noopener"><Icono nombre="whatsapp" tam={16} /> Turnos WhatsApp</a>
