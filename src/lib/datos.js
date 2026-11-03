@@ -3,10 +3,12 @@
 // Separar contenido de presentación permite editar textos sin
 // tocar componentes. En producción podría venir de un CMS/API.
 // ============================================================
+//Datos de contacto
 export const WHATSAPP_TURNOS_LA_PLATA = 'https://api.whatsapp.com/send?phone=5492216139002';
 export const WHATSAPP_TURNOS_VARELA = 'https://api.whatsapp.com/send?phone=5491153388292';
 export const WHATSAPP_CONSULTAS_LAPLATA = 'https://api.whatsapp.com/send?phone=5492216151566';
 export const PORTAL_WEB = "https://pacientes.cytec.ar/login"
+export const EMAIL_CONTACTO = 'info@cytec.com.ar'
 
 //Tipos de ECOGRAFIAS
 export const DOPPLER = {titulo: 'Doppler:', subtipos:[
@@ -476,7 +478,7 @@ export const serviciosDetalle = {
     ],
     // 6. Localidad donde se realiza
     localidad:[
-      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.'
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 16:00 hs.'
     ]
   },
   'tomografia': {
@@ -559,7 +561,7 @@ export const serviciosDetalle = {
     ],
     // 7. Localidad donde se realiza
     localidad:[
-      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.'
+      'La Plata - Calle 8 nº 607 e/ 44 y 45 - Lunes a Viernes: 8:00 a 20:00 hs.'
     ]
   },
   'resonancia-magnetica': {

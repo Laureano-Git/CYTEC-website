@@ -202,9 +202,6 @@ let servicio = $derived(data.servicio);
             <strong>WhatsApp:</strong> +54 9 221 613-9002
         </div>
         <div class="dato-util">
-            <strong>Requisitos:</strong> DNI físico, orden médica y carnet de cobertura.
-        </div>
-        <div class="dato-util">
             <strong>Informes:</strong> Disponibles en línea mediante Portal PACS.
         </div>
         </div>
