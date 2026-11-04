@@ -1,6 +1,6 @@
 <script>
   // Barra superior de contacto: teléfonos, horarios y botón de turnos por WhatsApp.
-  import Icono from './Icono.svelte';
+  import Icono from './Icono.svelte'; //probar el strong dentro de el $props() de iconos para hacer el tamaño dinamico
   import { WHATSAPP_TURNOS_LA_PLATA, WHATSAPP_CONSULTAS_LAPLATA, PORTAL_WEB } from '$lib/datos.js';
   // "onturnos" es un callback recibido del padre: abre el modal de turnos online.
   let { onturnos } = $props();
@@ -8,9 +8,9 @@
 
 <div class="topbar">
   <div class="contenedor fila">
-    <span><Icono nombre="telefono" tam={16} /> La Plata: 221 425-7412 </span>
-    <span><Icono nombre="telefono" tam={16} /> Florencio Varela: (011) 4237-5458</span>
-    <span class="oculto-movil"><Icono nombre="reloj" tam={16} /> Lun a Vie 8 a 20 hs · Sáb 8 a 12 hs</span>
+    <span><Icono nombre="telefono" tam={16}/><b>La Plata: 221 425-7412</b></span>
+    <span><Icono nombre="telefono" tam={16} /><b>Florencio Varela: (011) 4237-5458</b></span>
+    <span class="oculto-movil"><Icono nombre="reloj" tam={16} /><b>Lun a Vie 8-20 hs·Sáb 8-12 hs</b></span>
     <span class="acciones">
       <a class="btn whatsapp chico" href={WHATSAPP_TURNOS_LA_PLATA} target="_blank" rel="noopener"><Icono nombre="whatsapp" tam={16} /> Turnos WhatsApp</a>
       <a class="btn whatsapp chico" href={WHATSAPP_CONSULTAS_LAPLATA} target="_blank" rel="noopener"><Icono nombre="whatsapp" tam={16} /> Consultas WhatsApp</a>
