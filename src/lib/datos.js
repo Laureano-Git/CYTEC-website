@@ -184,10 +184,10 @@ export const novedades = [
 
 //Seccion SEDES
 export const sedes = [
-  { nombre: 'La Plata', direccion: 'Calle 8 nº 607 e/ 44 y 45 [B1900TGQ]', telefonos: '+54 221 425-7412 | 421-1067 / 1892 / 2074', wsp:'+54 9 221 613-9002',
-    whatsapp: 'https://api.whatsapp.com/send?phone=5492216139002', horario: 'Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.' },
+  { nombre: 'La Plata', direccion: 'Calle 8 nº 607 e/ 44 y 45', telefonos: '+54 221 425-7412 | 421-1067 / 1892 / 2074', wsp:'+54 9 221 613-9002',
+    whatsapp: 'https://api.whatsapp.com/send?phone=5492216139002', horario: 'Lunes a Viernes: 8:00 a 20:00 hs. Sábados: 8:00 a 12:00 hs.', mapa: 'https://www.google.com/maps/search/?api=1&query=CYTEC+La+Plata+Calle+8+607', },
   { nombre: 'Florencio Varela', direccion: 'Bartolomé Mitre Nº 40', telefonos: '(011) 4237-5458 | 4355-2957 | 4355-4833', wsp:'+54 9 11 5338-8292',
-    whatsapp: 'https://api.whatsapp.com/send?phone=5491153388292', horario: 'Lunes a Viernes: 9:00 a 15:00 hs.' }
+    whatsapp: 'https://api.whatsapp.com/send?phone=5491153388292', horario: 'Lunes a Viernes: 9:00 a 15:00 hs.', mapa: 'https://www.google.com/maps/search/?api=1&query=CYTEC+Bartolomé+Mitre+40+Florencio+Varela' }
 ];
 
 //Seccion NOSOTROS - DATA

@@ -2,7 +2,7 @@
 <script>
   // Pie de página institucional: sedes balanceadas, tarjeta compacta de QR/feedback y redes sociales.
   import Icono from './Icono.svelte';
-  import { sedes } from '$lib/datos.js';
+  import { sedes, EMAIL_CONTACTO } from '$lib/datos.js';
 </script>
 
 <footer id="contacto">
@@ -13,10 +13,21 @@
       <div class="tarjeta-sede">
         <div class="sede-contenido">
           <h3>Sede {s.nombre}</h3>
-          <p><Icono nombre="pin" tam={18} /> <span>{s.direccion}</span></p>
+          <p><Icono nombre="pin" tam={18} /><a 
+              href={s.mapa} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="enlace-contacto"
+              title={`Ver ubicación de Sede ${s.nombre} en Google Maps`}
+            >
+              <span>{s.direccion}</span>
+              <span class="icono-externo" aria-hidden="true"></span>
+            </a></p>
           <p><Icono nombre="telefono" tam={18} /> <span>{s.telefonos}</span></p>
           <p><Icono nombre="whatsapp" tam={18} /> <span>{s.wsp}</span></p>
           <p><Icono nombre="reloj" tam={18} /> <span>{s.horario}</span></p>
+          <p><Icono nombre="mail" tam={18} /><span>{EMAIL_CONTACTO}</span></p>
+
         </div>
         
         <div class="sede-accion">
@@ -120,6 +131,45 @@
     font-size: 0.85rem; 
     line-height: 1.45;
     color: rgba(255, 255, 255, 0.9);
+  }
+
+  .sede-accion {
+    margin-top: 1.25rem;
+  }
+
+  .tarjeta-sede .btn { 
+    display: inline-flex; 
+    gap: 0.4rem; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    font-size: 0.78rem;
+    padding: 0.65rem 1rem;
+  }
+  /* 🔗 Estilos para los enlaces interactivos dentro de las sedes (Mapas) */
+  .enlace-contacto {
+    color: var(--blanco);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color var(--transicion);
+  }
+
+  .enlace-contacto:hover {
+    color: var(--secundario);
+    text-decoration: underline;
+  }
+
+  .icono-externo {
+    font-size: 0.72rem;
+    opacity: 0.75;
+    transition: transform var(--transicion);
+  }
+
+  .enlace-contacto:hover .icono-externo {
+    transform: translate(2px, -2px);
+    opacity: 1;
   }
 
   .sede-accion {
