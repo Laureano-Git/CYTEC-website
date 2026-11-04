@@ -38,7 +38,8 @@ export const menu = [
       { texto: 'Staff', href: '/#staff' },
       {texto: 'Nuestra calidad', href: '/#calidad' },
       { texto: 'Convenios y Formacion', href: '/#formacion' },
-      { texto: 'PACS', href: '/#pacs' } 
+      { texto: 'PACS', href: '/#pacs' },
+      { texto: 'Contacto', href: '/#contacto' } 
     ] 
   },
   { texto: 'Servicios', hijos: [
